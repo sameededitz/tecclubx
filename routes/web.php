@@ -44,7 +44,7 @@ Route::get('/email/view', function () {
 
 Route::get('/email/test', [EmailController::class, 'test']);
 
-Route::get('/send-test-email', function () {
+Route::get('/test/email', function () {
     \Illuminate\Support\Facades\Mail::raw('This is a test email', function ($message) {
         $message->to('sameedhassan22@gmail.com')
             ->subject('Test Email');

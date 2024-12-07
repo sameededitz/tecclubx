@@ -1,5 +1,5 @@
 # # Ignore all contents of the upload folder
-# /upload/
+upload/
 
 # # Ignore all contents of the portfolio folder
-# /portfolio/
+portfolio/

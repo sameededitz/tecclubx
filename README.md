@@ -31,16 +31,15 @@ The TecClubb Company Website showcases the company’s work and offers a clean i
 ## Installation
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/tecclubb-company-website-admin-panel.git
+    git clone https://github.com/sameededitz/tecclubx.git
     ```
 2. **Navigate to the project directory**:
     ```bash
-    cd tecclubb-company-website-admin-panel
+    cd tecclubx
     ```
 3. **Install dependencies**:
     ```bash
     composer install
-    npm install
     ```
 4. **Set up environment variables**:
     ```bash
