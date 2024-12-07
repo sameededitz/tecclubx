@@ -1,6 +1,6 @@
 @extends('layout.home-layout')
 @section('title')
-    Contact | TecClub - Technology 
+    Contact | TecClub - Technology
 @endsection
 
 @section('home_content')
@@ -98,21 +98,24 @@
                 <div class="col-xl-12">
                     <div class="swiper brand__slider">
                         <div class="swiper-wrapper">
-                            <div class="brand__area-item swiper-slide">
-                                <img src="assets/img/brand/brand-1.png" alt="image">
-                            </div>
-                            <div class="brand__area-item swiper-slide">
-                                <img src="assets/img/brand/brand-2.png" alt="image">
-                            </div>
-                            <div class="brand__area-item swiper-slide">
-                                <img src="assets/img/brand/brand-3.png" alt="image">
-                            </div>
-                            <div class="brand__area-item swiper-slide">
-                                <img src="assets/img/brand/brand-4.png" alt="image">
-                            </div>
-                            <div class="brand__area-item swiper-slide">
-                                <img src="assets/img/brand/brand-5.png" alt="image">
-                            </div>
+                            @if ($sliderimg->isNotEmpty())
+                                @foreach ($sliderimg as $image)
+                                    <div class="brand__area-item swiper-slide">
+                                        <img src="{{ $image->getFirstMediaUrl('section_img') ?? asset('assets/img/brand/brand-1.png') }}"
+                                            alt="slider image">
+                                    </div>
+                                @endforeach
+                            @else
+                                <div class="brand__area-item swiper-slide">
+                                    <img src="{{ asset('assets/img/brand/brand-1.png') }}" alt="slider image">
+                                </div>
+                                <div class="brand__area-item swiper-slide">
+                                    <img src="{{ asset('assets/img/brand/brand-2.png') }}" alt="slider image">
+                                </div>
+                                <div class="brand__area-item swiper-slide">
+                                    <img src="{{ asset('assets/img/brand/brand-3.png') }}" alt="slider image">
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>

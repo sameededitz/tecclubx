@@ -30,8 +30,9 @@ class HomeController extends Controller
 
     public function about()
     {
+        $sliderimg = SectionImages::where('section', 'slider')->get();
         $aboutImages = SectionImages::where('section', 'about')->get();
-        return view('home.about', compact('aboutImages'));
+        return view('home.about', compact('aboutImages', 'sliderimg'));
     }
 
     public function service()
