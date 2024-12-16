@@ -7,7 +7,6 @@ use App\Models\Portfolio;
 use App\Models\Post;
 use App\Models\SectionImages;
 use App\Models\Tag;
-use App\Rules\Recaptcha;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

@@ -46,12 +46,12 @@ class FetchInboxEmailsCommand extends Command
             Email::updateOrCreate(
                 ['message_id' => $messageId], // Store the IMAP unique identifier
                 [
-                    'uid' => $message->getUid(),
-                    'from' => $message->getFrom()[0]->mail,
-                    'to' => $message->getTo()[0]->mail,
-                    'subject' => $message->getSubject(),
-                    'body' => $message->getHTMLBody(),
-                    'received_at' => $message->getDate(),
+                    'uid' => $message->getUid() ?? null, // Fallback to null if UID is missing
+                    'from' => $message->getFrom()[0]->mail ?? 'unknown@domain.com', // Fallback email address
+                    'to' => $message->getTo()[0]->mail ?? 'unknown@domain.com', // Fallback email address
+                    'subject' => $message->getSubject() ?? 'No Subject', // Fallback subject
+                    'body' => $message->getHTMLBody() ?? $message->getTextBody() ?? 'No Content found', // Use text body as a fallback
+                    'received_at' => $message->getDate() ?? now(), // Fallback to the current timestamp
                     'status' => 'inbox',
                 ]
             );
