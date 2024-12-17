@@ -23,26 +23,6 @@ class AllUsers extends Component
             ->get();
     }
 
-    public function addPurchase()
-    {
-        $this->validate();
-
-        Purchase::create([
-            'user_id' => $this->selectedUser->id,
-            'started_at' => now(),
-            'expires_at' => $this->expirationDate,
-            'is_active' => true,
-        ]);
-
-        $this->expirationDate = '';
-
-        // Reload users to update the table
-        $this->mount();
-
-        $this->dispatch('close-modal');
-        $this->dispatch('alert_add', ['type' => 'success', 'message' => 'Purchase added successfully!']);
-    }
-
     public function openModal(User $user)
     {
         $this->selectedUser = $user;
