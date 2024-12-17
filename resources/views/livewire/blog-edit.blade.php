@@ -98,7 +98,7 @@
             });
         });
 
-        const example_image_upload_handler = (blobInfo, progress) => new Promise((resolve, reject) => {
+        const image_upload_handler = (blobInfo, progress) => new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest();
             xhr.withCredentials = false;
             xhr.open('POST',
@@ -153,7 +153,10 @@
         });
 
         tinymce.init({
-            selector: 'textarea#myeditorinstance', // Replace this CSS selector to match your HTML
+            selector: 'textarea#myeditorinstance',
+            relative_urls: false,
+            remove_script_host: false,
+            document_base_url: '{{ config('app.url') }}' + '/',
             plugins: [
                 "advlist", "anchor", "autolink", "charmap", "code", "fullscreen",
                 "help", "image", "insertdatetime", "link", "lists", "media",
@@ -162,8 +165,7 @@
             ],
             toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
             images_file_types: 'jpg,png,jpeg',
-            image_prepend_url: `${window.location.origin}/portfolio/`,
-            images_upload_handler: example_image_upload_handler,
+            images_upload_handler: image_upload_handler,
             setup: function(editor) {
                 editor.on('init change', function() {
                     editor.save();
@@ -171,16 +173,11 @@
 
                 editor.on('BeforeSetContent', function(e) {
                     const content = e.content;
-                    const updatedContent = content.replace(/src="\.\.\/\.\.\/portfolio/g,
-                        `src="${window.location.origin}/portfolio`);
-                    e.content = updatedContent;
+                    e.content = content;
                 });
 
                 editor.on('change', function(e) {
                     let content = editor.getContent();
-                    // Replace relative paths with absolute paths
-                    content = content.replace(/src="\.\.\/\.\.\/portfolio/g,
-                        `src="${window.location.origin}/portfolio`);
                     @this.set('description', content);
                 });
             }

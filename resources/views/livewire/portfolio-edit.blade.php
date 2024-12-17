@@ -36,22 +36,24 @@
                                         <div class="upload-image-wrapper d-flex align-items-center gap-3">
                                             <div
                                                 class="uploaded-img position-relative h-120-px w-120-px border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50">
-                                                <button type="button" wire:click="removeImage('cover')"
-                                                    class="uploaded-img__remove position-absolute top-0 end-0 z-1 text-2xxl line-height-1 me-8 mt-8 d-flex">
-                                                    <iconify-icon icon="radix-icons:cross-2"
-                                                        class="text-xl text-danger-600"></iconify-icon>
-                                                </button>
+                                                @if ($cover)
+                                                    <button type="button" wire:click="removeImage('cover')"
+                                                        class="uploaded-img__remove position-absolute top-0 end-0 z-1 text-2xxl line-height-1 me-8 mt-8 d-flex">
+                                                        <iconify-icon icon="radix-icons:cross-2"
+                                                            class="text-xl text-danger-600"></iconify-icon>
+                                                    </button>
+                                                @endif
                                                 <img id="uploaded-img__preview" class="w-100 h-100 object-fit-cover"
                                                     src="{{ $cover ? $cover->temporaryUrl() : $portfolio->getFirstMediaUrl('cover') }}"
                                                     alt="cover_image">
                                             </div>
                                             <label
                                                 class="upload-file h-120-px w-120-px border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50 bg-hover-neutral-200 d-flex align-items-center flex-column justify-content-center gap-1"
-                                                for="upload-file">
+                                                for="upload-file-cover">
                                                 <iconify-icon icon="solar:camera-outline"
                                                     class="text-xl text-secondary-light"></iconify-icon>
                                                 <span class="fw-semibold text-secondary-light">Upload</span>
-                                                <input id="upload-file" wire:model="cover" type="file" hidden>
+                                                <input id="upload-file-cover" wire:model="cover" type="file" hidden>
                                                 <div wire:loading wire:target="cover">Uploading...</div>
                                             </label>
                                         </div>
@@ -61,22 +63,24 @@
                                         <div class="upload-image-wrapper d-flex align-items-center gap-3">
                                             <div
                                                 class="uploaded-img position-relative h-120-px w-120-px border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50">
-                                                <button type="button" wire:click="removeImage('preview')"
-                                                    class="uploaded-img__remove position-absolute top-0 end-0 z-1 text-2xxl line-height-1 me-8 mt-8 d-flex">
-                                                    <iconify-icon icon="radix-icons:cross-2"
-                                                        class="text-xl text-danger-600"></iconify-icon>
-                                                </button>
+                                                @if ($preview)
+                                                    <button type="button" wire:click="removeImage('preview')"
+                                                        class="uploaded-img__remove position-absolute top-0 end-0 z-1 text-2xxl line-height-1 me-8 mt-8 d-flex">
+                                                        <iconify-icon icon="radix-icons:cross-2"
+                                                            class="text-xl text-danger-600"></iconify-icon>
+                                                    </button>
+                                                @endif
                                                 <img id="uploaded-img__preview" class="w-100 h-100 object-fit-cover"
                                                     src="{{ $preview ? $preview->temporaryUrl() : $portfolio->getFirstMediaUrl('preview') }}"
                                                     alt="preview_image">
                                             </div>
                                             <label
                                                 class="upload-file h-120-px w-120-px border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50 bg-hover-neutral-200 d-flex align-items-center flex-column justify-content-center gap-1"
-                                                for="upload-file">
+                                                for="upload-file-preview">
                                                 <iconify-icon icon="solar:camera-outline"
                                                     class="text-xl text-secondary-light"></iconify-icon>
                                                 <span class="fw-semibold text-secondary-light">Upload</span>
-                                                <input id="upload-file" wire:model="preview" type="file" hidden>
+                                                <input id="upload-file-preview" wire:model="preview" type="file" hidden>
                                                 <div wire:loading wire:target="preview">Uploading...</div>
                                             </label>
                                         </div>
@@ -86,22 +90,24 @@
                                         <div class="upload-image-wrapper d-flex align-items-center gap-3">
                                             <div
                                                 class="uploaded-img position-relative h-120-px w-120-px border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50">
-                                                <button type="button" wire:click="removeImage('thumbnail')"
-                                                    class="uploaded-img__remove position-absolute top-0 end-0 z-1 text-2xxl line-height-1 me-8 mt-8 d-flex">
-                                                    <iconify-icon icon="radix-icons:cross-2"
-                                                        class="text-xl text-danger-600"></iconify-icon>
-                                                </button>
+                                                @if ($thumbnail)
+                                                    <button type="button" wire:click="removeImage('thumbnail')"
+                                                        class="uploaded-img__remove position-absolute top-0 end-0 z-1 text-2xxl line-height-1 me-8 mt-8 d-flex">
+                                                        <iconify-icon icon="radix-icons:cross-2"
+                                                            class="text-xl text-danger-600"></iconify-icon>
+                                                    </button>
+                                                @endif
                                                 <img id="uploaded-img__preview" class="w-100 h-100 object-fit-cover"
                                                     src="{{ $thumbnail ? $thumbnail->temporaryUrl() : $portfolio->getFirstMediaUrl('thumbnail') }}"
                                                     alt="server_image">
                                             </div>
                                             <label
                                                 class="upload-file h-120-px w-120-px border input-form-light radius-8 overflow-hidden border-dashed bg-neutral-50 bg-hover-neutral-200 d-flex align-items-center flex-column justify-content-center gap-1"
-                                                for="upload-file">
+                                                for="upload-file-thumbnail">
                                                 <iconify-icon icon="solar:camera-outline"
                                                     class="text-xl text-secondary-light"></iconify-icon>
                                                 <span class="fw-semibold text-secondary-light">Upload</span>
-                                                <input id="upload-file" wire:model="thumbnail" type="file" hidden>
+                                                <input id="upload-file-thumbnail" wire:model="thumbnail" type="file" hidden>
                                                 <div wire:loading wire:target="thumbnail">Uploading...</div>
                                             </label>
                                         </div>
@@ -143,7 +149,7 @@
 
 @script
     <script>
-        const example_image_upload_handler = (blobInfo, progress) => new Promise((resolve, reject) => {
+        const image_upload_handler = (blobInfo, progress) => new Promise((resolve, reject) => {
             const xhr = new XMLHttpRequest();
             xhr.withCredentials = false;
             xhr.open('POST',
@@ -157,7 +163,7 @@
             };
 
             xhr.onload = () => {
-                console.log(xhr);
+                // console.log(xhr);
 
                 if (xhr.status === 403) {
                     reject({
@@ -199,6 +205,9 @@
 
         tinymce.init({
             selector: 'textarea#myeditorinstance', // Replace this CSS selector to match your HTML
+            relative_urls: false,
+            remove_script_host: false,
+            document_base_url: '{{ config('app.url') }}' + '/',
             plugins: [
                 "advlist", "anchor", "autolink", "charmap", "code", "fullscreen",
                 "help", "image", "insertdatetime", "link", "lists", "media",
@@ -207,46 +216,20 @@
             ],
             toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
             images_file_types: 'jpg,png,jpeg',
-            image_prepend_url: `${window.location.origin}/portfolio/`,
-            images_upload_handler: example_image_upload_handler,
+            images_upload_handler: image_upload_handler,
             setup: function(editor) {
-                editor.on('blur', function(e) {
-                    editor.save(); // This ensures the content is saved back to the textarea
-                });
-                // When editor is initialized or content is changed
-                editor.on('init', function() {
+                editor.on('init change', function() {
                     editor.save();
-                    // Set the content from the backend with correct URLs
-                    this.setContent(@json($portfolio->description));
                 });
 
-                // Before setting content, replace relative paths with absolute paths
                 editor.on('BeforeSetContent', function(e) {
-                    e.content = e.content.replace(/src="\.\.\/\.\.\/portfolio/g,
-                        `src="${window.location.origin}/portfolio`);
+                    const content = e.content;
+                    e.content = content;
                 });
 
-                // On editor change, replace relative paths with absolute paths and update Livewire model
                 editor.on('change', function(e) {
                     let content = editor.getContent();
                     // Replace relative paths with absolute paths
-                    content = content.replace(/src="\.\.\/\.\.\/portfolio/g,
-                        `src="${window.location.origin}/portfolio`);
-                    // Set the content to the Livewire model
-                    @this.set('description', content);
-                });
-
-                // Handle the case where src may have multiple `../` relative path indicators
-                editor.on('BeforeSetContent', function(e) {
-                    e.content = e.content.replace(/src="(\.\.\/)+portfolio/g,
-                        `src="${window.location.origin}/portfolio`);
-                });
-
-                editor.on('change', function(e) {
-                    let content = editor.getContent();
-                    // Ensure all relative paths are converted
-                    content = content.replace(/src="(\.\.\/)+portfolio/g,
-                        `src="${window.location.origin}/portfolio`);
                     @this.set('description', content);
                 });
             }

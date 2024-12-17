@@ -19,7 +19,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'verifyRole' => VerifyRole::class
         ]);
         $middleware->validateCsrfTokens([
-            'admin/upload-image',
+            'admin/upload/*',
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

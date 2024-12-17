@@ -9,6 +9,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\SectionImagesController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\UploadController;
 use App\Livewire\PortfolioEdit;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'verified', 'verifyR
 
     Route::get('/portfolio', [PortfolioController::class, 'All'])->name('all-portfolio');
     Route::get('/portfolio/create', [PortfolioController::class, 'create'])->name('add-portfolio');
-    Route::get('/portfolio-detail/{portfolio:slug}', [PortfolioController::class, 'view'])->name('view-portfolio');
+    Route::get('/portfolio/{portfolio:slug}', [PortfolioController::class, 'view'])->name('view-portfolio');
 
     Route::get('/portfolio/edit/{portfolio:slug}', PortfolioEdit::class)->name('edit-portfolio');
 
@@ -57,7 +58,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'verified', 'verifyR
     Route::delete('/tags/delete/{tag}', [TagController::class, 'delete'])->name('delete-tag');
 
     Route::get('/blogs', [PostController::class, 'index'])->name('all-blogs');
-    Route::get('/blogs/save', [PostController::class, 'save'])->name('add-blog');
+    Route::get('/blogs/create', [PostController::class, 'create'])->name('add-blog');
     Route::post('/blogs/{post}/status', [PostController::class, 'updateStatus'])->name('update-blog-status');
     Route::get('/blogs/{post}', [PostController::class, 'view'])->name('view-blog');
     Route::get('/blog/{post}/update', [PostController::class, 'edit'])->name('edit-blog');
@@ -71,5 +72,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'verified', 'verifyR
 
     Route::delete('/delete-admin/{user}', [AdminController::class, 'deleteAdmin'])->name('delete-admin');
 
-    Route::post('/upload-image', [PortfolioController::class, 'uploadImage'])->name('upload-image');
+    Route::post('/upload/image', [UploadController::class, 'uploadImage'])->name('upload-image');
+    Route::post('/upload/email/image', [UploadController::class, 'uploadEmail'])->name('upload-email-image');
 });

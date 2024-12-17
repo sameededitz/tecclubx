@@ -23,7 +23,7 @@ class InboxController extends Controller
     public function send(Request $request, Email $email)
     {
         // Validate the request
-        // dd($request->all());
+        // dd($request->message);
         $request->validate([
             'to' => 'required|string',
             'subject' => 'required|string|max:255',

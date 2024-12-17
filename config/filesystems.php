@@ -51,26 +51,33 @@ return [
         //     'visibility' => 'public',
         // ],
 
-        // 'upload' => [
-        //     'driver' => 'local',
-        //     'root' => storage_path('app/public/portfolio'),
-        //     'url' => env('APP_URL') . '/storage/portfolio',
-        //     'visibility' => 'public',
-        // ],
+        'images' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/images'),
+            'url' => env('APP_URL') . '/storage/images',
+            'visibility' => 'public',
+        ],
+
+        'email' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/email'),
+            'url' => env('APP_URL') . '/storage/email',
+            'visibility' => 'public',
+        ],
 
         'media' => [
             'driver' => 'local',
-            'root' => public_path('/upload'),
-            'url' => env('APP_URL') . '/upload',
+            'root' => storage_path('app/public/media'),
+            'url' => env('APP_URL') . '/storage/media',
             'visibility' => 'public',
         ],
 
-        'upload' => [
-            'driver' => 'local',
-            'root' => public_path('/portfolio'),
-            'url' => env('APP_URL') . '/portfolio',
-            'visibility' => 'public',
-        ],
+        // 'upload' => [
+        //     'driver' => 'local',
+        //     'root' => public_path('/portfolio'),
+        //     'url' => env('APP_URL') . '/portfolio',
+        //     'visibility' => 'public',
+        // ],
 
         's3' => [
             'driver' => 's3',

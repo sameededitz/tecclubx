@@ -75,8 +75,11 @@ class PortfolioAdd extends Component
     {
         // Get the base URL from the environment variable
         $baseUrl = env('APP_URL', 'http://127.0.0.1:8000');
+
+        $regexPattern = '/src="(?:' . preg_quote($baseUrl, '/') . ')?\/?storage\/images\/([^"]+)"/';
+
         // Extract image file names from description
-        preg_match_all('/src="' . preg_quote($baseUrl, '/') . '\/portfolio\/([^"]+)"/', $portfolio->description, $matches);
+        preg_match_all($regexPattern, $portfolio->description, $matches);
         $imageFiles = $matches[1] ?? [];
 
         // Update the image metadata for each image file name

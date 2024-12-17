@@ -88,7 +88,7 @@
                                     placeholder="Enter Category Name" value="{{ old('name') }}" required>
                             </div>
                             <div class="d-flex align-items-center justify-content-center gap-3 mt-24">
-                                <button type="reset"
+                                <button type="reset" data-bs-dismiss="modal" aria-label="Close"
                                     class="border border-danger-600 bg-hover-danger-200 text-danger-600 text-md px-40 py-11 radius-8">
                                     Cancel
                                 </button>

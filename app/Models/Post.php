@@ -65,15 +65,16 @@ class Post extends Model implements HasMedia
         // Get the base URL from the environment variable
         $baseUrl = env('APP_URL', 'http://127.0.0.1:8000');
         // Extract image file names from description
-        preg_match_all('/src="' . preg_quote($baseUrl, '/') . '\/portfolio\/([^"]+)"/', $this->body, $matches);
-        // dd($matches);
+        $regexPattern = '/src="(?:' . preg_quote($baseUrl, '/') . ')?\/?storage\/images\/([^"]+)"/';
 
+        // Extract image file names from description
+        preg_match_all($regexPattern, $this->body, $matches);
         if (!empty($matches[1])) {
             foreach ($matches[1] as $fileName) {
 
                 // Delete image from storage
-                if (Storage::disk('upload')->exists($fileName)) {
-                    Storage::disk('upload')->delete($fileName);
+                if (Storage::disk('images')->exists($fileName)) {
+                    Storage::disk('images')->delete($fileName);
                 }
                 // Delete image metadata record
                 ImageMetadata::where('path', $fileName)->delete();

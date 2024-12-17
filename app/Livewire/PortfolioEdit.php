@@ -29,6 +29,11 @@ class PortfolioEdit extends Component
         $this->date = $portfolio->date ? $portfolio->date->format('Y-m-d') : null;
     }
 
+    public function removeImage($field)
+    {
+        $this->$field = null;
+    }
+
     protected function rules()
     {
         return [
@@ -47,28 +52,28 @@ class PortfolioEdit extends Component
         $this->validate();
 
         $baseUrl = env('APP_URL', 'http://127.0.0.1:8000');
-        // Extract image file names from description
-        preg_match_all('/src="' . preg_quote($baseUrl, '/') . '\/portfolio\/([^"]+)"/', $this->portfolio->description, $oldImageMatches);
+
+        // Extract image file names from the old description (absolute and relative paths)
+        preg_match_all('/src="(?:' . preg_quote($baseUrl, '/') . ')?\/?storage\/images\/([^"]+)"/', $this->portfolio->description, $oldImageMatches);
         $oldImagePaths = $oldImageMatches[1] ?? [];
 
-        // dd($oldImagePaths);
-
-        // Extract image paths from the new description
-        preg_match_all('/src="' . preg_quote($baseUrl, '/') . '\/portfolio\/([^"]+)"/', $this->description, $newImageMatches);
+        // Extract image paths from the new description (absolute and relative paths)
+        preg_match_all('/src="(?:' . preg_quote($baseUrl, '/') . ')?\/?storage\/images\/([^"]+)"/', $this->description, $newImageMatches);
         $newImagePaths = $newImageMatches[1] ?? [];
 
-        // dd($newImagePaths);
-
+        // Determine which images need to be deleted (present in old but not in new)
         $imagesToDelete = array_diff($oldImagePaths, $newImagePaths);
 
+        // Iterate through images to delete and remove from storage and metadata
         foreach ($imagesToDelete as $image) {
             $imageMetadata = ImageMetadata::where('path', $image)
                 ->where('portfolio_id', '<>', $this->portfolio->id)
                 ->exists();
 
             if (!$imageMetadata) {
-                // Delete from storage and metadata table
-                Storage::disk('upload')->delete($image);
+                // Delete the image file from storage if no metadata exists
+                Storage::disk('images')->delete($image);
+                // Delete the image metadata
                 ImageMetadata::where('path', $image)->delete();
             }
         }
@@ -112,8 +117,11 @@ class PortfolioEdit extends Component
     {
         // Get the base URL from the environment variable
         $baseUrl = env('APP_URL', 'http://127.0.0.1:8000');
+
+        $regexPattern = '/src="(?:' . preg_quote($baseUrl, '/') . ')?\/?storage\/images\/([^"]+)"/';
+
         // Extract image file names from description
-        preg_match_all('/src="' . preg_quote($baseUrl, '/') . '\/portfolio\/([^"]+)"/', $portfolio->description, $matches);
+        preg_match_all($regexPattern, $portfolio->description, $matches);
         $imageFiles = $matches[1] ?? [];
 
         // Update the image metadata for each image file name

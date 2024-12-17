@@ -50,6 +50,7 @@ class BlogAdd extends Component
 
     public function submit()
     {
+        // dd($this->description);
         $this->validate();
 
         $post = Post::create([
@@ -81,7 +82,10 @@ class BlogAdd extends Component
         // Get the base URL from the environment variable
         $baseUrl = env('APP_URL', 'http://127.0.0.1:8000');
         // Extract image file names from description
-        preg_match_all('/src="' . preg_quote($baseUrl, '/') . '\/portfolio\/([^"]+)"/', $post->description, $matches);
+        $regexPattern = '/src="(?:' . preg_quote($baseUrl, '/') . ')?\/?storage\/images\/([^"]+)"/';
+
+        // Extract image file names from description
+        preg_match_all($regexPattern, $post->body, $matches);
         $imageFiles = $matches[1] ?? [];
 
         // Update the image metadata for each image file name

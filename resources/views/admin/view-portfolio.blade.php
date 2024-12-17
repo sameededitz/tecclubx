@@ -42,7 +42,7 @@
         </div>
         <div class="card-body scroll-sm" style="overflow-x: scroll">
             <div class="d-flex align-items-end justify-content-end">
-                <span class="text-md text-secondary-light fw-normal">{{ $portfolio->date }}</span>
+                <span class="text-md text-secondary-light fw-normal">{{ $portfolio->date->toFormattedDateString() }}</span>
             </div>
             <div class="row mt-16 align-items-center justify-content-center">
                 <div class="col-12 col-md-6">
@@ -53,10 +53,6 @@
                     <img src="{{ $portfolio->getFirstMediaUrl('thumbnail') }}" alt="thumbnail-portfolio"
                         class="w-100-px flex-shrink-0 me-12 mb-12 radius-8" width="150px">
                 </div>
-                {{-- <div class="col-12 col-md-4">
-                </div>
-                <div class="col-12 col-md-4">
-                </div> --}}
             </div>
         </div>
     </div>

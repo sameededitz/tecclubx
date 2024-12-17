@@ -31,7 +31,7 @@ require __DIR__ . '/admin.php';
 
 Route::get('/optimize', function () {
     Artisan::call('optimize:clear');
-    Artisan::call('migrate');
+    // Artisan::call('migrate');
 });
 
 Route::get('/api-docs', function () {

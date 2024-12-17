@@ -13,7 +13,7 @@ class PostController extends Controller
         return view('admin.all-blogs', compact('blogs'));
     }
 
-    public function save()
+    public function create()
     {
         return view('admin.add-blog');
     }

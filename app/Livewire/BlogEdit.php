@@ -61,22 +61,24 @@ class BlogEdit extends Component
         $this->validate();
 
         $baseUrl = env('APP_URL', 'http://127.0.0.1:8000');
-        preg_match_all('/src="' . preg_quote($baseUrl, '/') . '\/portfolio\/([^"]+)"/', $this->post->body, $oldImageMatches);
+        preg_match_all('/src="(?:' . preg_quote($baseUrl, '/') . ')?\/?storage\/images\/([^"]+)"/', $this->post->body, $oldImageMatches);
         $oldImagePaths = $oldImageMatches[1] ?? [];
 
-        preg_match_all('/src="' . preg_quote($baseUrl, '/') . '\/portfolio\/([^"]+)"/', $this->description, $newImageMatches);
+        // Extract image paths from the new description (absolute and relative paths)
+        preg_match_all('/src="(?:' . preg_quote($baseUrl, '/') . ')?\/?storage\/images\/([^"]+)"/', $this->description, $newImageMatches);
         $newImagePaths = $newImageMatches[1] ?? [];
 
+        // Determine which images need to be deleted (present in old but not in new)
         $imagesToDelete = array_diff($oldImagePaths, $newImagePaths);
 
         foreach ($imagesToDelete as $image) {
             $imageMetadata = ImageMetadata::where('path', $image)
-                ->where('portfolio_id', '<>', $this->portfolio->id)
+                ->where('blog_id', '<>', $this->post->id)
                 ->exists();
 
             if (!$imageMetadata) {
                 // Delete from storage and metadata table
-                Storage::disk('upload')->delete($image);
+                Storage::disk('images')->delete($image);
                 ImageMetadata::where('path', $image)->delete();
             }
         }
@@ -111,7 +113,10 @@ class BlogEdit extends Component
         // Get the base URL from the environment variable
         $baseUrl = env('APP_URL', 'http://127.0.0.1:8000');
         // Extract image file names from description
-        preg_match_all('/src="' . preg_quote($baseUrl, '/') . '\/portfolio\/([^"]+)"/', $post->description, $matches);
+        $regexPattern = '/src="(?:' . preg_quote($baseUrl, '/') . ')?\/?storage\/images\/([^"]+)"/';
+
+        // Extract image file names from description
+        preg_match_all($regexPattern, $post->body, $matches);
         $imageFiles = $matches[1] ?? [];
 
         // Update the image metadata for each image file name
