@@ -37,7 +37,7 @@ class AppServiceProvider extends ServiceProvider
             return Limit::perMinute(5)->by($request->email . $request->ip());
         });
 
-        View::composer(['home.*', 'partials.home.*','email.send.*'], function ($view) {
+        View::composer(['home.*', 'partials.home.*','email.*'], function ($view) {
             $options = Option::whereIn('key', [
                 'name',
                 'phone',

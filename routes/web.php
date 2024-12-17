@@ -39,7 +39,9 @@ Route::get('/api-docs', function () {
 })->name('api-docs');
 
 Route::get('/email/view', function () {
-    return view('email.send.contact-owner-email');
+    $subject = 'Test Email';
+    $content = 'This is a test email';
+    return view('email.custom-message', compact('subject', 'content'));
 });
 
 Route::get('/email/test', [EmailController::class, 'test']);
