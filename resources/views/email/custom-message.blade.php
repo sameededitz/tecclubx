@@ -60,7 +60,7 @@
 
                     <!-- Call-to-Action Button -->
                     <tr>
-                        <td align="center" style="padding: 20px;">
+                        <td align="left" style="padding: 20px;">
                             <a href="{{ route('contact') }}"
                                 style="background-color: #007bff; color: #ffffff; text-decoration: none; padding: 10px 20px; font-weight: bold; border-radius: 5px; display: inline-block;">
                                 Let’s Start!
