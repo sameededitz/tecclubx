@@ -1,6 +1,6 @@
 @extends('layout.home-layout')
 @section('title')
-    Home | TecClub - Technology 
+    Home | TecClub - Technology
 @endsection
 
 @section('home_content')
@@ -362,7 +362,8 @@
                                             <i class="fas fa-star "></i>
                                         </div>
                                     </div>
-                                    <p>Zentronix is knowledgeable and helped with what we needed, they jumped on call quickly
+                                    <p> {{ config('app.name') }} is knowledgeable and helped with what we needed, they
+                                        jumped on call quickly
                                         and answered all the questions we had</p>
                                 </div>
                                 <div class="single-slider swiper-slide">
@@ -379,8 +380,10 @@
                                             <i class="fas fa-star "></i>
                                         </div>
                                     </div>
-                                    <p>TecClub is a true professional. Is able to work on processes and deliver the result
-                                        on time. They understands the delivery methodology and is attentive to details. Highly
+                                    <p> {{ config('app.name') }} is a true professional. Is able to work on processes and
+                                        deliver the result
+                                        on time. They understands the delivery methodology and is attentive to details.
+                                        Highly
                                         recommend.</p>
                                 </div>
                             </div>

@@ -56,7 +56,7 @@
                     <div class="testimonial__six-card">
                         <h4>Cyril Selivanov</h4>
                         <span>Germany</span>
-                        <p>TecClub is a true professional. Is able to work on processes and deliver the result
+                        <p> {{ config('app.name') }} is a true professional. Is able to work on processes and deliver the result
                             on time. They understands the delivery methodology and is attentive to details. Highly
                             recommend.</p>
                         <div class="testimonial-rating mt-5">
@@ -72,7 +72,7 @@
                     <div class="testimonial__six-card">
                         <h4>Ankit Sharma</h4>
                         <span>India</span>
-                        <p>TecClub is knowledgeable and helped with what we needed. They jumped on a call quickly and
+                        <p> {{ config('app.name') }} is knowledgeable and helped with what we needed. They jumped on a call quickly and
                             answered all the questions we had, showing dedication and a true commitment to client success.
                         </p>
 
