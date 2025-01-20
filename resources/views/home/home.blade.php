@@ -982,7 +982,7 @@
                 <div class="col-md-3 col-sm-6 mb-4">
                     <div class="highlight-card">
                         <i class="bi bi-briefcase" style="font-size: 3rem; color: #007bff;"></i>
-                        <h1 class="mt-2">30+</h1>
+                        <h1 class="mt-2">45+</h1>
                         <p>Projects</p>
                     </div>
                 </div>
