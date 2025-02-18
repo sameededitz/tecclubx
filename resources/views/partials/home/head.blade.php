@@ -1,8 +1,8 @@
 <!-- Start Meta -->
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Bantec - IT Service & Technology HTML5 Template">
-<meta name="keywords" content="Creative, Digital, multipage, landing, freelancer template">
+<meta name="description" content="Your trusted partner in digital transformation and innovation.">
+<meta name="keywords" content="IT Services, IT Consulting, IT Support, IT Management">
 <meta name="author" content="ThemeOri">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Title of Site -->
