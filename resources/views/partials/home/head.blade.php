@@ -8,7 +8,7 @@
 <!-- Title of Site -->
 <title>@yield('title', config('app.name'))</title>
 <!-- Favicons -->
-<link rel="icon" type="image/png" href="{{ asset('assets/img/favicon-1.png') }}">
+<link rel="icon" type="image/png" href="{{ asset('assets/img/Favicon.png') }}">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
