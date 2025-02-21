@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-xl-6">
                     <div class="faq-collapse">
-                        <div class="faq-collapse-item">
+                        <div class="faq-collapse-item" data-aos="fade-right">
                             <div class="faq-collapse-item-card active">
                                 <div class="faq-collapse-item-card-header">
                                     <i class="fas fa-minus"></i>
@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-collapse-item">
+                        <div class="faq-collapse-item" data-aos="fade-right">
                             <div class="faq-collapse-item-card">
                                 <div class="faq-collapse-item-card-header">
                                     <i class="fas fa-plus"></i>
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-collapse-item">
+                        <div class="faq-collapse-item" data-aos="fade-right">
                             <div class="faq-collapse-item-card">
                                 <div class="faq-collapse-item-card-header">
                                     <i class="fas fa-plus"></i>
@@ -69,7 +69,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-collapse-item">
+                        <div class="faq-collapse-item" data-aos="fade-right">
                             <div class="faq-collapse-item-card">
                                 <div class="faq-collapse-item-card-header">
                                     <i class="fas fa-plus"></i>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="faq-collapse">
-                        <div class="faq-collapse-item">
+                        <div class="faq-collapse-item" data-aos="fade-left">
                             <div class="faq-collapse-item-card active">
                                 <div class="faq-collapse-item-card-header">
                                     <i class="fas fa-minus"></i>
@@ -98,7 +98,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-collapse-item">
+                        <div class="faq-collapse-item" data-aos="fade-left">
                             <div class="faq-collapse-item-card">
                                 <div class="faq-collapse-item-card-header">
                                     <i class="fas fa-plus"></i>
@@ -112,7 +112,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-collapse-item">
+                        <div class="faq-collapse-item" data-aos="fade-left">
                             <div class="faq-collapse-item-card">
                                 <div class="faq-collapse-item-card-header">
                                     <i class="fas fa-plus"></i>
@@ -125,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-collapse-item">
+                        <div class="faq-collapse-item" data-aos="fade-left">
                             <div class="faq-collapse-item-card">
                                 <div class="faq-collapse-item-card-header">
                                     <i class="fas fa-plus"></i>

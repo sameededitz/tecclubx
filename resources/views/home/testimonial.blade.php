@@ -1,6 +1,6 @@
 @extends('layout.home-layout')
 @section('title')
-    Testimonial | TecClub - Technology 
+    Testimonial | TecClub - Technology
 @endsection
 
 @section('home_content')
@@ -28,7 +28,7 @@
     <!-- Testimonial Area Start -->
 
     <div class="testimonial__six section-padding">
-        <div class="container">
+        <div class="container" data-aos="zoom-out-up">
             <div class="row justify-content-center text-center mb-50">
                 <div class="col-xl-7 col-lg-7 col-md-9">
                     <span class="subtitle-one">Praise & Feedback</span>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="zoom-out-up">
                     <div class="testimonial__six-card">
                         <h4>Garth Van Sittert</h4>
                         <span>South Africa</span>
@@ -52,11 +52,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="zoom-out-up">
                     <div class="testimonial__six-card">
                         <h4>Cyril Selivanov</h4>
                         <span>Germany</span>
-                        <p> {{ config('app.name') }} is a true professional. Is able to work on processes and deliver the result
+                        <p> {{ config('app.name') }} is a true professional. Is able to work on processes and deliver the
+                            result
                             on time. They understands the delivery methodology and is attentive to details. Highly
                             recommend.</p>
                         <div class="testimonial-rating mt-5">
@@ -68,11 +69,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="zoom-out-up">
                     <div class="testimonial__six-card">
                         <h4>Ankit Sharma</h4>
                         <span>India</span>
-                        <p> {{ config('app.name') }} is knowledgeable and helped with what we needed. They jumped on a call quickly and
+                        <p> {{ config('app.name') }} is knowledgeable and helped with what we needed. They jumped on a call
+                            quickly and
                             answered all the questions we had, showing dedication and a true commitment to client success.
                         </p>
 

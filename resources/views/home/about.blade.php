@@ -125,9 +125,8 @@
     <!-- Brand Area End -->
 
     <!-- Testimonial Area Start -->
-
-    <div class="testimonial__six section-padding" data-aos="zoom-out-up">
-        <div class="container">
+    <div class="testimonial__six section-padding">
+        <div class="container" data-aos="zoom-out-up">
             <div class="row justify-content-center text-center mb-50">
                 <div class="col-xl-7 col-lg-7 col-md-9">
                     <span class="subtitle-one">Our Team</span>
@@ -135,7 +134,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="zoom-out-up">
                     <div class="testimonial__six-card">
                         <h4>Hassan Nisar</h4>
                         <span>Ceo & Co-Founder</span>
@@ -144,7 +143,7 @@
 
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="zoom-out-up">
                     <div class="testimonial__six-card">
                         <h4>M.Sohaib Abbas</h4>
                         <span>CTO</span>
@@ -153,7 +152,7 @@
 
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="zoom-out-up">
                     <div class="testimonial__six-card">
                         <h4>Farhan Ali</h4>
                         <span>Director</span>
@@ -163,7 +162,7 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="zoom-out-up">
                     <div class="testimonial__six-card">
                         <h4>Uzair Ahmad</h4>
                         <span>App Development Lead</span>
@@ -172,7 +171,7 @@
 
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="zoom-out-up">
                     <div class="testimonial__six-card">
                         <h4>M.Sameed</h4>
                         <span>Web Development Lead</span>
@@ -182,7 +181,7 @@
 
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="zoom-out-up">
                     <div class="testimonial__six-card">
                         <h4>M.Haroon</h4>
                         <span>E-commerce Developer</span>
