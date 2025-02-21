@@ -36,6 +36,12 @@
         });
     </script>
 
+    <script>
+        AOS.init({
+            duration: 800, // Animation duration (milliseconds)
+            once: true, // Animation only once
+        });
+    </script>
     @yield('home_scripts')
 </body>
 

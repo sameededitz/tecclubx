@@ -18,7 +18,7 @@
         </div>
         <div class="container">
             <div class="row align-items-center gy-4 justify-content-center">
-                <div class="col-xl-6 col-lg-6">
+                <div class="col-xl-6 col-lg-6" data-aos="fade-right">
                     <div class="banner__one-content">
                         <span class="subtitle-one">TecClub Technology</span>
                         <h2>Welcome to <span>TecClub</span></h2>
@@ -30,7 +30,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-9">
+                <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-9" data-aos="fade-left">
                     <div class="banner__one-image">
                         <div class="banner__one-image-wrapper">
                             <div class="banner__one-image-wrapper-shapes animate-rotate">
@@ -86,7 +86,7 @@
 
     <!-- Services Two Area Start -->
     <div class="services__one section-padding">
-        <div class="container">
+        <div class="container"data-aos="fade-right">
             <div class="row justify-content-center text-center">
                 <div class="col-xl-7 col-lg-7 col-md-9 services__one-title">
                     <span class="subtitle-one">Our Services</span>
@@ -94,88 +94,84 @@
                 </div>
             </div>
             <div class="row d-flex">
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i> <img src="{{ asset('assets/img/service/mobile-app.png') }}" alt=""></i>
                         </div>
                         <div class="services__one-single-service-content">
                             <h4>App Development</h4>
-                            <a href="{{ route('services') }}">
-                                <p>We specialize in creating high-quality mobile applications for both iOS and Android
-                                    platforms...</p>
-                            </a>
+                            <p>We specialize in creating high-quality mobile applications for both iOS and Android
+                                platforms. Our team handles everything from concept to deployment, ensuring your app is
+                                intuitive, user-friendly, and tailored to your business goals.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/website-codes.png') }}" alt=""></i>
                         </div>
                         <div class="services__one-single-service-content">
                             <h4>Web development</h4>
-                            <a href="{{ route('services') }}">
-                                <p>Our web development services focus on building robust, responsive, and scalable
-                                    websites...
-                                </p>
-                            </a>
+                            <p>Our web development services focus on building robust, responsive, and scalable websites.
+                                Whether you need an e-commerce platform, a corporate website, or a custom web solution, we
+                                deliver sites that perform exceptionally and provide a seamless user experience.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/web-development.png') }}" alt=""></i>
                         </div>
                         <div class="services__one-single-service-content">
                             <h4>UI & UX Design</h4>
-                            <a href="{{ route('services') }}">
-                                <p> Our UX/UI design services focus on creating intuitive, visually appealing interfaces
-                                    that...</p>
-                            </a>
+                            <p>
+                                Our UX/UI design services focus on creating intuitive, visually appealing interfaces that
+                                captivate users while ensuring seamless navigation. We aim to blend aesthetics with
+                                functionality, enhancing the overall user experience of your website or app.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/seo.png') }}" alt=""></i>
                         </div>
                         <div class=" services__one-single-service-content">
                             <h4>Digital Marketing</h4>
-                            <a href="{{ route('services') }}">
-                                <p>Our digital marketing solutions are crafted to amplify your brand's visibility online...
-                                </p>
-                        </div> </a>
+                            <p>Our digital marketing solutions are crafted to amplify your brand's visibility online. We
+                                specialize in SEO, PPC, social media management, and content marketing, creating targeted
+                                strategies that attract more visitors, boost engagement etc.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/profit.png') }}" alt=""></i>
                         </div>
                         <div class="services__one-single-service-content">
                             <h4>E-Commerce</h4>
-                            <a href="{{ route('services') }}">
-                                <p>We offer a training program to enhance e-commerce strategies, covering website
-                                    development...
-                                </p>
-                            </a>
+                            <p>We offer a training program to enhance e-commerce strategies, covering website development,
+                                digital marketing, and logistics. Participants gain practical tools to improve their online
+                                presence. This program is ideal for small to medium-sized businesses etc.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/design-software.png') }}" alt=""></i>
                         </div>
                         <div class="services__one-single-service-content">
                             <h4>Graphics Designing</h4>
-                            <a href="{{ route('services') }}">
-                                <p>Our graphic design team brings your brand to life with creative and impactful visuals...
-                                </p>
-                            </a>
+                            <p>Our graphic design team brings your brand to life with creative and impactful visuals. From
+                                logos and branding to promotional materials and digital assets, we design graphics that
+                                capture your brand’s essence and resonate with your audience</p>
                         </div>
                     </div>
                 </div>
@@ -188,7 +184,7 @@
     <div class="about__one section-padding">
         <div class="container">
             <div class="row align-items-center flex-wrap-reverse gy-4">
-                <div class="col-xl-6 col-lg-5">
+                <div class="col-xl-6 col-lg-5" data-aos="fade-right">
                     <div class="about__one-image">
                         <div class="experience-bar animate-y-axis-slider">
                             <i class="flaticon-consultant"></i>
@@ -213,7 +209,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-7 col-md-9">
+                <div class="col-xl-6 col-lg-7 col-md-9" data-aos="fade-left">
                     <div class="about__one-content">
                         <span class="subtitle-one">About us</span>
                         <h2>What We’re All About</h2>
@@ -254,7 +250,7 @@
     <div class="why-choose-us__one section-padding">
         <div class="container">
             <div class="row gy-4 align-items-center">
-                <div class="col-xl-6 col-lg-7 col-md-9">
+                <div class="col-xl-6 col-lg-7 col-md-9" data-aos="fade-up-right">
                     <div class="why-choose-us__one-left">
                         <div class="why-choose-us__one-title">
                             <span class="subtitle-one">Why Chose Us</span>
@@ -288,7 +284,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-10">
+                <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-10" data-aos="fade-up-left">
                     <div class="why-choose-us__one-image">
                         <div class="why-choose-us__one-image-shape">
                             <div class="shape shape-1 animate-x-axis"></div>
@@ -309,7 +305,7 @@
     <!-- Why choose us Area End -->
 
     <!-- Testimonial Area Start -->
-    <div class="testimonial__one section-padding">
+    <div class="testimonial__one section-padding" data-aos="zoom-in">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6">
@@ -404,7 +400,8 @@
     <!-- Testimonial Area End -->
 
     <!-- Portfolio Area Start -->
-    <div class="portfolio__one section-padding">
+    <div class="portfolio__one section-padding"data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
         <div class="container">
             <div class="row gy-4 align-items-end justify-content-between mb-5">
                 <div class="col-xl-6 col-lg-7 col-md-9 col-sm-10">
@@ -451,7 +448,7 @@
     <!-- Portfolio Area End -->
 
     <!-- Start new section for languages -->
-    <div class="services__one section-padding">
+    <div class="services__one section-padding" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="container">
             <!-- Title Section -->
             <div class="row justify-content-center text-center mb-4">
@@ -953,7 +950,8 @@
     <!-- End -->
 
     <!--  Start review section -->
-    <div class="container highlights-container">
+    <div class="container highlights-container" data-aos="fade-left" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-xl-7 col-lg-7 col-md-9 services__one-title">
@@ -1001,7 +999,7 @@
 
 
     <!-- TEAM Area Start -->
-    <div class="testimonial__six section-padding">
+    <div class="testimonial__six section-padding" data-aos="zoom-out-up">
         <div class="container">
             <div class="row justify-content-center text-center mb-50">
                 <div class="col-xl-7 col-lg-7 col-md-9">

@@ -27,7 +27,7 @@
 
     <!-- Services Two Area Start -->
     <div class="services__one section-padding">
-        <div class="container">
+        <div class="container"data-aos="fade-right">
             <div class="row justify-content-center text-center">
                 <div class="col-xl-7 col-lg-7 col-md-9 services__one-title">
                     <span class="subtitle-one">Our Services</span>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="row d-flex">
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i> <img src="{{ asset('assets/img/service/mobile-app.png') }}" alt=""></i>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/website-codes.png') }}" alt=""></i>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/web-development.png') }}" alt=""></i>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/seo.png') }}" alt=""></i>
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/profit.png') }}" alt=""></i>
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <div class="single-service">
                         <div class="services__one-single-service-icon">
                             <i><img src="{{ asset('assets/img/service/design-software.png') }}" alt=""></i>

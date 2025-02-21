@@ -27,7 +27,7 @@
 
     <!-- Request Quote Start -->
 
-    <div class="request-quote__area section-padding">
+    <div class="request-quote__area section-padding" data-aos="fade-right">
         <div class="container">
             @if (session('status'))
                 <div class="row py-2">

@@ -29,7 +29,7 @@
     <div class="about__one section-padding">
         <div class="container">
             <div class="row align-items-center flex-wrap-reverse gy-4">
-                <div class="col-xl-6 col-lg-5">
+                <div class="col-xl-6 col-lg-5" data-aos="fade-right">
                     <div class="about__one-image">
                         <div class="experience-bar animate-y-axis-slider">
                             <i class="flaticon-consultant"></i>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-7 col-md-9">
+                <div class="col-xl-6 col-lg-7 col-md-9" data-aos="fade-left">
                     <div class="about__one-content">
                         <span class="subtitle-one">About us</span>
                         <h2>What We’re All About</h2>
@@ -126,7 +126,7 @@
 
     <!-- Testimonial Area Start -->
 
-    <div class="testimonial__six section-padding">
+    <div class="testimonial__six section-padding" data-aos="zoom-out-up">
         <div class="container">
             <div class="row justify-content-center text-center mb-50">
                 <div class="col-xl-7 col-lg-7 col-md-9">
