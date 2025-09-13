@@ -65,68 +65,6 @@
                         </div>
                     @endforelse
                 </div>
-                <div class="col-xl-4">
-                    <div class="blog__sidebar-main-sidebar">
-                        <div class="sidebar-item">
-                            <div class="sidebar-item-single sidebar-search">
-                                <h3>Search</h3>
-                                <form action="{{ route('blogs') }}" method="GET">
-                                    <input type="text" name="search" placeholder="Type here..."
-                                        value="{{ request('search') }}">
-                                    <button type="submit">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </form>
-                            </div>
-
-                            <div class="sidebar-item-single sidebar-category">
-                                <h3>Category</h3>
-                                <div class="categories">
-                                    @foreach ($categories as $category)
-                                        <a href="{{ route('blogs', ['category' => $category->slug]) }}"
-                                            class="single-category">
-                                            <div class="single-category-name">
-                                                <i class="fas fa-angle-double-right"></i>
-                                                <h4>{{ $category->name }}</h4>
-                                            </div>
-                                            <span class="category-count">({{ $category->posts->count() }})</span>
-                                        </a>
-                                    @endforeach
-                                </div>
-                            </div>
-
-                            <div class="sidebar-item-single recent-blog-post">
-                                <h3>Recent Post</h3>
-                                <div class="blog-post">
-                                    @foreach ($recentPosts as $recent)
-                                        <div class="blog-post-single">
-                                            <div class="blog-post-single-img">
-                                                <img src="{{ $recent->getFirstMediaUrl('thumbnail') }}"
-                                                    alt="{{ $recent->title }}" class="img-cover">
-                                            </div>
-                                            <div class="blog-post-single-content">
-                                                <div class="blog-post-single-content-top">
-                                                    <span>
-                                                        <i class="far fa-folder-open"></i>
-                                                        {{ $recent->category->name }}
-                                                    </span>
-                                                </div>
-                                                <a href="{{route('show-blog', $recent->slug)}}">{{ Str::limit($recent->title, 10) }}</a>
-                                            </div>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            </div>
-
-                            <div class="sidebar-item-single tags">
-                                <h3>Tags</h3>
-                                @foreach ($tags as $tag)
-                                    <a href="{{ route('blogs', ['tag' => $tag->slug]) }}">{{ $tag->name }}</a>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="row">
                 <div class="col-12 col-xl-8">
