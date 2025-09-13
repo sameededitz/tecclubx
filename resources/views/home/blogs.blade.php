@@ -27,7 +27,7 @@
 
     <!-- Blog With Sidebar Area End -->
 
-    <div class="blog__sidebar section-padding">
+    <div class="blog__two section-padding">
         <div class="container">
             <div class="row gy-4 flex-wrap">
                 <div class="col-xl-8">
@@ -66,7 +66,7 @@
                     @endforelse
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-12 col-xl-8">
                     <div class="portfolio__two-pagination">
                         {{ $blogs->links() }}
