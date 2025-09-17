@@ -6,7 +6,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                 <div class="footer__two-widget">
                     <div class="footer__two-widget-about">
-                        <a href="{{ route('home') }}"><img class="dark-n"  width="60px" 
+                        <a href="{{ route('home') }}"><img class="dark-n" width="60px"
                                 src="{{ isset($options['web_logo']) ? $options['web_logo']->getFirstMediaUrl('info_img') : null }}"
                                 alt="image">
                             <span
@@ -33,14 +33,14 @@
                     <h4>Quick Link</h4>
                     <div class="footer__two-widget-solution">
                         <ul>
+                            <li><a href="{{ route('about') }}"><i class="far fa-chevron-double-right"></i>About Us</a>
+                            </li>
                             <li><a href="{{ route('services') }}"><i class="far fa-chevron-double-right"></i>Service</a>
                             </li>
-                            <li><a href="{{ route('faqs') }}"><i class="far fa-chevron-double-right"></i>FAQ</a></li>
                             <li><a href="{{ route('reviews') }}"><i
                                         class="far fa-chevron-double-right"></i>Testimonial</a>
                             </li>
-                            <li><a href="{{ route('about') }}"><i class="far fa-chevron-double-right"></i>About Us</a>
-                            </li>
+                            <li><a href="{{ route('faqs') }}"><i class="far fa-chevron-double-right"></i>FAQ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -50,14 +50,15 @@
                     <h4>Our Services</h4>
                     <div class="footer__two-widget-solution">
                         <ul>
+                            <li><a href="{{ route('vpndevelopment') }}"><i class="far fa-chevron-double-right"></i>VPN
+                                    App
+                                    Development</a></li>
                             <li><a href="{{ route('services') }}"><i class="far fa-chevron-double-right"></i>App
                                     Development</a></li>
                             <li><a href="{{ route('services') }}"><i class="far fa-chevron-double-right"></i>Web
                                     Development</a></li>
                             <li><a href="{{ route('services') }}"><i class="far fa-chevron-double-right"></i>UI & UX
                                     Design</a></li>
-                            <li><a href="{{ route('services') }}"><i class="far fa-chevron-double-right"></i>Digital
-                                    Marketing</a></li>
                         </ul>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
                 </div>
                 <div class="col-xl-5 col-lg-6">
                     <div class="copyright__one-right">
-                        
+
                         <a href="{{ route('contact') }}">Contact Us</a>
                     </div>
                 </div>

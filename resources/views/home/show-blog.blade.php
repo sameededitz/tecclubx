@@ -1,6 +1,6 @@
 @extends('layout.home-layout')
 @section('title')
-    Blogs | Zentronix - Technology
+    Blogs | TecClub - Technology
 @endsection
 
 @section('home_content')

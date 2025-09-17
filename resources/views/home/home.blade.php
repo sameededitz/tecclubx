@@ -964,7 +964,7 @@
                 <div class="col-md-3 col-sm-6 mb-4">
                     <div class="highlight-card">
                         <i class="bi bi-calendar3" style="font-size: 3rem; color: #007bff;"></i>
-                        <h1 class="mt-2">5+</h1>
+                        <h1 class="mt-2">7+</h1>
                         <p>Years</p>
                     </div>
                 </div>
@@ -972,7 +972,7 @@
                 <div class="col-md-3 col-sm-6 mb-4">
                     <div class="highlight-card">
                         <i class="bi bi-person" style="font-size: 3rem; color: #007bff;"></i>
-                        <h1 class="mt-2">10+</h1>
+                        <h1 class="mt-2">12+</h1>
                         <p>Engineers</p>
                     </div>
                 </div>
@@ -980,7 +980,7 @@
                 <div class="col-md-3 col-sm-6 mb-4">
                     <div class="highlight-card">
                         <i class="bi bi-briefcase" style="font-size: 3rem; color: #007bff;"></i>
-                        <h1 class="mt-2">45+</h1>
+                        <h1 class="mt-2">70+</h1>
                         <p>Projects</p>
                     </div>
                 </div>
@@ -988,7 +988,7 @@
                 <div class="col-md-3 col-sm-6 mb-4">
                     <div class="highlight-card">
                         <i class="bi bi-star" style="font-size: 3rem; color: #007bff;"></i>
-                        <h1 class="mt-2">40+</h1>
+                        <h1 class="mt-2">53+</h1>
                         <p>Satisfied Clients</p>
                     </div>
                 </div>
@@ -1128,26 +1128,570 @@
     </div>
     <!-- Blog Area End -->
 
-
-
-    <!-- Subscribe Area End -->
-    <div class="subscribe__one">
-        <div class="container">
-            <div class="row justify-content-center text-center subscribe__one-content"
-                style="background-image: url(assets/img/subscribe/subscribe-one-shape-1.png);">
-                <div class="col-xl-7 col-lg-8">
-                    <div class="subscribe__one-title">
-                        <h3>Subscribe Our newsletter </h3>
-                    </div>
-                    <form action="#" class="subscribe__one-form">
-                        <input type="email" placeholder="Enter Your Email">
-                        <button class="btn-two" type="submit">subscribe now</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Subscribe Area End -->
-@endsection
+    @endsection
 @section('home_scripts')
+<style>
+/* Client Success Stories Section Styles */
+.client-success-stories {
+    position: relative;
+    overflow: hidden;
+}
+
+.client-success-stories .section-title h2 {
+    color: var(--text-heading-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+}
+
+.client-success-stories .section-title p {
+    color: var(--body-color);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.success-story-card {
+    background: var(--bg-white);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: var(--box-shadow-1);
+    transition: all 0.4s ease;
+    height: 100%;
+    border: 1px solid var(--border-color-1);
+    position: relative;
+    overflow: hidden;
+}
+
+.success-story-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary-color-1), var(--primary-color-3));
+}
+
+.success-story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-2);
+    border-color: var(--primary-color-1);
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.story-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color-1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.story-metrics {
+    display: flex;
+    flex-direction: column;
+}
+
+.metric-number {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary-color-1);
+    line-height: 1;
+    font-family: var(--heading-font);
+}
+
+.metric-label {
+    font-size: 14px;
+    color: var(--body-color);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.story-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-heading-color);
+    margin-bottom: 15px;
+    font-family: var(--heading-font);
+}
+
+.story-content p {
+    color: var(--body-color);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.story-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.story-tags .tag {
+    background: rgba(14, 89, 242, 0.1);
+    color: var(--primary-color-1);
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.story-client {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color-1);
+}
+
+.client-avatar {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-heading-color);
+    font-size: 18px;
+}
+
+.client-info h6 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-heading-color);
+    margin-bottom: 2px;
+    font-family: var(--heading-font);
+}
+
+.client-info span {
+    font-size: 13px;
+    color: var(--body-color);
+}
+
+/* Testimonials Carousel Styles */
+.testimonials-carousel {
+    margin-top: 40px;
+}
+
+.success-testimonials-slider {
+    padding: 20px 0;
+}
+
+.testimonial-card {
+    background: var(--bg-white);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: var(--box-shadow-1);
+    border: 1px solid var(--border-color-1);
+    margin: 0 10px;
+}
+
+.quote-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color-1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--body-color);
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-heading-color);
+    font-size: 18px;
+}
+
+.author-info h6 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-heading-color);
+    margin-bottom: 2px;
+    font-family: var(--heading-font);
+}
+
+.author-info span {
+    font-size: 14px;
+    color: var(--body-color);
+}
+
+/* CTA Section Styles */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color-1), var(--primary-color-3));
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.cta-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cta-shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    background: var(--text-white);
+}
+
+.shape-1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 5%;
+    animation: float 15s infinite ease-in-out;
+}
+
+.shape-2 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 10%;
+    animation: float 20s infinite ease-in-out reverse;
+}
+
+.shape-3 {
+    width: 100px;
+    height: 100px;
+    bottom: 20%;
+    left: 20%;
+    animation: float 18s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-20px) rotate(120deg); }
+    66% { transform: translateY(-10px) rotate(240deg); }
+}
+
+.cta-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-white);
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-family: var(--heading-font);
+}
+
+.cta-content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-white);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-family: var(--heading-font);
+}
+
+.cta-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.cta-feature i {
+    color: var(--primary-color-2);
+    font-size: 18px;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 35px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-header h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 8px;
+    font-family: var(--heading-font);
+}
+
+.card-header p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    font-size: 16px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.primary-cta {
+    background: var(--primary-color-2) !important;
+    color: var(--text-heading-color) !important;
+    border: 1px solid var(--primary-color-2) !important;
+}
+
+.secondary-cta {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.tertiary-cta {
+    background: transparent !important;
+    color: var(--text-white) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.action-buttons .btn-two {
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+.action-buttons .btn-two:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.info-item i {
+    color: var(--primary-color-2);
+    font-size: 16px;
+    width: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .cta-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .cta-features {
+        justify-content: center;
+    }
+    
+    .story-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .story-metrics {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .success-story-card,
+    .testimonial-card,
+    .cta-card {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-features {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .story-tags {
+        justify-content: center;
+    }
+    
+    .client-info, .author-info {
+        text-align: center;
+    }
+    
+    .story-client, .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .metric-number {
+        font-size: 24px;
+    }
+    
+    .story-content h4 {
+        font-size: 18px;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .card-header h4 {
+        font-size: 20px;
+    }
+    
+    .action-buttons .btn-two {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Swiper Pagination Styles */
+.success-testimonials-slider .swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+}
+
+.success-testimonials-slider .swiper-pagination-bullet {
+    background: var(--primary-color-1);
+    opacity: 0.3;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+
+.success-testimonials-slider .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--primary-color-1);
+}
+</style>
+
+<script>
+// Initialize Success Stories Testimonials Slider
+document.addEventListener('DOMContentLoaded', function() {
+    const successTestimonialsSlider = new Swiper('.success-testimonials-slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        }
+    });
+});
+</script>
 @endsection

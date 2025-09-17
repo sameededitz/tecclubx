@@ -54,3 +54,6 @@ Route::get('/test/email', function () {
 
     return 'Test email sent';
 });
+
+Route::get('/vpndevelopment', function () { return view('home.vpndevelopment');})->name('vpndevelopment');
+Route::get('/whitelabel', function () { return view('home.whitelabel');})->name('whitelabel');
