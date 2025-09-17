@@ -83,7 +83,7 @@ class HomeController extends Controller
         // Get only published posts and order by latest
         $blogs = $query->where('is_published', true)
             ->orderBy('created_at', 'desc')
-            ->paginate(4);
+            ->paginate(6);
 
         $categories = Category::all();
         $tags = Tag::all();
