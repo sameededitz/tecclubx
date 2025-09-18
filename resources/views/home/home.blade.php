@@ -52,13 +52,13 @@
                                 <div class="feature-icon">
                                     <i class="fas fa-check"></i>
                                 </div>
-                                <span>500+ Projects Delivered</span>
+                                <span>70+ Projects Delivered</span>
                             </div>
                             <div class="feature-item">
                                 <div class="feature-icon">
                                     <i class="fas fa-check"></i>
                                 </div>
-                                <span>5+ Years Experience</span>
+                                <span>7+ Years Experience</span>
                             </div>
                             <div class="feature-item">
                                 <div class="feature-icon">
@@ -79,17 +79,17 @@
                         </div>
                         <div class="banner-stats">
                             <div class="stat-item">
-                                <div class="stat-number" data-count="500">0</div>
+                                <div class="stat-number" data-count="500">70</div>
                                 <div class="stat-symbol">+</div>
                                 <div class="stat-label">Projects</div>
                             </div>
                             <div class="stat-item">
-                                <div class="stat-number" data-count="98">0</div>
+                                <div class="stat-number" data-count="98">99</div>
                                 <div class="stat-symbol">%</div>
                                 <div class="stat-label">Satisfaction</div>
                             </div>
                             <div class="stat-item">
-                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-number" data-count="50">50</div>
                                 <div class="stat-symbol">+</div>
                                 <div class="stat-label">Clients</div>
                             </div>
@@ -226,7 +226,7 @@
                             <i class="fas fa-award"></i>
                         </div>
                         <div class="trust-content">
-                            <div class="trust-number">5+</div>
+                            <div class="trust-number">7+</div>
                             <div class="trust-label">Years</div>
                         </div>
                     </div>
