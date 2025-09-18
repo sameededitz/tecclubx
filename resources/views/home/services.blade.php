@@ -25,95 +25,249 @@
     </div>
     <!-- Banner Area End -->
 
-    <!-- Services Two Area Start -->
-    <div class="services__one section-padding">
-        <div class="container"data-aos="fade-right">
+      <!-- Premium Services Area Start -->
+    <div class="premium-services-section section-padding">
+        <div class="services-background">
+            <div class="services-shapes">
+                <div class="service-shape shape-1"></div>
+                <div class="service-shape shape-2"></div>
+                <div class="service-shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container" data-aos="fade-up">
             <div class="row justify-content-center text-center">
-                <div class="col-xl-7 col-lg-7 col-md-9 services__one-title">
-                    <span class="subtitle-one">Our Services</span>
-                    <h2>We Offer Solutions</h2>
+                <div class="col-xl-8 col-lg-8 col-md-10">
+                    <div class="premium-section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-cogs"></i>
+                            <span>Our Services</span>
+                        </div>
+                        <h2 class="section-title">Premium Digital Solutions</h2>
+                        <p class="section-description">
+                            We deliver cutting-edge technology solutions that transform businesses and drive growth. 
+                            From innovative mobile apps to robust web platforms, our expert team creates digital 
+                            experiences that captivate users and achieve your business objectives.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="row d-flex">
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i> <img src="{{ asset('assets/img/service/mobile-app.png') }}" alt=""></i>
+            <div class="premium-services-grid">
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon mobile-app-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="icon-glow"></div>
                         </div>
-                        <div class="services__one-single-service-content">
-                            <h4>App Development</h4>
-                            <p>We specialize in creating high-quality mobile applications for both iOS and Android
-                                platforms. Our team handles everything from concept to deployment, ensuring your app is
-                                intuitive, user-friendly, and tailored to your business goals.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/website-codes.png') }}" alt=""></i>
-                        </div>
-                        <div class="services__one-single-service-content">
-                            <h4>Web development</h4>
-                            <p>Our web development services focus on building robust, responsive, and scalable websites.
-                                Whether you need an e-commerce platform, a corporate website, or a custom web solution, we
-                                deliver sites that perform exceptionally and provide a seamless user experience.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/web-development.png') }}" alt=""></i>
-                        </div>
-                        <div class="services__one-single-service-content">
-                            <h4>UI & UX Design</h4>
-                            <p>
-                                Our UX/UI design services focus on creating intuitive, visually appealing interfaces that
-                                captivate users while ensuring seamless navigation. We aim to blend aesthetics with
-                                functionality, enhancing the overall user experience of your website or app.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/seo.png') }}" alt=""></i>
-                        </div>
-                        <div class=" services__one-single-service-content">
-                            <h4>Digital Marketing</h4>
-                            <p>Our digital marketing solutions are crafted to amplify your brand's visibility online. We
-                                specialize in SEO, PPC, social media management, and content marketing, creating targeted
-                                strategies that attract more visitors, boost engagement etc.
+                        <div class="service-content">
+                            <h4 class="service-title">Mobile App Development</h4>
+                            <p class="service-description">
+                                Transform your ideas into powerful mobile experiences. We craft intuitive iOS and Android 
+                                applications that engage users and drive business growth with cutting-edge technology.
                             </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Native & Cross-Platform</li>
+                                <li><i class="fas fa-check"></i> UI/UX Optimization</li>
+                                <li><i class="fas fa-check"></i> App Store Deployment</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/profit.png') }}" alt=""></i>
+
+                <div class="premium-service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Most Popular</span>
+                    </div>
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon web-dev-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="icon-glow"></div>
                         </div>
-                        <div class="services__one-single-service-content">
-                            <h4>E-Commerce</h4>
-                            <p>We offer a training program to enhance e-commerce strategies, covering website development,
-                                digital marketing, and logistics. Participants gain practical tools to improve their online
-                                presence. This program is ideal for small to medium-sized businesses etc.
+                        <div class="service-content">
+                            <h4 class="service-title">Web Development</h4>
+                            <p class="service-description">
+                                Build robust, scalable web solutions that captivate users and drive conversions. From 
+                                e-commerce platforms to custom applications, we deliver excellence in every line of code.
                             </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Responsive Design</li>
+                                <li><i class="fas fa-check"></i> Modern Frameworks</li>
+                                <li><i class="fas fa-check"></i> Performance Optimized</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/design-software.png') }}" alt=""></i>
+
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon design-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="icon-glow"></div>
                         </div>
-                        <div class="services__one-single-service-content">
-                            <h4>Graphics Designing</h4>
-                            <p>Our graphic design team brings your brand to life with creative and impactful visuals. From
-                                logos and branding to promotional materials and digital assets, we design graphics that
-                                capture your brand’s essence and resonate with your audience</p>
+                        <div class="service-content">
+                            <h4 class="service-title">UI & UX Design</h4>
+                            <p class="service-description">
+                                Create stunning interfaces that users love. Our design team crafts beautiful, intuitive 
+                                experiences that enhance user engagement and drive meaningful interactions.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> User Research</li>
+                                <li><i class="fas fa-check"></i> Prototype Design</li>
+                                <li><i class="fas fa-check"></i> Visual Identity</li>
+                            </ul>
                         </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon marketing-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Digital Marketing</h4>
+                            <p class="service-description">
+                                Amplify your brand's digital presence with strategic marketing solutions. We drive 
+                                targeted traffic, boost engagement, and deliver measurable results across all channels.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> SEO Optimization</li>
+                                <li><i class="fas fa-check"></i> Social Media</li>
+                                <li><i class="fas fa-check"></i> PPC Campaigns</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon ecommerce-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">E-Commerce Solutions</h4>
+                            <p class="service-description">
+                                Build powerful online stores that convert visitors into customers. Our e-commerce 
+                                solutions integrate seamlessly with your business operations and scale with your growth.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Custom Platforms</li>
+                                <li><i class="fas fa-check"></i> Payment Integration</li>
+                                <li><i class="fas fa-check"></i> Inventory Management</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon graphics-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Graphics Design</h4>
+                            <p class="service-description">
+                                Bring your brand to life with stunning visual designs. From logos to marketing materials, 
+                                we create graphics that capture attention and communicate your brand's unique story.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Brand Identity</li>
+                                <li><i class="fas fa-check"></i> Marketing Materials</li>
+                                <li><i class="fas fa-check"></i> Digital Assets</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta" data-aos="fade-up" data-aos-delay="700">
+                <div class="cta-content">
+                    <h3>Ready to Transform Your Business?</h3>
+                    <p>Let's discuss how our premium solutions can drive your success</p>
+                    <div class="cta-actions">
+                        <a href="{{ route('contact') }}" class="btn-premium-primary">
+                            <span>Start Your Project</span>
+                            <i class="fas fa-rocket"></i>
+                        </a>
+                        <a href="{{ route('services') }}" class="btn-premium-outline">
+                            <span>View All Services</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -221,7 +375,7 @@
             <div class="row g-4">
                 <div class="col-xl-6 col-lg-12">
                     <div class="why-features">
-                        <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-trophy"></i>
                             </div>
@@ -230,7 +384,7 @@
                                 <p>Years of experience delivering successful projects across various industries and technologies</p>
                             </div>
                         </div>
-                        <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="feature-item" >
                             <div class="feature-icon">
                                 <i class="fas fa-clock"></i>
                             </div>
@@ -239,7 +393,7 @@
                                 <p>We respect deadlines and ensure your project is completed on time without compromising quality</p>
                             </div>
                         </div>
-                        <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
+                        <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-shield-alt"></i>
                             </div>
@@ -248,7 +402,7 @@
                                 <p>Rigorous testing and quality control processes ensure bug-free and high-performance solutions</p>
                             </div>
                         </div>
-                        <div class="feature-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-headset"></i>
                             </div>
@@ -261,28 +415,28 @@
                 </div>
                 <div class="col-xl-6 col-lg-12">
                     <div class="stats-grid">
-                        <div class="stat-card" data-aos="fade-left" data-aos-delay="100">
+                        <div class="stat-card">
                             <div class="stat-icon">
                                 <i class="fas fa-project-diagram"></i>
                             </div>
                             <div class="stat-number" data-count="70">70</div>
                             <div class="stat-label">Projects Completed</div>
                         </div>
-                        <div class="stat-card" data-aos="fade-left" data-aos-delay="200">
+                        <div class="stat-card">
                             <div class="stat-icon">
                                 <i class="fas fa-smile"></i>
                             </div>
                             <div class="stat-number" data-count="53">53</div>
                             <div class="stat-label">Happy Clients</div>
                         </div>
-                        <div class="stat-card" data-aos="fade-left" data-aos-delay="300">
+                        <div class="stat-card">
                             <div class="stat-icon">
                                 <i class="fas fa-calendar-alt"></i>
                             </div>
                             <div class="stat-number" data-count="7">7</div>
                             <div class="stat-label">Years Experience</div>
                         </div>
-                        <div class="stat-card" data-aos="fade-left" data-aos-delay="400">
+                        <div class="stat-card">
                             <div class="stat-icon">
                                 <i class="fas fa-users"></i>
                             </div>

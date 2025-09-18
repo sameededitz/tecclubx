@@ -5,43 +5,126 @@
 
 @section('home_content')
 
-    <!-- Banner Area Start -->
-    <div class="banner__one">
-        <div class="banner-shape">
-            <div class="shape banner-shape-1"></div>
-            <div class="shape banner-shape-2"></div>
-            <div class="shape banner-shape-3"></div>
-            <div class="shape banner-shape-4"></div>
-            <img class="shape banner-shape-5" src="assets/img/shape/banner-shape.png" alt="image">
-            <div class="shape banner-shape-7"></div>
-            <div class="shape banner-shape-6"></div>
+    <!-- Premium Banner Area Start -->
+    <div class="premium-banner-section">
+        <div class="banner-background">
+            <div class="gradient-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="banner-particles">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+                <div class="particle particle-5"></div>
+                <div class="particle particle-6"></div>
+                <div class="particle particle-7"></div>
+                <div class="particle particle-8"></div>
+            </div>
         </div>
         <div class="container">
             <div class="row align-items-center gy-4 justify-content-center">
                 <div class="col-xl-6 col-lg-6" data-aos="fade-right">
-                    <div class="banner__one-content">
-                        <span class="subtitle-one">TecClub Technology</span>
-                        <h2>Welcome to <span>TecClub</span></h2>
-                        <p>TecClub is a leading software development agency specializing in web development, mobile app
-                            development, and custom software solutions. Our team of experienced engineers delivers
-                            innovative, high-quality products that meet your unique business needs.</p>
-                        <a href="{{ route('services') }}" class="btn-two">Find Solutions
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+                    <div class="premium-banner-content">
+                        <div class="banner-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <span class="badge-text">TecClub Technology</span>
+                            <div class="badge-glow"></div>
+                        </div>
+                        <h1 class="banner-title">
+                            Transform Your Ideas Into 
+                            <span class="text-highlight">Digital Reality</span>
+                        </h1>
+                        <p class="banner-description">
+                            We're a leading software development agency crafting innovative digital solutions. 
+                            From cutting-edge web applications to mobile apps that captivate users, we turn 
+                            your vision into powerful, scalable technology that drives business growth.
+                        </p>
+                        <div class="banner-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span>500+ Projects Delivered</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span>5+ Years Experience</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <span>24/7 Support</span>
+                            </div>
+                        </div>
+                        <div class="banner-actions">
+                            <a href="{{ route('services') }}" class="btn-premium-primary">
+                                <span>Explore Solutions</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="{{ route('portfolio') }}" class="btn-premium-secondary">
+                                <span>View Portfolio</span>
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="banner-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="500">0</div>
+                                <div class="stat-symbol">+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="98">0</div>
+                                <div class="stat-symbol">%</div>
+                                <div class="stat-label">Satisfaction</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-symbol">+</div>
+                                <div class="stat-label">Clients</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-9" data-aos="fade-left">
-                    <div class="banner__one-image">
-                        <div class="banner__one-image-wrapper">
-                            <div class="banner__one-image-wrapper-shapes animate-rotate">
-                                <div class="shape shape-1"></div>
-                                <div class="shape shape-2"></div>
+                    <div class="premium-banner-image">
+                        <div class="image-decorations">
+                            <div class="decoration-circle circle-1"></div>
+                            <div class="decoration-circle circle-2"></div>
+                            <div class="decoration-circle circle-3"></div>
+                        </div>
+                        <div class="image-glow"></div>
+                        <div class="banner-image-wrapper">
+                            <div class="floating-elements">
+                                <div class="element element-1">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="element element-2">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <div class="element element-3">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <div class="element element-4">
+                                    <i class="fab fa-figma"></i>
+                                </div>
                             </div>
                             @if ($bannerimg)
                                 <img src="{{ $bannerimg->getFirstMediaUrl('section_img') ?? asset('assets/img/banner/banner-right-img.png') }}"
-                                    alt="banner image">
+                                    alt="TecClub Technology Solutions" class="main-banner-image">
                             @else
-                                <img src="{{ asset('assets/img/banner/banner-right-img.png') }}" alt="banner image">
+                                <img src="{{ asset('assets/img/banner/banner-right-img.png') }}" 
+                                    alt="TecClub Technology Solutions" class="main-banner-image">
                             @endif
                         </div>
                     </div>
@@ -49,130 +132,362 @@
             </div>
         </div>
     </div>
-    <!-- Banner Area End -->
+    <!-- Premium Banner Area End -->
 
-    <!-- Brand Area Start -->
-    <div class="brand__area pt-115">
+    <!-- Premium Brand Area Start -->
+    <div class="premium-brand-section">
         <div class="container">
-            <div class="row brand__area-border">
-                <div class="col-xl-12">
-                    <div class="swiper brand__slider">
+            <div class="premium-brand-wrapper">
+                <div class="brand-header">
+                    <div class="brand-badge">
+                        <i class="fas fa-handshake"></i>
+                        <span>Trusted Partners</span>
+                    </div>
+                    <h3 class="brand-title">Trusted by Industry Leaders</h3>
+                    <p class="brand-description">Join 50+ companies that trust us with their digital transformation</p>
+                </div>
+                <div class="brand-slider-container">
+                    <div class="swiper premium-brand-slider">
                         <div class="swiper-wrapper">
                             @if ($sliderimg->isNotEmpty())
                                 @foreach ($sliderimg as $image)
-                                    <div class="brand__area-item swiper-slide">
-                                        <img src="{{ $image->getFirstMediaUrl('section_img') ?? asset('assets/img/brand/brand-1.png') }}"
-                                            alt="slider image">
+                                    <div class="premium-brand-item swiper-slide">
+                                        <div class="brand-image-wrapper">
+                                            <img src="{{ $image->getFirstMediaUrl('section_img') ?? asset('assets/img/brand/brand-1.png') }}"
+                                                alt="Partner Brand">
+                                            <div class="brand-overlay">
+                                                <div class="brand-hover-content">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span>Trusted Partner</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 @endforeach
                             @else
-                                <div class="brand__area-item swiper-slide">
-                                    <img src="{{ asset('assets/img/brand/brand-1.png') }}" alt="slider image">
+                                <div class="premium-brand-item swiper-slide">
+                                    <div class="brand-image-wrapper">
+                                        <img src="{{ asset('assets/img/brand/brand-1.png') }}" alt="Partner Brand">
+                                        <div class="brand-overlay">
+                                            <div class="brand-hover-content">
+                                                <i class="fas fa-heart"></i>
+                                                <span>Trusted Partner</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="brand__area-item swiper-slide">
-                                    <img src="{{ asset('assets/img/brand/brand-2.png') }}" alt="slider image">
+                                <div class="premium-brand-item swiper-slide">
+                                    <div class="brand-image-wrapper">
+                                        <img src="{{ asset('assets/img/brand/brand-2.png') }}" alt="Partner Brand">
+                                        <div class="brand-overlay">
+                                            <div class="brand-hover-content">
+                                                <i class="fas fa-heart"></i>
+                                                <span>Trusted Partner</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="brand__area-item swiper-slide">
-                                    <img src="{{ asset('assets/img/brand/brand-3.png') }}" alt="slider image">
+                                <div class="premium-brand-item swiper-slide">
+                                    <div class="brand-image-wrapper">
+                                        <img src="{{ asset('assets/img/brand/brand-3.png') }}" alt="Partner Brand">
+                                        <div class="brand-overlay">
+                                            <div class="brand-hover-content">
+                                                <i class="fas fa-heart"></i>
+                                                <span>Trusted Partner</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             @endif
+                        </div>
+                    </div>
+                </div>
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="trust-content">
+                            <div class="trust-number">100%</div>
+                            <div class="trust-label">Secure</div>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="trust-content">
+                            <div class="trust-number">24/7</div>
+                            <div class="trust-label">Support</div>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="trust-content">
+                            <div class="trust-number">5+</div>
+                            <div class="trust-label">Years</div>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="trust-content">
+                            <div class="trust-number">50+</div>
+                            <div class="trust-label">Clients</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Brand Area End -->
+    <!-- Premium Brand Area End -->
 
-    <!-- Services Two Area Start -->
-    <div class="services__one section-padding">
-        <div class="container"data-aos="fade-right">
+    <!-- Premium Services Area Start -->
+    <div class="premium-services-section section-padding">
+        <div class="services-background">
+            <div class="services-shapes">
+                <div class="service-shape shape-1"></div>
+                <div class="service-shape shape-2"></div>
+                <div class="service-shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container" data-aos="fade-up">
             <div class="row justify-content-center text-center">
-                <div class="col-xl-7 col-lg-7 col-md-9 services__one-title">
-                    <span class="subtitle-one">Our Services</span>
-                    <h2>We Offer Solutions</h2>
+                <div class="col-xl-8 col-lg-8 col-md-10">
+                    <div class="premium-section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-cogs"></i>
+                            <span>Our Services</span>
+                        </div>
+                        <h2 class="section-title">Premium Digital Solutions</h2>
+                        <p class="section-description">
+                            We deliver cutting-edge technology solutions that transform businesses and drive growth. 
+                            From innovative mobile apps to robust web platforms, our expert team creates digital 
+                            experiences that captivate users and achieve your business objectives.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="row d-flex">
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i> <img src="{{ asset('assets/img/service/mobile-app.png') }}" alt=""></i>
+            <div class="premium-services-grid">
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon mobile-app-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="icon-glow"></div>
                         </div>
-                        <div class="services__one-single-service-content">
-                            <h4>App Development</h4>
-                            <p>We specialize in creating high-quality mobile applications for both iOS and Android
-                                platforms. Our team handles everything from concept to deployment, ensuring your app is
-                                intuitive, user-friendly, and tailored to your business goals.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/website-codes.png') }}" alt=""></i>
-                        </div>
-                        <div class="services__one-single-service-content">
-                            <h4>Web development</h4>
-                            <p>Our web development services focus on building robust, responsive, and scalable websites.
-                                Whether you need an e-commerce platform, a corporate website, or a custom web solution, we
-                                deliver sites that perform exceptionally and provide a seamless user experience.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/web-development.png') }}" alt=""></i>
-                        </div>
-                        <div class="services__one-single-service-content">
-                            <h4>UI & UX Design</h4>
-                            <p>
-                                Our UX/UI design services focus on creating intuitive, visually appealing interfaces that
-                                captivate users while ensuring seamless navigation. We aim to blend aesthetics with
-                                functionality, enhancing the overall user experience of your website or app.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/seo.png') }}" alt=""></i>
-                        </div>
-                        <div class=" services__one-single-service-content">
-                            <h4>Digital Marketing</h4>
-                            <p>Our digital marketing solutions are crafted to amplify your brand's visibility online. We
-                                specialize in SEO, PPC, social media management, and content marketing, creating targeted
-                                strategies that attract more visitors, boost engagement etc.
+                        <div class="service-content">
+                            <h4 class="service-title">Mobile App Development</h4>
+                            <p class="service-description">
+                                Transform your ideas into powerful mobile experiences. We craft intuitive iOS and Android 
+                                applications that engage users and drive business growth with cutting-edge technology.
                             </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Native & Cross-Platform</li>
+                                <li><i class="fas fa-check"></i> UI/UX Optimization</li>
+                                <li><i class="fas fa-check"></i> App Store Deployment</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/profit.png') }}" alt=""></i>
+
+                <div class="premium-service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Most Popular</span>
+                    </div>
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon web-dev-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="icon-glow"></div>
                         </div>
-                        <div class="services__one-single-service-content">
-                            <h4>E-Commerce</h4>
-                            <p>We offer a training program to enhance e-commerce strategies, covering website development,
-                                digital marketing, and logistics. Participants gain practical tools to improve their online
-                                presence. This program is ideal for small to medium-sized businesses etc.
+                        <div class="service-content">
+                            <h4 class="service-title">Web Development</h4>
+                            <p class="service-description">
+                                Build robust, scalable web solutions that captivate users and drive conversions. From 
+                                e-commerce platforms to custom applications, we deliver excellence in every line of code.
                             </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Responsive Design</li>
+                                <li><i class="fas fa-check"></i> Modern Frameworks</li>
+                                <li><i class="fas fa-check"></i> Performance Optimized</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4" data-aos="fade-right">
-                    <div class="single-service">
-                        <div class="services__one-single-service-icon">
-                            <i><img src="{{ asset('assets/img/service/design-software.png') }}" alt=""></i>
+
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon design-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="icon-glow"></div>
                         </div>
-                        <div class="services__one-single-service-content">
-                            <h4>Graphics Designing</h4>
-                            <p>Our graphic design team brings your brand to life with creative and impactful visuals. From
-                                logos and branding to promotional materials and digital assets, we design graphics that
-                                capture your brand’s essence and resonate with your audience</p>
+                        <div class="service-content">
+                            <h4 class="service-title">UI & UX Design</h4>
+                            <p class="service-description">
+                                Create stunning interfaces that users love. Our design team crafts beautiful, intuitive 
+                                experiences that enhance user engagement and drive meaningful interactions.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> User Research</li>
+                                <li><i class="fas fa-check"></i> Prototype Design</li>
+                                <li><i class="fas fa-check"></i> Visual Identity</li>
+                            </ul>
                         </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon marketing-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Digital Marketing</h4>
+                            <p class="service-description">
+                                Amplify your brand's digital presence with strategic marketing solutions. We drive 
+                                targeted traffic, boost engagement, and deliver measurable results across all channels.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> SEO Optimization</li>
+                                <li><i class="fas fa-check"></i> Social Media</li>
+                                <li><i class="fas fa-check"></i> PPC Campaigns</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon ecommerce-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">E-Commerce Solutions</h4>
+                            <p class="service-description">
+                                Build powerful online stores that convert visitors into customers. Our e-commerce 
+                                solutions integrate seamlessly with your business operations and scale with your growth.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Custom Platforms</li>
+                                <li><i class="fas fa-check"></i> Payment Integration</li>
+                                <li><i class="fas fa-check"></i> Inventory Management</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="premium-service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon graphics-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title">Graphics Design</h4>
+                            <p class="service-description">
+                                Bring your brand to life with stunning visual designs. From logos to marketing materials, 
+                                we create graphics that capture attention and communicate your brand's unique story.
+                            </p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Brand Identity</li>
+                                <li><i class="fas fa-check"></i> Marketing Materials</li>
+                                <li><i class="fas fa-check"></i> Digital Assets</li>
+                            </ul>
+                        </div>
+                        <div class="service-footer">
+                            <a href="{{ route('services') }}" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="card-decoration">
+                            <div class="decoration-element element-1"></div>
+                            <div class="decoration-element element-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta" data-aos="fade-up" data-aos-delay="700">
+                <div class="cta-content">
+                    <h3>Ready to Transform Your Business?</h3>
+                    <p>Let's discuss how our premium solutions can drive your success</p>
+                    <div class="cta-actions">
+                        <a href="{{ route('contact') }}" class="btn-premium-primary">
+                            <span>Start Your Project</span>
+                            <i class="fas fa-rocket"></i>
+                        </a>
+                        <a href="{{ route('services') }}" class="btn-premium-outline">
+                            <span>View All Services</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -949,126 +1264,229 @@
 
     <!-- End -->
 
-    <!--  Start review section -->
-    <div class="container highlights-container" data-aos="fade-left" data-aos-offset="300"
-        data-aos-easing="ease-in-sine">
+     <!-- Team Section Start -->
+    <section class="modern-team-section section-padding">
+        <div class="team-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
         <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-xl-7 col-lg-7 col-md-9 services__one-title">
-                    <span class="subtitle-one">Our Results</span>
-                    <h2>A Journey of Success and Growth</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <!-- Card 1 -->
-                <div class="col-md-3 col-sm-6 mb-4">
-                    <div class="highlight-card">
-                        <i class="bi bi-calendar3" style="font-size: 3rem; color: #007bff;"></i>
-                        <h1 class="mt-2">7+</h1>
-                        <p>Years</p>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-3 col-sm-6 mb-4">
-                    <div class="highlight-card">
-                        <i class="bi bi-person" style="font-size: 3rem; color: #007bff;"></i>
-                        <h1 class="mt-2">12+</h1>
-                        <p>Engineers</p>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-3 col-sm-6 mb-4">
-                    <div class="highlight-card">
-                        <i class="bi bi-briefcase" style="font-size: 3rem; color: #007bff;"></i>
-                        <h1 class="mt-2">70+</h1>
-                        <p>Projects</p>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="col-md-3 col-sm-6 mb-4">
-                    <div class="highlight-card">
-                        <i class="bi bi-star" style="font-size: 3rem; color: #007bff;"></i>
-                        <h1 class="mt-2">53+</h1>
-                        <p>Satisfied Clients</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end -->
-
-
-    <!-- TEAM Area Start -->
-    <div class="testimonial__six section-padding">
-        <div class="container" data-aos="zoom-out-up">
-            <div class="row justify-content-center text-center mb-50">
-                <div class="col-xl-7 col-lg-7 col-md-9">
-                    <span class="subtitle-one">Our Team</span>
-                    <h2>Your Project’s Dedicated Team</h2>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-xl-4" data-aos="zoom-out-up">
-                    <div class="testimonial__six-card">
-                        <h4>Hassan Nisar</h4>
-                        <span>Ceo & Co-Founder</span>
-                        <p>Hassan Nisar, CEO and Co-Founder at TecClub Technology, leads with vision and technical
-                            expertise, driving innovation and excellence across all digital solutions.</p>
-
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <div class="team-badge">
+                        <div class="badge-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span>Meet Our Expert Team</span>
+                        <div class="badge-shine"></div>
                     </div>
+                    <h2 class="team-main-title">The Minds Behind <span class="highlight-text">TecClub's Success</span></h2>
+                    <p class="team-subtitle">Passionate innovators and technical experts dedicated to transforming your digital vision into reality</p>
                 </div>
-                <div class="col-xl-4" data-aos="zoom-out-up">
-                    <div class="testimonial__six-card">
-                        <h4>M.Sohaib Abbas</h4>
-                        <span>CTO</span>
-                        <p>M.Sohaib Abbas, CTO of TecClub Technology, leads tech innovation and strategic growth, ensuring
-                            cutting-edge solutions that drive the company’s success.</p>
+            </div>
 
+            <!-- Leadership Row -->
+            <div class="leadership-section">
+                <div class="row justify-content-center g-4 mb-5">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="team-member-card leadership-card">
+                            <div class="card-glow"></div>
+                            <div class="member-header">
+                                <div class="member-avatar leadership-avatar">
+                                    <div class="avatar-ring"></div>
+                                    <div class="avatar-image">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                                <div class="member-role-badge ceo-badge">
+                                    <i class="fas fa-crown"></i>
+                                    <span>CEO</span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">Hassan Nisar</h3>
+                                <p class="member-title">Chief Executive Officer & Co-Founder</p>
+                                <p class="member-description">Visionary leader driving TecClub's innovation strategy with 5+ years of technical expertise in digital transformation and business growth.</p>
+                                <div class="member-specialties">
+                                    <span class="specialty">Strategic Leadership</span>
+                                    <span class="specialty">Innovation</span>
+                                    <span class="specialty">Business Growth</span>
+                                </div>
+                               
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-4" data-aos="zoom-out-up">
-                    <div class="testimonial__six-card">
-                        <h4>Farhan Ali</h4>
-                        <span>Director</span>
-                        <p>Farhan Ali, Director at TecClub Technology, leads with a focus on innovation and strategic
-                            growth, driving the company's success through impactful digital solutions.</p>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-member-card leadership-card">
+                            <div class="card-glow"></div>
+                            <div class="member-header">
+                                <div class="member-avatar leadership-avatar">
+                                    <div class="avatar-ring"></div>
+                                    <div class="avatar-image">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                                <div class="member-role-badge cto-badge">
+                                    <i class="fas fa-cogs"></i>
+                                    <span>CTO</span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">M.Sohaib Abbas</h3>
+                                <p class="member-title">Chief Technology Officer</p>
+                                <p class="member-description">Technology architect leading cutting-edge development initiatives and ensuring scalable, robust digital solutions for our clients.</p>
+                                <div class="member-specialties">
+                                    <span class="specialty">Tech Architecture</span>
+                                    <span class="specialty">Innovation</span>
+                                    <span class="specialty">System Design</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="team-member-card leadership-card">
+                            <div class="card-glow"></div>
+                            <div class="member-header">
+                                <div class="member-avatar leadership-avatar">
+                                    <div class="avatar-ring"></div>
+                                    <div class="avatar-image">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                                <div class="member-role-badge director-badge">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Director</span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">Farhan Ali</h3>
+                                <p class="member-title">Director of Operations</p>
+                                <p class="member-description">Strategic Operations Leader & UI/UX Designer focused on creating exceptional client experiences and driving sustainable business growth.</p>
+                                <div class="member-specialties">
+                                    <span class="specialty">Operations</span>
+                                    <span class="specialty">Strategy</span>
+                                    <span class="specialty">Client Success</span>
+                                </div>
+                            
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-xl-4" data-aos="zoom-out-up">
-                    <div class="testimonial__six-card">
-                        <h4>Uzair Ahmad</h4>
-                        <span>App Development Lead</span>
-                        <p>Uzair Ahmad, App Development Lead at TecClub Technology, specializes in creating high-quality,
-                            user-focused applications that drive innovation and enhance user experience.</p>
 
-                    </div>
+            <!-- Development Team -->
+            <div class="development-section">
+                <div class="section-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-text">Development Experts</div>
+                    <div class="divider-line"></div>
                 </div>
-                <div class="col-xl-4" data-aos="zoom-out-up">
-                    <div class="testimonial__six-card">
-                        <h4>M.Sameed</h4>
-                        <span>Web Development Lead</span>
-                        <p>M.Sameed, Web Development Lead at TecClub Technology, crafts responsive and innovative web
-                            solutions,
-                            enhancing user engagement and supporting the company’s digital growth.</p>
-
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="team-member-card developer-card">
+                            <div class="card-glow"></div>
+                            <div class="member-header">
+                                <div class="member-avatar developer-avatar">
+                                    <div class="avatar-ring"></div>
+                                    <div class="avatar-image">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                                <div class="member-role-badge mobile-badge">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Mobile</span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">Uzair Ahmad</h3>
+                                <p class="member-title">App Development Lead</p>
+                                <p class="member-description">Mobile app specialist creating innovative iOS and Android applications with focus on user experience and performance optimization.</p>
+                                <div class="member-specialties">
+                                    <span class="specialty">React Native</span>
+                                    <span class="specialty">Flutter</span>
+                                    <span class="specialty">iOS/Android</span>
+                                </div>
+                               
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-4" data-aos="zoom-out-up">
-                    <div class="testimonial__six-card">
-                        <h4>M.Haroon</h4>
-                        <span>E-commerce Developer</span>
-                        <p>Haroon, Ecommerce Development Lead at TecClub Technology, specializes in creating optimized,
-                            user-friendly online stores that enhance customer experience and digital commerce success.
-                        </p>
 
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-member-card developer-card">
+                            <div class="card-glow"></div>
+                            <div class="member-header">
+                                <div class="member-avatar developer-avatar">
+                                    <div class="avatar-ring"></div>
+                                    <div class="avatar-image">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                                <div class="member-role-badge web-badge">
+                                    <i class="fas fa-code"></i>
+                                    <span>Web</span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">M.Sameed</h3>
+                                <p class="member-title">Web Development Lead</p>
+                                <p class="member-description">Full-stack web developer crafting responsive, scalable web solutions using modern frameworks and cutting-edge technologies.</p>
+                                <div class="member-specialties">
+                                    <span class="specialty">Laravel</span>
+                                    <span class="specialty">React</span>
+                                    <span class="specialty">Node.js</span>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="team-member-card developer-card">
+                            <div class="card-glow"></div>
+                            <div class="member-header">
+                                <div class="member-avatar developer-avatar">
+                                    <div class="avatar-ring"></div>
+                                    <div class="avatar-image">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="status-indicator online"></div>
+                                </div>
+                                <div class="member-role-badge ecommerce-badge">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>E-commerce</span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">M.Haroon</h3>
+                                <p class="member-title">E-commerce Development Lead</p>
+                                <p class="member-description">E-commerce specialist building high-converting online stores with seamless user experiences and advanced functionality.</p>
+                                <div class="member-specialties">
+                                    <span class="specialty">Shopify</span>
+                                    <span class="specialty">WooCommerce</span>
+                                    <span class="specialty">Magento</span>
+                                </div>
+                              
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- TEAM Area End -->
+    </section>
+    <!-- Team Section End -->
 
 
     <!-- Blog Area Start -->
@@ -1130,568 +1548,66 @@
 
     @endsection
 @section('home_scripts')
-<style>
-/* Client Success Stories Section Styles */
-.client-success-stories {
-    position: relative;
-    overflow: hidden;
-}
-
-.client-success-stories .section-title h2 {
-    color: var(--text-heading-color);
-    font-weight: 700;
-    margin-bottom: 20px;
-    font-family: var(--heading-font);
-}
-
-.client-success-stories .section-title p {
-    color: var(--body-color);
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.success-story-card {
-    background: var(--bg-white);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: var(--box-shadow-1);
-    transition: all 0.4s ease;
-    height: 100%;
-    border: 1px solid var(--border-color-1);
-    position: relative;
-    overflow: hidden;
-}
-
-.success-story-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(135deg, var(--primary-color-1), var(--primary-color-3));
-}
-
-.success-story-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--box-shadow-2);
-    border-color: var(--primary-color-1);
-}
-
-.story-header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 25px;
-}
-
-.story-icon {
-    width: 60px;
-    height: 60px;
-    background: var(--primary-color-1);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-white);
-    font-size: 24px;
-    flex-shrink: 0;
-}
-
-.story-metrics {
-    display: flex;
-    flex-direction: column;
-}
-
-.metric-number {
-    font-size: 28px;
-    font-weight: 800;
-    color: var(--primary-color-1);
-    line-height: 1;
-    font-family: var(--heading-font);
-}
-
-.metric-label {
-    font-size: 14px;
-    color: var(--body-color);
-    font-weight: 600;
-    margin-top: 5px;
-}
-
-.story-content h4 {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--text-heading-color);
-    margin-bottom: 15px;
-    font-family: var(--heading-font);
-}
-
-.story-content p {
-    color: var(--body-color);
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.story-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 25px;
-}
-
-.story-tags .tag {
-    background: rgba(14, 89, 242, 0.1);
-    color: var(--primary-color-1);
-    padding: 6px 12px;
-    border-radius: 12px;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.story-client {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color-1);
-}
-
-.client-avatar {
-    width: 50px;
-    height: 50px;
-    background: var(--primary-color-2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-heading-color);
-    font-size: 18px;
-}
-
-.client-info h6 {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text-heading-color);
-    margin-bottom: 2px;
-    font-family: var(--heading-font);
-}
-
-.client-info span {
-    font-size: 13px;
-    color: var(--body-color);
-}
-
-/* Testimonials Carousel Styles */
-.testimonials-carousel {
-    margin-top: 40px;
-}
-
-.success-testimonials-slider {
-    padding: 20px 0;
-}
-
-.testimonial-card {
-    background: var(--bg-white);
-    border-radius: 20px;
-    padding: 35px;
-    box-shadow: var(--box-shadow-1);
-    border: 1px solid var(--border-color-1);
-    margin: 0 10px;
-}
-
-.quote-icon {
-    width: 60px;
-    height: 60px;
-    background: var(--primary-color-1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-white);
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.testimonial-content p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--body-color);
-    margin-bottom: 25px;
-    font-style: italic;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.author-avatar {
-    width: 50px;
-    height: 50px;
-    background: var(--primary-color-2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-heading-color);
-    font-size: 18px;
-}
-
-.author-info h6 {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--text-heading-color);
-    margin-bottom: 2px;
-    font-family: var(--heading-font);
-}
-
-.author-info span {
-    font-size: 14px;
-    color: var(--body-color);
-}
-
-/* CTA Section Styles */
-.cta-section {
-    background: linear-gradient(135deg, var(--primary-color-1), var(--primary-color-3));
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}
-
-.cta-shapes {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.cta-shape {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.1;
-    background: var(--text-white);
-}
-
-.shape-1 {
-    width: 200px;
-    height: 200px;
-    top: 10%;
-    left: 5%;
-    animation: float 15s infinite ease-in-out;
-}
-
-.shape-2 {
-    width: 150px;
-    height: 150px;
-    top: 60%;
-    right: 10%;
-    animation: float 20s infinite ease-in-out reverse;
-}
-
-.shape-3 {
-    width: 100px;
-    height: 100px;
-    bottom: 20%;
-    left: 20%;
-    animation: float 18s infinite ease-in-out;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    33% { transform: translateY(-20px) rotate(120deg); }
-    66% { transform: translateY(-10px) rotate(240deg); }
-}
-
-.cta-section .container {
-    position: relative;
-    z-index: 2;
-}
-
-.cta-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: var(--text-white);
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-weight: 600;
-    margin-bottom: 25px;
-    font-family: var(--heading-font);
-}
-
-.cta-content h2 {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--text-white);
-    margin-bottom: 20px;
-    line-height: 1.2;
-    font-family: var(--heading-font);
-}
-
-.cta-content p {
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.cta-features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-bottom: 20px;
-}
-
-.cta-feature {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--text-white);
-    font-weight: 600;
-}
-
-.cta-feature i {
-    color: var(--primary-color-2);
-    font-size: 18px;
-}
-
-.cta-actions {
-    display: flex;
-    justify-content: center;
-}
-
-.cta-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 25px;
-    padding: 35px;
-    width: 100%;
-    max-width: 400px;
-}
-
-.card-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.card-header h4 {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text-white);
-    margin-bottom: 8px;
-    font-family: var(--heading-font);
-}
-
-.card-header p {
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0;
-    font-size: 16px;
-}
-
-.action-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.primary-cta {
-    background: var(--primary-color-2) !important;
-    color: var(--text-heading-color) !important;
-    border: 1px solid var(--primary-color-2) !important;
-}
-
-.secondary-cta {
-    background: rgba(255, 255, 255, 0.1) !important;
-    color: var(--text-white) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-}
-
-.tertiary-cta {
-    background: transparent !important;
-    color: var(--text-white) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-}
-
-.action-buttons .btn-two {
-    padding: 15px 25px;
-    border-radius: 15px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    text-decoration: none;
-    font-family: var(--heading-font);
-}
-
-.action-buttons .btn-two:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.card-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 20px;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 14px;
-}
-
-.info-item i {
-    color: var(--primary-color-2);
-    font-size: 16px;
-    width: 16px;
-}
-
-/* Responsive Styles */
-@media (max-width: 992px) {
-    .cta-content h2 {
-        font-size: 2.5rem;
-    }
-    
-    .cta-features {
-        justify-content: center;
-    }
-    
-    .story-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-    
-    .story-metrics {
-        align-items: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .success-story-card,
-    .testimonial-card,
-    .cta-card {
-        padding: 25px;
-        margin-bottom: 25px;
-    }
-    
-    .cta-content h2 {
-        font-size: 2rem;
-    }
-    
-    .cta-features {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    .story-tags {
-        justify-content: center;
-    }
-    
-    .client-info, .author-info {
-        text-align: center;
-    }
-    
-    .story-client, .testimonial-author {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .metric-number {
-        font-size: 24px;
-    }
-    
-    .story-content h4 {
-        font-size: 18px;
-    }
-    
-    .cta-content h2 {
-        font-size: 1.8rem;
-    }
-    
-    .card-header h4 {
-        font-size: 20px;
-    }
-    
-    .action-buttons .btn-two {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-}
-
-/* Swiper Pagination Styles */
-.success-testimonials-slider .swiper-pagination {
-    position: relative;
-    margin-top: 30px;
-}
-
-.success-testimonials-slider .swiper-pagination-bullet {
-    background: var(--primary-color-1);
-    opacity: 0.3;
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-}
-
-.success-testimonials-slider .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: var(--primary-color-1);
-}
-</style>
-
 <script>
-// Initialize Success Stories Testimonials Slider
-document.addEventListener('DOMContentLoaded', function() {
-    const successTestimonialsSlider = new Swiper('.success-testimonials-slider', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
+// Counter Animation for Banner Stats
+function animateCounters() {
+    const counters = document.querySelectorAll('[data-count]');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 16);
+                
+                observer.unobserve(counter);
             }
-        }
+        });
     });
+    
+    counters.forEach(counter => observer.observe(counter));
+}
+
+// Initialize Premium Brand Slider
+function initPremiumSliders() {
+    if (typeof Swiper !== 'undefined') {
+        const brandSlider = new Swiper('.premium-brand-slider', {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: { slidesPerView: 2, spaceBetween: 20 },
+                576: { slidesPerView: 3, spaceBetween: 25 },
+                768: { slidesPerView: 4, spaceBetween: 30 },
+                1024: { slidesPerView: 5, spaceBetween: 30 },
+                1200: { slidesPerView: 6, spaceBetween: 30 }
+            }
+        });
+    }
+}
+
+// Initialize animations when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    animateCounters();
+    initPremiumSliders();
 });
 </script>
+@endsection
+
+@section('styles')
 @endsection

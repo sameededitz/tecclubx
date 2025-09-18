@@ -286,7 +286,7 @@
                         
                         <div class="trust-indicators">
                             <div class="trust-item">
-                                <div class="trust-number">200+</div>
+                                <div class="trust-number">25+</div>
                                 <div class="trust-label">VPN Brands Launched</div>
                             </div>
                             <div class="trust-item">
@@ -294,7 +294,7 @@
                                 <div class="trust-label">Client Satisfaction</div>
                             </div>
                             <div class="trust-item">
-                                <div class="trust-number">5+</div>
+                                <div class="trust-number">7+</div>
                                 <div class="trust-label">Years Experience</div>
                             </div>
                         </div>
@@ -589,64 +589,7 @@
     </section>
     <!-- Pricing Section End -->
 
-    <!-- Process Section Start -->
-    <section class="process-section section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <div class="section-badge">
-                        <i class="fas fa-cogs"></i>
-                        <span>Launch Process</span>
-                    </div>
-                    <h2 class="section-title">How We Launch Your VPN Brand</h2>
-                    <p class="section-subtitle">Our proven 4-step process to get your VPN business online</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="process-step">
-                        <div class="step-number">01</div>
-                        <div class="step-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h3>Consultation</h3>
-                        <p>We discuss your business requirements, target market, and branding preferences to create a customized solution.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="process-step">
-                        <div class="step-number">02</div>
-                        <div class="step-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3>Branding</h3>
-                        <p>Our design team customizes the apps and admin panel with your logo, colors, and brand identity.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="process-step">
-                        <div class="step-number">03</div>
-                        <div class="step-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Setup</h3>
-                        <p>We deploy your VPN infrastructure, configure servers, and set up payment systems for your business.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="process-step">
-                        <div class="step-number">04</div>
-                        <div class="step-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h3>Launch</h3>
-                        <p>Your VPN service goes live with full support, documentation, and ongoing maintenance included.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Process Section End -->
+    
 
     <!-- FAQ Section Start -->
     <section class="faq-section section-padding">
@@ -1664,7 +1607,7 @@
 }
 
 .trust-label {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
     font-size: 0.9rem;
 }
 
@@ -1858,7 +1801,7 @@
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, #2d7cff, #facc15);
+    background: #0e59f2;
 }
 
 .expertise-card:hover {
