@@ -28,11 +28,6 @@
       <!-- Premium Services Area Start -->
     <div class="premium-services-section section-padding">
         <div class="services-background">
-            <div class="services-shapes">
-                <div class="service-shape shape-1"></div>
-                <div class="service-shape shape-2"></div>
-                <div class="service-shape shape-3"></div>
-            </div>
         </div>
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center text-center">
@@ -1210,6 +1205,655 @@
     .stat-number {
         font-size: 32px;
     }
+}
+
+/*Our services card decoration*/
+.services-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.service-shape {
+    position: absolute;
+    background: linear-gradient(45deg, rgba(14, 89, 242, 0.03), rgba(245, 204, 21, 0.03));
+    border-radius: 50%;
+    animation: float 15s ease-in-out infinite;
+}
+
+.service-shape.shape-1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 5%;
+}
+
+.service-shape.shape-2 {
+    width: 200px;
+    height: 200px;
+    top: 60%;
+    right: 10%;
+    animation-delay: 5s;
+}
+
+.service-shape.shape-3 {
+    width: 150px;
+    height: 150px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 10s;
+}
+
+.premium-section-header {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 60px;
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(14, 89, 242, 0.1);
+    border: 1px solid rgba(14, 89, 242, 0.2);
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    gap: 8px;
+    font-weight: 600;
+    color: #0E59F2;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #64748b;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.premium-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.premium-service-card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    position: relative;
+    height: 100%;
+}
+
+.premium-service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
+    border-color: rgba(14, 89, 242, 0.2);
+}
+
+.premium-service-card.featured {
+    background: linear-gradient(135deg, #0E59F2 0%, #2D7CFF 100%);
+    color: white;
+    transform: scale(1.05);
+}
+
+.premium-service-card.featured:hover {
+    transform: translateY(-15px) scale(1.05);
+}
+
+.featured-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(248, 229, 89, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(248, 229, 89, 0.3);
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #F8E559;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 20;
+}
+
+.service-card-inner {
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.service-icon-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Premium Service Icon Styles */
+.service-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 32px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Individual Icon Gradients */
+.mobile-app-icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+}
+
+.web-dev-icon {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    box-shadow: 0 8px 32px rgba(245, 87, 108, 0.3);
+}
+
+.design-icon {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    box-shadow: 0 8px 32px rgba(79, 172, 254, 0.3);
+}
+
+.marketing-icon {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    box-shadow: 0 8px 32px rgba(67, 233, 123, 0.3);
+}
+
+.ecommerce-icon {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    box-shadow: 0 8px 32px rgba(250, 112, 154, 0.3);
+}
+
+.graphics-icon {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    box-shadow: 0 8px 32px rgba(168, 237, 234, 0.3);
+}
+
+/* Icon Hover Effects */
+.premium-service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.premium-service-card:hover .mobile-app-icon {
+    box-shadow: 
+        0 20px 40px rgba(102, 126, 234, 0.4),
+        0 0 0 8px rgba(102, 126, 234, 0.2);
+}
+
+.premium-service-card:hover .web-dev-icon {
+    box-shadow: 
+        0 20px 40px rgba(245, 87, 108, 0.4),
+        0 0 0 8px rgba(245, 87, 108, 0.2);
+}
+
+.premium-service-card:hover .design-icon {
+    box-shadow: 
+        0 20px 40px rgba(79, 172, 254, 0.4),
+        0 0 0 8px rgba(79, 172, 254, 0.2);
+}
+
+.premium-service-card:hover .marketing-icon {
+    box-shadow: 
+        0 20px 40px rgba(67, 233, 123, 0.4),
+        0 0 0 8px rgba(67, 233, 123, 0.2);
+}
+
+.premium-service-card:hover .ecommerce-icon {
+    box-shadow: 
+        0 20px 40px rgba(250, 112, 154, 0.4),
+        0 0 0 8px rgba(250, 112, 154, 0.2);
+}
+
+.premium-service-card:hover .graphics-icon {
+    box-shadow: 
+        0 20px 40px rgba(168, 237, 234, 0.4),
+        0 0 0 8px rgba(168, 237, 234, 0.2);
+}
+
+/* Icon Animation */
+.service-icon i {
+    transition: all 0.3s ease;
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.premium-service-card:hover .service-icon i {
+    animation-play-state: paused;
+    transform: scale(1.1);
+}
+
+.premium-service-card.featured .service-icon {
+    transform: scale(1.05);
+    animation: featuredPulse 2s ease-in-out infinite;
+}
+
+@keyframes featuredPulse {
+    0%, 100% { 
+        transform: scale(1.05);
+        box-shadow: 0 8px 32px rgba(245, 87, 108, 0.3);
+    }
+    50% { 
+        transform: scale(1.1);
+        box-shadow: 0 12px 40px rgba(245, 87, 108, 0.5);
+    }
+}
+
+.service-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icon-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.premium-service-card:hover .icon-glow {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* Responsive Icon Adjustments */
+@media (max-width: 768px) {
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+        border-radius: 16px;
+    }
+    
+    .icon-glow {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        border-radius: 14px;
+    }
+    
+    .icon-glow {
+        width: 90px;
+        height: 90px;
+    }
+}
+    transition: all 0.3s ease;
+}
+
+.premium-service-card:hover .icon-glow {
+    opacity: 1;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.service-content {
+    flex-grow: 1;
+    margin-bottom: 25px;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.premium-service-card.featured .service-title {
+    color: white;
+}
+
+.service-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.premium-service-card.featured .service-description {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-features li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.premium-service-card.featured .service-features li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.service-features i {
+    color: #0E59F2;
+    font-size: 12px;
+}
+
+.premium-service-card.featured .service-features i {
+    color: #F8E559;
+}
+
+.service-footer {
+    margin-top: auto;
+}
+
+.service-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(14, 89, 242, 0.1);
+    color: #0E59F2;
+    padding: 12px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.service-link:hover {
+    background: #0E59F2;
+    color: white;
+    transform: translateX(5px);
+}
+
+.premium-service-card.featured .service-link {
+    background: rgba(248, 229, 89, 0.2);
+    color: #F8E559;
+}
+
+.premium-service-card.featured .service-link:hover {
+    background: #F8E559;
+    color: #1e293b;
+}
+
+.card-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.decoration-element {
+    position: absolute;
+    background: linear-gradient(45deg, rgba(14, 89, 242, 0.1), rgba(245, 204, 21, 0.1));
+    border-radius: 50%;
+    animation: float 12s ease-in-out infinite;
+}
+
+.decoration-element.element-1 {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: -50px;
+}
+
+.decoration-element.element-2 {
+    width: 60px;
+    height: 60px;
+    bottom: -30px;
+    left: -30px;
+    animation-delay: 6s;
+}
+
+.services-cta {
+    background: white;
+    border-radius: 25px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 10;
+}
+
+.cta-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-premium-outline {
+    background: transparent;
+    border: 2px solid #0E59F2;
+    color: #0E59F2;
+    padding: 13px 28px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-premium-outline:hover {
+    background: #0E59F2;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+    50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .premium-services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    .banner-title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .premium-banner-section {
+        padding: 80px 0;
+        min-height: 80vh;
+    }
+    
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .banner-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner-stats {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .stat-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    
+    .premium-brand-wrapper {
+        padding: 40px 20px;
+        border-radius: 20px;
+    }
+    
+    .trust-indicators {
+        gap: 20px;
+    }
+    
+    .trust-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .premium-services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .service-card-inner {
+        padding: 30px;
+    }
+    
+    .services-cta {
+        padding: 40px 20px;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .floating-elements .element {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .banner-features {
+        gap: 10px;
+    }
+    
+    .premium-service-card.featured {
+        transform: none;
+    }
+    
+    .premium-service-card.featured:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.btn-premium-primary {
+    background: #0E59F2;
+    color: #1e293b;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(89, 89, 248, 0.3);
+}
+
+.btn-premium-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(248, 229, 89, 0.4);
+    color: #1e293b;
 }
 </style>
 
