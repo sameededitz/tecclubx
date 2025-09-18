@@ -79,7 +79,7 @@
                         </div>
                         <div class="banner-stats">
                             <div class="stat-item">
-                                <div class="stat-number" data-count="500">70</div>
+                                <div class="stat-number" data-count="70">70</div>
                                 <div class="stat-symbol">+</div>
                                 <div class="stat-label">Projects</div>
                             </div>
