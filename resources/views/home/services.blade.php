@@ -442,6 +442,33 @@
                 </div>
             </div>
         </div>
+        <style>
+            @media (max-width: 770px) {
+                .feature-item {
+                    flex-direction: row !important;
+                    text-align: left !important;
+                    gap: 15px !important;
+                    align-items: flex-start !important;
+                }
+                
+                .feature-icon {
+                    margin: 0 !important;
+                    min-width: 60px !important;
+                    width: 60px !important;
+                    height: 60px !important;
+                    display: flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                }
+                
+                .stat-icon {
+                    margin: 0 auto !important;
+                    width: 60px !important;
+                    height: 60px !important;
+                    font-size: 24px !important;
+                }
+            }
+        </style>
     </div>
     <!-- Why Choose Us Section End -->
 
