@@ -491,6 +491,22 @@
 @section('styles')
 <style>
 /* Modern About Section Enhancements */
+.brand__area-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* container height */
+}
+
+.brand__area-item img {
+    width: 150px; /* fixed width */
+    height: 80px; /* fixed height */
+    object-fit: contain; /* یا cover */
+    display: block;
+    filter: grayscale(100%) opacity(0.8); /* optional effect */
+    transition: all 0.3s ease;
+}
+
 .modern-about-visual {
     position: relative;
 }
