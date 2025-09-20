@@ -23,12 +23,16 @@
     </div>
 
     <div class="card basic-data-table">
-        <div class="card-header d-flex align-items-center justify-content-between">
+        <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-2">
             <h5 class="card-title mb-0">All Portfolio</h5>
-            <a href="{{ route('add-portfolio') }}">
-                <button type="button" class="btn rounded-pill btn-outline-info-600 radius-8 px-20 py-11">Add
-                    Portfolio</button>
-            </a>
+            <div class="d-flex gap-2 flex-wrap">
+                <a href="{{ route('add-portfolio') }}">
+                    <button type="button" class="btn rounded-pill btn-outline-info-600 radius-8 px-20 py-11">Add Portfolio</button>
+                </a>
+            <a href="{{ route('reorganize-portfolio') }}">
+                    <button type="button" class="btn rounded-pill btn-outline-info-600 radius-8 px-20 py-11">Reorganize</button>
+                </a>
+            </div>
         </div>
         <div class="card-body scroll-sm" style="overflow-x: scroll">
             <table class="table display responsive bordered-table mb-0" id="myTable" data-page-length='10'>

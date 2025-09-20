@@ -10,11 +10,24 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
+
 class Portfolio extends Model implements HasMedia
 {
     use HasFactory, InteractsWithMedia, HasSlug;
 
-    protected $fillable = ['title', 'description', 'category', 'date', 'slug'];
+    protected $fillable = ['title', 'description', 'category', 'date', 'slug', 'order_column'];
+
+    protected $casts = [
+        'date' => 'datetime',
+    ];
+
+    // Default order by order_column
+    protected static function booted()
+    {
+        static::addGlobalScope('ordered', function ($query) {
+            $query->orderBy('order_column');
+        });
+    }
 
     public function registerMediaCollections(): void
     {

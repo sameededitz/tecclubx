@@ -33,4 +33,27 @@ class PortfolioController extends Controller
             'message' => 'Portfolio deleted successfully',
         ]);
     }
+
+    // Show the reorganize page
+    public function reorganize()
+    {
+        $portfolios = Portfolio::orderBy('order_column')->get();
+        return view('admin.reorganize-portfolio', compact('portfolios'));
+    }
+
+    // Save the new order from drag-and-drop
+    public function saveReorder()
+    {
+        $order = request('order');
+        if ($order) {
+            $ids = explode(',', $order);
+            foreach ($ids as $index => $id) {
+                Portfolio::where('id', $id)->update(['order_column' => $index + 1]);
+            }
+        }
+        return redirect()->route('all-portfolio')->with([
+            'status' => 'success',
+            'message' => 'Portfolio order updated successfully',
+        ]);
+    }
 }

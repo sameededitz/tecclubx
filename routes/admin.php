@@ -17,6 +17,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'verified', 'verifyR
     Route::get('/', [AdminController::class, 'dashboard'])->name('admin-home');
 
     Route::get('/portfolio', [PortfolioController::class, 'All'])->name('all-portfolio');
+    Route::get('/portfolio/reorganize', [PortfolioController::class, 'reorganize'])->name('reorganize-portfolio');
+    Route::post('/portfolio/reorganize/save', [PortfolioController::class, 'saveReorder'])->name('save-reorder-portfolio');
     Route::get('/portfolio/create', [PortfolioController::class, 'create'])->name('add-portfolio');
     Route::get('/portfolio/{portfolio:slug}', [PortfolioController::class, 'view'])->name('view-portfolio');
 
