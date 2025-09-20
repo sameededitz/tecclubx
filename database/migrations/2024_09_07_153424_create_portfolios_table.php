@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('category')->nullable();
             $table->text('description');
             $table->date('date');
-            $table->integer('order_column')->default(0);
+            // $table->integer('order_column')->default(0);
             $table->timestamps();
         });
     }
