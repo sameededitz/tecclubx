@@ -503,7 +503,6 @@
     height: 80px; /* fixed height */
     object-fit: contain; /* یا cover */
     display: block;
-    filter: grayscale(100%) opacity(0.8); /* optional effect */
     transition: all 0.3s ease;
 }
 
