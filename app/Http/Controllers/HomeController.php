@@ -50,7 +50,7 @@ class HomeController extends Controller
     }
     public function portfolio()
     {
-        $portfolios = Portfolio::latest()->paginate(6);
+        $portfolios = Portfolio::query()->paginate(6);
         return view('home.portfolio', compact('portfolios'));
     }
 

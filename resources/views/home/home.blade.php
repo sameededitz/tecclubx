@@ -498,7 +498,7 @@
                             <i class="flaticon-consultant"></i>
                             <div class="experience-bar-right">
                                 <div class="experience-bar-counter">
-                                    <h4 class="counter">5</h4>
+                                    <h4 class="counter">7</h4>
                                     <span>+</span>
                                 </div>
                                 <span>Years Experience</span>
@@ -573,7 +573,7 @@
                                 </div>
                                 <div class="why-choose-us__one-quality-single-content">
                                     <h4>Expertise & Experience</h4>
-                                    <p>With over five years in the industry, we bring deep expertise in web development, app
+                                    <p>With over seven years in the industry, we bring deep expertise in web development, app
                                         development, UX/UI design, and digital marketing. We stay ahead of trends to deliver
                                         innovative solutions.</p>
                                 </div>

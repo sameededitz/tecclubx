@@ -67,12 +67,6 @@
                                 <li><i class="fas fa-check"></i> App Store Deployment</li>
                             </ul>
                         </div>
-                        <div class="service-footer">
-                            <a href="{{ route('services') }}" class="service-link">
-                                <span>Learn More</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
                         <div class="card-decoration">
                             <div class="decoration-element element-1"></div>
                             <div class="decoration-element element-2"></div>
@@ -104,12 +98,6 @@
                                 <li><i class="fas fa-check"></i> Performance Optimized</li>
                             </ul>
                         </div>
-                        <div class="service-footer">
-                            <a href="{{ route('services') }}" class="service-link">
-                                <span>Learn More</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
                         <div class="card-decoration">
                             <div class="decoration-element element-1"></div>
                             <div class="decoration-element element-2"></div>
@@ -136,12 +124,6 @@
                                 <li><i class="fas fa-check"></i> Prototype Design</li>
                                 <li><i class="fas fa-check"></i> Visual Identity</li>
                             </ul>
-                        </div>
-                        <div class="service-footer">
-                            <a href="{{ route('services') }}" class="service-link">
-                                <span>Learn More</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
                         </div>
                         <div class="card-decoration">
                             <div class="decoration-element element-1"></div>
@@ -170,12 +152,6 @@
                                 <li><i class="fas fa-check"></i> PPC Campaigns</li>
                             </ul>
                         </div>
-                        <div class="service-footer">
-                            <a href="{{ route('services') }}" class="service-link">
-                                <span>Learn More</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
                         <div class="card-decoration">
                             <div class="decoration-element element-1"></div>
                             <div class="decoration-element element-2"></div>
@@ -203,12 +179,6 @@
                                 <li><i class="fas fa-check"></i> Inventory Management</li>
                             </ul>
                         </div>
-                        <div class="service-footer">
-                            <a href="{{ route('services') }}" class="service-link">
-                                <span>Learn More</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
                         <div class="card-decoration">
                             <div class="decoration-element element-1"></div>
                             <div class="decoration-element element-2"></div>
@@ -235,12 +205,6 @@
                                 <li><i class="fas fa-check"></i> Marketing Materials</li>
                                 <li><i class="fas fa-check"></i> Digital Assets</li>
                             </ul>
-                        </div>
-                        <div class="service-footer">
-                            <a href="{{ route('services') }}" class="service-link">
-                                <span>Learn More</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
                         </div>
                         <div class="card-decoration">
                             <div class="decoration-element element-1"></div>
