@@ -1,0 +1,342 @@
+/* Premium Contact Form CSS */
+.premium-contact-form {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.premium-contact-form .form-container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.premium-contact-form .form-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 200px;
+    height: 200px;
+    background: #0e59f2;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.1;
+    transition: all 0.5s ease;
+}
+
+.premium-contact-form .form-container:hover::before {
+    transform: scale(1.2);
+}
+
+.premium-contact-form .form-header h2 {
+    font-weight: 700;
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    background: #0e59f2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.premium-contact-form .form-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Form Controls */
+.premium-contact-form .form-control {
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    padding: 1rem 1rem 0.5rem;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.premium-contact-form .form-control:focus {
+    border-color: #0e59f2;
+    box-shadow: 0 5px 15px rgba(14, 89, 242, 0.1);
+}
+
+.premium-contact-form .form-floating > .form-control:focus ~ label,
+.premium-contact-form .form-floating > .form-control:not(:placeholder-shown) ~ label {
+    color: #0e59f2;
+    opacity: 1;
+    transform: scale(0.85) translateY(-1rem) translateX(0.15rem);
+}
+
+.premium-contact-form .form-floating > label {
+    font-weight: 500;
+    color: #666;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Services Section */
+.premium-contact-form .services-section {
+    background: #f9fafc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+}
+
+.premium-contact-form .services-section:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.premium-contact-form .services-title {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.premium-contact-form .services-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(to bottom, #6e45e2, #88d3ce);
+    border-radius: 4px;
+}
+
+/* Checkboxes */
+.premium-contact-form .service-checkbox {
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    border: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.premium-contact-form .service-checkbox:hover {
+    background: #f8f9fe;
+    border-color: #0e59f2;
+    transform: translateY(-3px);
+}
+
+.premium-contact-form .form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0;
+    margin-right: 0.6rem;
+    cursor: pointer;
+}
+
+.premium-contact-form .form-check-input:checked {
+    background-color: #0e59f2;
+    border-color: #0e59f2;
+}
+
+.premium-contact-form .form-check-label {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #444;
+    cursor: pointer;
+}
+
+/* Button */
+.premium-contact-form .premium-btn {
+    background: #0e59f2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 10px 20px rgba(110, 69, 226, 0.2);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.premium-contact-form .premium-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #88d3ce, #6e45e2);
+    transition: all 0.5s ease;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.premium-contact-form .premium-btn:hover::before {
+    width: 100%;
+}
+
+.premium-contact-form .premium-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(110, 69, 226, 0.3);
+}
+
+/* Validation styling */
+.premium-contact-form .was-validated .form-control:invalid,
+.premium-contact-form .form-control.is-invalid {
+    border-color: #dc3545;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.premium-contact-form .was-validated .form-control:valid,
+.premium-contact-form .form-control.is-valid {
+    border-color: #198754;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.premium-contact-form .invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .premium-contact-form .form-container {
+        padding: 2rem;
+    }
+    
+    .premium-contact-form .form-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .premium-contact-form .services-section {
+        padding: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .premium-contact-form .services-section {
+        padding: 1.2rem;
+    }
+    
+    .premium-contact-form .service-checkbox {
+        padding: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .premium-contact-form .form-check-label {
+        font-size: 0.85rem;
+    }
+    
+    .premium-contact-form .form-container::before {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .premium-contact-form .form-header p {
+        font-size: 0.9rem;
+    }
+    
+    /* Adjust services on medium screens */
+    .premium-contact-form .col-md-4 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .premium-contact-form .form-container {
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+    
+    .premium-contact-form .form-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .premium-contact-form .premium-btn {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Make services full width on small screens */
+    .premium-contact-form .col-md-4 {
+        width: 100%;
+    }
+    
+    /* Smaller padding for form elements */
+    .premium-contact-form .form-floating {
+        margin-bottom: 0.8rem;
+    }
+    
+    .premium-contact-form .form-floating > label {
+        padding: 0.8rem;
+    }
+    
+    .premium-contact-form .form-control {
+        padding: 0.8rem 0.8rem 0.3rem;
+    }
+    
+    /* Adjust service section spacing */
+    .premium-contact-form .services-section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .premium-contact-form .services-title {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+    .premium-contact-form .form-container {
+        padding: 1.2rem;
+    }
+    
+    .premium-contact-form .form-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .premium-contact-form .form-header p {
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .premium-contact-form .services-title {
+        font-size: 0.95rem;
+    }
+    
+    .premium-contact-form .premium-btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .premium-contact-form .service-checkbox {
+        padding: 0.6rem;
+    }
+    
+    .premium-contact-form .form-check-input {
+        width: 1em;
+        height: 1em;
+        margin-right: 0.4rem;
+    }
+}
