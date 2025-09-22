@@ -33,7 +33,7 @@ class SectionImagesController extends Controller
         $maxImagesPerSection = [
             'banner' => 1,
             'about' => 2,
-            'slider' => 15,
+            'slider' => 30,
             'why_choose' => 1,
         ];
 

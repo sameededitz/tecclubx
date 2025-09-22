@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-auto">
                     <p class="mb-0">Made by <a href="https://www.instagram.com/not_sameed52/" target="_blank"
-                            class="text-primary-600">Sameed</a></p>
+                            class="text-primary-600">Sameed & Mian Farhan Ali</a></p>
                 </div>
             </div>
         </footer>
