@@ -6,6 +6,13 @@
             @endforeach
         </div>
     @endif
+    
+    @if ($showSuccessMessage)
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle me-2"></i> {{ $successMessage }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" wire:click="$set('showSuccessMessage', false)"></button>
+        </div>
+    @endif
 
     <div class="form-container">
         <div class="form-header">
@@ -13,7 +20,7 @@
             <p class="text-center mb-5">Fill out the form below and we'll get back to you as soon as possible.</p>
         </div>
 
-        <form id="contactForm" class="needs-validation" novalidate>
+        <form id="contactForm" class="needs-validation" wire:submit.prevent="submit" novalidate>
             <div class="row g-4">
                 <!-- Personal Information -->
                 <div class="col-md-6">
@@ -51,20 +58,19 @@
                         <div class="invalid-feedback">Please provide your phone number.</div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-3 optional-field">
                         <input type="text" id="company" class="form-control" wire:model="company"
                             placeholder="{{ env('APP_NAME') }}">
-                        <label for="company">Company/Organization (optional)</label>
+                        <label for="company">Company/Organization <span class="optional-text">(optional)</span></label>
                     </div>
                 </div>
 
                 <div class="col-md-6">
-                    <div class="form-floating mb-3">
+                    <div class="form-floating mb-3 optional-field">
                         <input type="text" id="website" class="form-control" wire:model="website"
                             placeholder="{{ env('APP_URL') }}">
-                        <label for="website">Website (optional)</label>
+                        <label for="website">Website <span class="optional-text">(optional)</span></label>
                     </div>
                 </div>
 
@@ -156,7 +162,7 @@
                     <div class="form-floating mb-3">
                         <textarea id="message" class="form-control" wire:model="message" placeholder="Type Here" style="height: 150px"
                             required></textarea>
-                        <label for="message">Message *</label>
+                        <label for="message">Message</label>
                         <div class="invalid-feedback">Please provide a message.</div>
                     </div>
                 </div>
@@ -193,24 +199,25 @@
 
             // Handle form submission
             form.addEventListener('submit', function(e) {
-                e.preventDefault();
-
                 // Add validation classes
                 form.classList.add('was-validated');
 
                 // Check if form is valid
-                if (form.checkValidity()) {
-                    // Get the reCAPTCHA response
-                    grecaptcha.ready(function() {
-                        grecaptcha.execute('{{ config('services.recaptcha.key') }}', {
-                            action: 'submit'
-                        }).then(function(token) {
-                            document.getElementById('g-recaptcha-response').value = token;
-                            @this.set('recaptcha', token);
-                            @this.call('submit');
-                        });
-                    });
+                if (!form.checkValidity()) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
                 }
+                
+                // Get the reCAPTCHA response
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('{{ config('services.recaptcha.key') }}', {
+                        action: 'submit'
+                    }).then(function(token) {
+                        document.getElementById('g-recaptcha-response').value = token;
+                        @this.set('recaptcha', token);
+                    });
+                });
             });
 
             // Input animations

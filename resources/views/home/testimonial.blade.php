@@ -26,7 +26,7 @@
     <!-- Banner Area End -->
 
     <!-- Testimonial Area Start -->
-
+    
     <div class="testimonial__six section-padding">
         <div class="container" data-aos="zoom-out-up">
             <div class="row justify-content-center text-center mb-50">
@@ -91,7 +91,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Testimonial Area End -->
 
     <!-- Subscribe Area End -->

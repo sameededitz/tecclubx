@@ -54,7 +54,7 @@
                                 <span>Fast performance</span>
                             </div>
                         </div>
-                      <div class="hero-actions">
+                      <div class="hero-actions-1">
                             <a href="#contact" class="btn-primary-modern">
                                 <span>Start Your VPN Business</span>
                                 <i class="fas fa-arrow-right"></i>
@@ -66,57 +66,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-5 ms-5" data-aos="fade-left">
                     <div class="hero-visual">
-                        <!-- Phone Mockup with CSS Design -->
-                        <div class="phone-mockup">
-                            <div class="phone-frame">
-                                <div class="phone-screen">
-                                    <div class="screen-content">
-                                        <div class="status-bar">
-                                            <span class="time">9:41</span>
-                                            <div class="indicators">
-                                                <i class="fas fa-signal"></i>
-                                                <i class="fas fa-wifi"></i>
-                                                <i class="fas fa-battery-full"></i>
-                                            </div>
-                                        </div>
-                                        <div class="app-header">
-                                            <div class="app-logo">
-                                                <i class="fas fa-shield-alt"></i>
-                                            </div>
-                                            <h3>SecureVPN</h3>
-                                        </div>
-                                        <div class="connection-status">
-                                            <div class="status-circle connected">
-                                                <i class="fas fa-shield-alt"></i>
-                                                <div class="pulse-ring"></div>
-                                                <div class="pulse-ring delay-1"></div>
-                                                <div class="pulse-ring delay-2"></div>
-                                            </div>
-                                            <h4>Connected</h4>
-                                            <p><i class="fas fa-map-marker-alt"></i> New York, USA</p>
-                                            <div class="connection-speed">
-                                                <div class="speed-info">
-                                                    <span><i class="fas fa-arrow-down"></i> 45.2 Mbps</span>
-                                                    <span><i class="fas fa-arrow-up"></i> 38.1 Mbps</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="server-list">
-                                            <div class="server-item active">
-                                                <i class="fas fa-flag-usa"></i>
-                                                <span>United States</span>
-                                                <div class="server-status"></div>
-                                            </div>
-                                            <div class="server-item">
-                                                <i class="fas fa-flag"></i>
-                                                <span>United Kingdom</span>
-                                                <div class="server-status"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <!-- Cybersecurity Image with Overlay Effects -->
+                        <div class="cybersecurity-image-container">
+                            <img src="{{ asset('assets/img/vpndevelopment/vpndevelopment.png') }}" alt="Cybersecurity Developer" class="cybersecurity-image img-fluid">
+                            
+                            <!-- Overlay Elements -->
+                            <div class="cyber-overlay-elements">
+                                <!-- Glowing Shield Element -->
+                                <div class="cyber-shield">
+                                    <i class="fas fa-shield-alt"></i>
                                 </div>
+                                
+                                <!-- Circuit Lines -->
+                                <div class="circuit-line circuit-line-1"></div>
+                                <div class="circuit-line circuit-line-2"></div>
+                                <div class="circuit-line circuit-line-3"></div>
+                                
+                                <!-- Connection Points -->
+                                <div class="connection-point cp-1"></div>
+                                <div class="connection-point cp-2"></div>
+                                <div class="connection-point cp-3"></div>
+                                <div class="connection-point cp-4"></div>
                             </div>
                         </div>
                         
@@ -551,6 +523,144 @@
     z-index: 1;
 }
 
+/* Cybersecurity Image Styling */
+.cybersecurity-image-container {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    margin-bottom: 60px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.cybersecurity-image-container:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+.cybersecurity-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    transition: all 0.5s ease;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+/* Overlay Elements */
+.cyber-overlay-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.cyber-shield {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(14, 89, 242, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(14, 89, 242, 0.8);
+    animation: pulse 2s infinite;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(14, 89, 242, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(14, 89, 242, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(14, 89, 242, 0); }
+}
+
+.cyber-shield i {
+    color: #ffffff;
+    font-size: 36px;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+}
+
+/* Circuit Lines */
+.circuit-line {
+    position: absolute;
+    background: linear-gradient(90deg, transparent, rgba(14, 89, 242, 0.7), transparent);
+    height: 2px;
+}
+
+.circuit-line-1 {
+    top: 30%;
+    left: 0;
+    width: 100%;
+    animation: circuit-glow 3s infinite alternate;
+}
+
+.circuit-line-2 {
+    top: 60%;
+    right: 0;
+    width: 70%;
+    animation: circuit-glow 2.5s 0.5s infinite alternate;
+}
+
+.circuit-line-3 {
+    top: 85%;
+    left: 0;
+    width: 85%;
+    animation: circuit-glow 3.5s 1s infinite alternate;
+}
+
+@keyframes circuit-glow {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.9; }
+}
+
+/* Connection Points */
+.connection-point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #0e59f2;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(14, 89, 242, 1);
+}
+
+.cp-1 {
+    top: 30%;
+    left: 20%;
+    animation: blink 2s infinite;
+}
+
+.cp-2 {
+    top: 30%;
+    right: 25%;
+    animation: blink 2s 0.7s infinite;
+}
+
+.cp-3 {
+    top: 60%;
+    right: 30%;
+    animation: blink 2s 1.2s infinite;
+}
+
+.cp-4 {
+    top: 85%;
+    left: 15%;
+    animation: blink 2s 0.3s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.3); }
+}
+
+/* Note: Ensure the image file 'cybersecurity-developer.jpg' is placed in the assets/img/vpn/ directory */
+
 .gradient-overlay {
     position: absolute;
     top: 0;
@@ -764,7 +874,7 @@
     box-shadow: 0 8px 25px rgba(45, 124, 255, 0.4);
 }
 
-.hero-actions {
+.hero-actions-1 {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -1136,27 +1246,31 @@
 }
 
 .card-security {
-    top: 5%;
+    top: 15%;
     left: -25%;
     animation-delay: 0s;
+    z-index: 20;
 }
 
 .card-speed {
     top: 30%;
-    right: -30%;
+    right: -28%;
     animation-delay: 2s;
+    z-index: 20;
 }
 
 .card-global {
-    bottom: 40%;
+    bottom: 35%;
     left: -20%;
     animation-delay: 4s;
+    z-index: 20;
 }
 
 .card-privacy {
-    bottom: 10%;
-    right: -25%;
+    bottom: 15%;
+    right: -22%;
     animation-delay: 6s;
+    z-index: 20;
 }
 
 .card-icon {
@@ -1355,12 +1469,19 @@
         font-size: clamp(2.2rem, 5vw, 3.8rem);
     }
     
-    .phone-mockup {
-        transform: perspective(1000px) rotateY(-12deg) rotateX(3deg);
+    /* Cybersecurity image responsive */
+    .cybersecurity-image-container {
+        margin-bottom: 45px;
     }
     
-    .phone-frame {
-        width: 260px;
+    .cyber-shield {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .cyber-shield i {
+        font-size: 32px;
+    }
         height: 540px;
     }
     
@@ -1389,6 +1510,37 @@
     .hero-metrics {
         gap: 32px;
         justify-content: center;
+    }
+    
+    /* Cybersecurity image responsive */
+    .cybersecurity-image-container {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .floating-elements {
+        transform: scale(0.9);
+    }
+    
+    .card-security {
+        top: 10%;
+        left: -15%;
+    }
+    
+    .card-speed {
+        top: 25%;
+        right: -20%;
+    }
+    
+    .card-global {
+        bottom: 30%;
+        left: -10%;
+    }
+    
+    .card-privacy {
+        bottom: 12%;
+        right: -15%;
+    }
         margin-top: 40px;
     }
     
@@ -1437,6 +1589,31 @@
     
     .metric {
         justify-content: center;
+    }
+    
+    /* Cybersecurity image responsive */
+    .cybersecurity-image-container {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        transform-style: flat;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .floating-elements {
+        display: none;
+    }
+    
+    .circuit-line {
+        height: 1px;
+    }
+    
+    .cyber-shield {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .cyber-shield i {
+        font-size: 28px;
     }
     
     .hero-actions {
@@ -1503,6 +1680,31 @@
     
     .metric-number {
         font-size: 1.8rem;
+    }
+    
+    /* Cybersecurity image responsive */
+    .cybersecurity-image-container {
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+    
+    .cybersecurity-image {
+        border-radius: 10px;
+    }
+    
+    .cyber-shield {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .cyber-shield i {
+        font-size: 22px;
+    }
+    
+    .connection-point {
+        width: 6px;
+        height: 6px;
+    }
     }
     
     .metric-icon {
