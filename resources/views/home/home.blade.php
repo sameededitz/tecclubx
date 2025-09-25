@@ -1878,7 +1878,7 @@
 
         .btn-premium-primary {
             background: #0E59F2;
-            color: #1e293b;
+            color: #ffffff;
             padding: 15px 30px;
             border-radius: 15px;
             text-decoration: none;
@@ -1892,7 +1892,7 @@
 
         .btn-premium-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(248, 229, 89, 0.4);
+            box-shadow: 0 15px 40px rgba(22, 119, 255, 0.4);
             color: #1e293b;
         }
 

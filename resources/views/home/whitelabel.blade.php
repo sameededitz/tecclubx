@@ -76,10 +76,6 @@
                                 <span>Start Your VPN Business</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
-                            <a href="#demo" class="btn-secondary-modern">
-                                <i class="fas fa-play-circle"></i>
-                                <span>View Live Demo</span>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -621,13 +617,13 @@
                         
                         <div class="faq-item">
                             <div class="faq-question">
-                                <h4>Do I get the source code for the applications?</h4>
+                                <h4>What platforms do you support?</h4>
                                 <div class="faq-toggle">
                                     <i class="fas fa-plus"></i>
                                 </div>
                             </div>
                             <div class="faq-answer">
-                                <p>Yes, with our Professional and Enterprise packages, you receive complete source code for all applications. This gives you full control and the ability to make future modifications. The Starter package includes compiled applications only.</p>
+                                <p>We offer Android, iOS, Windows, macOS, and Web Panel versions of your VPN, all under your branding..</p>
                             </div>
                         </div>
                         
@@ -2225,7 +2221,7 @@
 </style>
 @endsection
 
-@section('scripts')
+@section('home_scripts')
 <script>
 // FAQ Accordion Functionality
 document.addEventListener('DOMContentLoaded', function() {

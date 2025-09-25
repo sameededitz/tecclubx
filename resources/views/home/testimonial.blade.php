@@ -115,3 +115,6 @@
 @endsection
 @section('home_scripts')
 @endsection
+
+@section('styles')
+@endsection

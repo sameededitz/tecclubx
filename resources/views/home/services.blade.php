@@ -213,23 +213,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="services-cta" data-aos="fade-up" data-aos-delay="700">
-                <div class="cta-content">
-                    <h3>Ready to Transform Your Business?</h3>
-                    <p>Let's discuss how our premium solutions can drive your success</p>
-                    <div class="cta-actions">
-                        <a href="{{ route('contact') }}" class="btn-premium-primary">
-                            <span>Start Your Project</span>
-                            <i class="fas fa-rocket"></i>
-                        </a>
-                        <a href="{{ route('services') }}" class="btn-premium-outline">
-                            <span>View All Services</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Services Two Area End -->
@@ -1829,7 +1812,7 @@
 
 .btn-premium-primary {
     background: #0E59F2;
-    color: #1e293b;
+    color: #ffffff;
     padding: 15px 30px;
     border-radius: 15px;
     text-decoration: none;

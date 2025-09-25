@@ -59,10 +59,6 @@
                                 <span>Start Your VPN Business</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
-                            <a href="#demo" class="btn-secondary-modern">
-                                <i class="fas fa-play-circle"></i>
-                                <span>View Live Demo</span>
-                            </a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,31 @@
+/* Premium FAQ page styles */
+.premium-faq {
+  padding: 4rem 0;
+  background: linear-gradient(180deg,#f8fbff 0%, #f4f8ff 100%);
+}
+.premium-faq .intro { text-align:center; margin-bottom:2.25rem }
+.premium-faq .intro .section-badge { display:inline-flex; align-items:center; gap:.6rem; padding:.45rem .85rem; border-radius:999px; background:linear-gradient(90deg, rgba(45,124,255,0.08), rgba(14,89,242,0.06)); color:#0e59f2; font-weight:700 }
+.premium-faq .intro h2{ font-size:2.25rem; margin-top:.75rem; color:#0e59f2 }
+.premium-faq .intro p{ color:#596676; max-width:760px; margin:0 auto }
+
+.premium-faq .faq-grid{ display:grid; grid-template-columns: 1fr 420px; gap:1.5rem; align-items:start }
+@media (max-width:991px){ .premium-faq .faq-grid{ grid-template-columns:1fr } }
+
+.premium-faq .faq-card { background: white; border-radius:16px; padding:1.25rem; box-shadow:0 12px 30px rgba(8,20,40,0.06); border:1px solid rgba(11,22,40,0.04) }
+.premium-faq .faq-list { display:flex; flex-direction:column; gap:.75rem }
+.premium-faq .faq-item { overflow:hidden; border-radius:12px; transition:transform .22s ease; }
+.premium-faq .faq-btn { width:100%; display:flex; align-items:center; gap:1rem; padding:1rem; background:transparent; border:none; text-align:left; cursor:pointer }
+.premium-faq .faq-btn:focus { outline:3px solid rgba(45,124,255,0.14); outline-offset:3px }
+.premium-faq .faq-btn .q-left { flex:1 }
+.premium-faq .faq-btn h4{ margin:0; font-size:1.03rem; color:#07203a }
+.premium-faq .faq-btn .meta { color:#6b7280; font-size:.9rem; margin-top:.25rem }
+.premium-faq .faq-icon { width:46px; height:46px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#eef6ff,#eaf3ff); color:#0e59f2; font-weight:700 }
+
+.premium-faq .panel { max-height:0; overflow:hidden; transition: max-height .35s ease; padding:0 1rem }
+.premium-faq .panel p{ margin:1rem 0; color:#475569; line-height:1.6 }
+.premium-faq .faq-item.expanded .panel { max-height:420px }
+
+.premium-faq .sidebar { display:flex; flex-direction:column; gap:1rem }
+.premium-faq .sidebar .cta { background:linear-gradient(130deg,#0e59f2 0%,#05365b 100%); padding:1rem; color:white; border-radius:12px }
+.premium-faq .sidebar .cta h5{ margin:.25rem 0 .5rem }
+.premium-faq .sidebar .help-list { background:white; padding:1rem; border-radius:12px; box-shadow:0 10px 30px rgba(8,20,40,0.04) }
