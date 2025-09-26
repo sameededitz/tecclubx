@@ -1,5 +1,5 @@
-<!-- Footer Two Area Start -->
-<div class="footer__two">
+
+<div class="footer__two premium-footer">
     <img class="footer__two-shape" src="{{ asset('assets/img/shape/footer-two-bg.png') }}" alt="image">
     <div class="container">
         <div class="row gy-4 justify-content-between">
@@ -53,12 +53,12 @@
                             <li><a href="{{ route('vpndevelopment') }}"><i class="far fa-chevron-double-right"></i>VPN
                                     App
                                     Development</a></li>
+                                    <li><a href="{{ route('whitelabel') }}"><i class="far fa-chevron-double-right"></i>White Label Options</a></li>
                             <li><a href="{{ route('services') }}"><i class="far fa-chevron-double-right"></i>App
                                     Development</a></li>
                             <li><a href="{{ route('services') }}"><i class="far fa-chevron-double-right"></i>Web
                                     Development</a></li>
-                            <li><a href="{{ route('services') }}"><i class="far fa-chevron-double-right"></i>UI & UX
-                                    Design</a></li>
+    
                         </ul>
                     </div>
                 </div>
@@ -79,6 +79,11 @@
                                         </li>
                                     @endif
                                 @endforeach
+                            </ul>
+                        </div>
+                        <div class="footer__newsletter">
+                            <input type="email" placeholder="Your work email">
+                            <button type="button">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -105,3 +110,40 @@
     </div>
 </div>
 <!-- Footer Two Area End -->
+
+<!-- Footer Two Area Start -->
+<style>
+    /* Premium footer refinements (page-scoped) */
+    .premium-footer { background: linear-gradient(180deg,#071127 0%, #0b1730 100%); color: #dbe9ff; position: relative; padding-top: 3.25rem; }
+    .premium-footer .footer__two-shape { opacity: 0.06; filter: blur(18px); transform: translateY(-10%); }
+    .premium-footer a { color: #cfe4ff; }
+    .premium-footer a:hover { color: #fff; text-decoration: none; }
+    .premium-footer .footer__two-widget h4 { color: #ffffff; font-weight: 700; margin-bottom: .85rem }
+    .premium-footer .footer__two-widget p { color: #b7cbe6; }
+    .premium-footer .footer__two-widget-about img { border-radius: 8px; box-shadow: 0 10px 30px rgba(2,6,23,0.6); }
+    .premium-footer .footer__two-widget-about span { color:#fff; display:inline-block; vertical-align:middle }
+
+    /* Newsletter */
+    .footer__newsletter { display:flex; gap:.5rem; margin-top:.8rem; }
+    .footer__newsletter input { flex:1; padding:.62rem .75rem; border-radius:8px; border:1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02); color:#fff }
+    .footer__newsletter button { background: linear-gradient(90deg,#0b6efd,#6b7cff); color:#fff; border:none; padding:.62rem .9rem; border-radius:8px }
+
+    /* Social icons */
+    .footer__two-widget-social ul { list-style:none; margin:0; padding:0; display:flex; gap:.6rem }
+    .footer__two-widget-social li a { display:inline-flex; width:40px; height:40px; align-items:center; justify-content:center; border-radius:10px; background: rgba(255,255,255,0.03); color:#fff; transition: transform .18s ease, background .18s ease }
+    .footer__two-widget-social li a:hover { transform: translateY(-4px); background: rgba(255,255,255,0.06) }
+
+    /* Quick links & services */
+    .footer__two-widget-solution ul { list-style:none; padding:0; margin:0 }
+    .footer__two-widget-solution li { margin-bottom:.65rem }
+    .footer__two-widget-solution li i { margin-right:.6rem; color:rgba(255,255,255,0.18) }
+
+    /* Copyright */
+    .copyright__one { border-top: 1px solid rgba(255,255,255,0.04); margin-top:1.5rem; padding-top:1.2rem }
+    .copyright__one p, .copyright__one a { color: #9fb0cc }
+
+    @media (max-width: 768px) {
+        .footer__newsletter { flex-direction:column }
+        .footer__newsletter button { width:100% }
+    }
+</style>
