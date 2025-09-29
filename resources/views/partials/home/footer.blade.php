@@ -1,6 +1,5 @@
 
-<div class="footer__two premium-footer">
-    <img class="footer__two-shape" src="{{ asset('assets/img/shape/footer-two-bg.png') }}" alt="image">
+<div class="footer__two premium-footer" style="margin-top: -48px">
     <div class="container">
         <div class="row gy-4 justify-content-between">
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">

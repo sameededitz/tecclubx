@@ -48,7 +48,7 @@
                                     </span>
                                 </div>
                                 <a href="{{ route('show-blog', $blog->slug) }}" class="blog-heading">
-                                    {{ Str::limit($blog->title, 30) }}
+                                    {{ Str::words($blog->title, 3, '...') }}
                                 </a>
                                 <a href="{{ route('show-blog', $blog->slug) }}" class="btn-three">Read More
                                     <i class="fas fa-angle-right"></i>
@@ -78,24 +78,22 @@
 
     <!-- Blog With Sidebar Area End -->
 
-    <!-- Subscribe Area End -->
-    <div class="subscribe__one">
-        <div class="container">
-            <div class="row justify-content-center text-center subscribe__one-content"
-                style="background-image: url(assets/img/subscribe/subscribe-one-shape-1.png);">
-                <div class="col-xl-7 col-lg-8">
-                    <div class="subscribe__one-title">
-                        <h3>Subscribe Our newsletter </h3>
-                    </div>
-                    <form action="#" class="subscribe__one-form">
-                        <input type="email" placeholder="Enter Your Email">
-                        <button class="btn-two" type="submit">subscribe now</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Subscribe Area End -->
 @endsection
 @section('home_scripts')
+@endsection
+
+@section('styles')
+    <style>
+        /* Compact blog cards: show only 3-word titles and reduce card content height */
+        .blog__one-single-blog { border-radius:14px; overflow:hidden; box-shadow:0 18px 40px rgba(11,20,30,0.04); }
+        .blog__one-single-blog-image img { height:170px; object-fit:cover; width:100%; display:block }
+        .blog__one-single-blog-content { padding:14px; min-height:110px; display:flex; flex-direction:column; }
+        .blog-heading { font-weight:700; font-size:1.05rem; color:#071127; margin-bottom:.6rem; display:block; line-height:1.2; max-height:2.4rem; overflow:hidden; }
+        .blog__one-single-blog-content .btn-three { margin-top:auto; align-self:flex-start }
+
+        @media (min-width: 1200px) {
+            .blog__one-single-blog-image img { height:190px }
+            .blog__one-single-blog-content { min-height:120px }
+        }
+    </style>
 @endsection
