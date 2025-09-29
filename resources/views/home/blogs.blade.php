@@ -40,8 +40,8 @@
                                 <span class="date">{{ $blog->published_at->format('d') }}</span>
                                 <span class="month">{{ $blog->published_at->format('M') }}</span>
                             </div>
-                            <div class="blog__one-single-blog-content">
-                                <div class="blog__one-single-blog-content-top" style="padding: 17px;">
+                            <div class="blog__one-single-blog-content" style="padding: 17px;">
+                                <div class="blog__one-single-blog-content-top">
                                     <span>
                                         <i class="fas fa-user"></i>
                                         {{ $blog->author->name }}
