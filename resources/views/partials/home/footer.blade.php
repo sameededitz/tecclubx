@@ -67,7 +67,7 @@
                     <h4>Follow Us</h4>
                     <div class="footer__two-widget-subscribe">
                         <p>The latest news, articles, sent to your inbox weekly.</p>
-                        <div class="footer__two-widget-social">
+                        <div class="footer__two-widget-social mt-2">
                             <ul>
                                 @foreach ($socialLinks as $platform => $url)
                                     @if ($url)
@@ -79,10 +79,6 @@
                                     @endif
                                 @endforeach
                             </ul>
-                        </div>
-                        <div class="footer__newsletter">
-                            <input type="email" placeholder="Your work email">
-                            <button type="button">Subscribe</button>
                         </div>
                     </div>
                 </div>

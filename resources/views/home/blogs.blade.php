@@ -41,7 +41,7 @@
                                 <span class="month">{{ $blog->published_at->format('M') }}</span>
                             </div>
                             <div class="blog__one-single-blog-content">
-                                <div class="blog__one-single-blog-content-top">
+                                <div class="blog__one-single-blog-content-top" style="padding: 17px;">
                                     <span>
                                         <i class="fas fa-user"></i>
                                         {{ $blog->author->name }}
