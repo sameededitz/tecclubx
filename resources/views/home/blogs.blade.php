@@ -84,16 +84,37 @@
 
 @section('styles')
     <style>
-        /* Compact blog cards: show only 3-word titles and reduce card content height */
-        .blog__one-single-blog { border-radius:14px; overflow:hidden; box-shadow:0 18px 40px rgba(11,20,30,0.04); }
-        .blog__one-single-blog-image img { height:170px; object-fit:cover; width:100%; display:block }
-        .blog__one-single-blog-content { padding:14px; min-height:110px; display:flex; flex-direction:column; }
-        .blog-heading { font-weight:700; font-size:1.05rem; color:#071127; margin-bottom:.6rem; display:block; line-height:1.2; max-height:2.4rem; overflow:hidden; }
-        .blog__one-single-blog-content .btn-three { margin-top:auto; align-self:flex-start }
+        /* Show full image and compact overlay text box for premium cards */
+        .blog__one-single-blog { border-radius:14px; overflow:visible; box-shadow:0 18px 40px rgba(11,20,30,0.04); position:relative; }
 
-        @media (min-width: 1200px) {
-            .blog__one-single-blog-image img { height:190px }
-            .blog__one-single-blog-content { min-height:120px }
+        /* Image area: keep full image visible (contain) with a soft bg */
+        .blog__one-single-blog-image { background:#f6f9fc; display:flex; align-items:center; justify-content:center; padding:12px; border-top-left-radius:14px; border-top-right-radius:14px; }
+        .blog__one-single-blog-image img { width:100%; height:auto; max-height:240px; object-fit:contain; display:block; border-radius:10px; }
+
+        /* Compact overlay text box sitting on the lower part of the image */
+        .blog__one-single-blog-content {
+            position:absolute;
+            left:18px;
+            right:18px;
+            bottom:14px;
+            background: rgba(255,255,255,0.98);
+            border-radius:12px;
+            padding:10px 12px;
+            min-height:62px;
+            display:flex;
+            flex-direction:column;
+            box-shadow: 0 12px 30px rgba(11,20,30,0.06);
+        }
+
+        .blog__one-single-blog-content .blog__one-single-blog-content-top { font-size:0.86rem; color:#6b7a86; margin-bottom:6px }
+        .blog-heading { font-weight:700; font-size:1rem; color:#071127; margin:0 0 6px; display:block; line-height:1.2; overflow:hidden; }
+        .blog__one-single-blog-content .btn-three { margin-top:auto; align-self:flex-start; padding:.35rem .6rem; font-size:.9rem }
+
+        /* When stacked on small screens, make content static below image */
+        @media (max-width: 767px) {
+            .blog__one-single-blog { overflow:hidden }
+            .blog__one-single-blog-content { position:static; margin:0; padding:12px; min-height:auto; box-shadow:none; border-bottom-left-radius:14px; border-bottom-right-radius:14px }
+            .blog__one-single-blog-image img { max-height:300px }
         }
     </style>
 @endsection
