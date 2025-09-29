@@ -83,40 +83,4 @@
 @endsection
 
 @section('styles')
-    <style>
-        /* Show full image and smaller glass overlay so image remains visible */
-        .blog__one-single-blog { border-radius:14px; overflow:visible; box-shadow:0 18px 40px rgba(11,20,30,0.04); position:relative; }
-
-        /* Image area: keep full image visible (contain) with a soft bg */
-        .blog__one-single-blog-image { background:#f6f9fc; display:flex; align-items:center; justify-content:center; padding:10px; border-top-left-radius:14px; border-top-right-radius:14px; }
-        .blog__one-single-blog-image img { width:100%; height:auto; max-height:260px; object-fit:contain; display:block; border-radius:10px; }
-
-        /* Slim glass overlay sitting near the bottom of the image */
-        .blog__one-single-blog-content {
-            position:absolute;
-            left:16px;
-            right:16px;
-            bottom:12px;
-            background: rgba(255,255,255,0.88);
-            backdrop-filter: blur(6px);
-            border: 1px solid rgba(11,20,30,0.03);
-            border-radius:12px;
-            padding:8px 12px;
-            min-height:52px;
-            display:flex;
-            flex-direction:column;
-            box-shadow: 0 12px 30px rgba(11,20,30,0.05);
-        }
-
-        .blog__one-single-blog-content .blog__one-single-blog-content-top { font-size:0.82rem; color:#6b7a86; margin-bottom:4px }
-        .blog-heading { font-weight:700; font-size:0.98rem; color:#071127; margin:0 0 4px; display:block; line-height:1.15; overflow:hidden; text-overflow:ellipsis; white-space:nowrap }
-        .blog__one-single-blog-content .btn-three { margin-top:auto; align-self:flex-start; padding:.32rem .6rem; font-size:.88rem }
-
-        /* When stacked on small screens, make content static below image */
-        @media (max-width: 767px) {
-            .blog__one-single-blog { overflow:hidden }
-            .blog__one-single-blog-content { position:static; margin:0; padding:12px; min-height:auto; box-shadow:none; border-bottom-left-radius:14px; border-bottom-right-radius:14px }
-            .blog__one-single-blog-image img { max-height:300px }
-        }
-    </style>
 @endsection
