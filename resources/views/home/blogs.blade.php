@@ -67,7 +67,7 @@
             @endforelse
         </div>
         <div class="row mt-4">
-            <div class="col-12 col-xl-8">
+            <div class="col-12 col-xl-8" style="width: 100%;">
                 <div class="portfolio__two-pagination">
                     {{ $blogs->links() }}
                 </div>
@@ -75,7 +75,6 @@
         </div>
     </div>
     </div>
-
     <!-- Blog With Sidebar Area End -->
 
 @endsection
@@ -83,4 +82,9 @@
 @endsection
 
 @section('styles')
+    <style>
+        /* Ensure author line and title do not add extra bottom spacing */
+        .blog__one-single-blog-content-top { margin-bottom: 0 !important; }
+        .blog-heading { margin-bottom: 0 !important; display: block; }
+    </style>
 @endsection
