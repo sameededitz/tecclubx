@@ -34,6 +34,8 @@
                         <ul>
                             <li><a href="{{ route('about') }}"><i class="far fa-chevron-double-right"></i>About Us</a>
                             </li>
+                            <!-- <li><a href="#"><i class="far fa-chevron-double-right"></i>Our Team</a> -->
+                            </li>
                             <li><a href="{{ route('services') }}"><i class="far fa-chevron-double-right"></i>Service</a>
                             </li>
                             <li><a href="{{ route('reviews') }}"><i
@@ -96,7 +98,10 @@
                 </div>
                 <div class="col-xl-5 col-lg-6">
                     <div class="copyright__one-right">
-
+                        <a href="{{ route('terms.service') }}">Terms of Service</a>
+                        <span>|</span>
+                        <a href="{{ route('privacy.policy') }}">Privacy Policy</a>
+                        <span>|</span>
                         <a href="{{ route('contact') }}">Contact Us</a>
                     </div>
                 </div>
@@ -136,6 +141,9 @@
     /* Copyright */
     .copyright__one { border-top: 1px solid rgba(255,255,255,0.04); margin-top:1.5rem; padding-top:1.2rem }
     .copyright__one p, .copyright__one a { color: #9fb0cc }
+    .copyright__one-right { text-align: right; }
+    .copyright__one-right span { color: #9fb0cc; margin: 0 0.5rem; }
+    .copyright__one-right a:hover { color: #fff; }
 
     @media (max-width: 768px) {
         .footer__newsletter { flex-direction:column }

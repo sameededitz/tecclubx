@@ -26,7 +26,7 @@
     <!-- Banner Area End -->
 
     <!-- Request Quote Start -->
-
+    
     <div class="request-quote__area section-padding" data-aos="fade-right">
         <div class="container">
             @if (session('status'))

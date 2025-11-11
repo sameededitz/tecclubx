@@ -27,12 +27,14 @@
                                 <li><a href="{{ route('whitelabel') }}">White Label VPN</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item-has-children"><a href="{{ route('services') }}">Services</a>
+                        <li class="menu-item-has-children">
+                            <a href="{{ route('services') }}">Services</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a class="cursor-pointer">About Us</a>
                             <ul class="sub-menu">
                                 <li><a href="{{ route('about') }}">Our Company</a></li>
+                                
                                 <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
                                 <li><a href="{{ route('reviews') }}">Testimonials</a></li>
                                 <li><a href="{{ route('faqs') }}">Faq</a></li>
@@ -81,10 +83,11 @@
         <li class="has-submenu">
             <a href="#" class="submenu-trigger">About Us <span class="arrow">+</span></a>
             <ul class="mobile-submenu">
-                <li><a href="{{ route('about') }}">Our Company</a></li>
-                <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
-                <li><a href="{{ route('reviews') }}">Testimonials</a></li>
-                <li><a href="{{ route('faqs') }}">FAQ</a></li>
+                                <li><a href="{{ route('about') }}">Our Company</a></li>
+                                <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                                <li><a href="{{ route('reviews') }}">Testimonials</a></li>
+                                <li><a href="{{ route('faqs') }}">FAQ</a></li>
+                                <li><a href="{{ route('privacy.policy') }}">Privacy Policy</a></li>
             </ul>
         </li>
         <li><a href="{{ route('blogs') }}">Blog</a></li>

@@ -35,7 +35,7 @@
                             <i class="flaticon-consultant"></i>
                             <div class="experience-bar-right">
                                 <div class="experience-bar-counter">
-                                    <h4 class="counter">5</h4>
+                                    <h4 class="counter">7</h4>
                                     <span>+</span>
                                 </div>
                                 <span>Years Experience</span>
@@ -55,11 +55,11 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7 col-md-9" data-aos="fade-left">
-                    <div class="about__one-content">
+                                        <div class="about__one-content">
                         <span class="subtitle-one">About us</span>
-                        <h2>What We’re All About</h2>
+                        <h2>What We're All About</h2>
                         <p>At TecClub, we are passionate about transforming ideas into powerful digital solutions. With
-                            over five years of experience in the industry, our team specializes in delivering top-notch
+                            over seven years of experience in the industry, our team specializes in delivering top-notch
                             services in app development, web development, UX/UI design, and digital marketing, Graphics
                             Designing , Search Engine Optimization (SEO).</p>
                         <div class="about__one-content-service">

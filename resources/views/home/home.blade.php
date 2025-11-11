@@ -522,7 +522,7 @@
                         <span class="subtitle-one">About us</span>
                         <h2>What We’re All About</h2>
                         <p>At TecClub, we are passionate about transforming ideas into powerful digital solutions. With
-                            over five years of experience in the industry, our team specializes in delivering top-notch
+                            over seven years of experience in the industry, our team specializes in delivering top-notch
                             services in app development, web development, UX/UI design, and digital marketing, Graphics
                             Designing , Search Engine Optimization (SEO).</p>
                         <div class="about__one-content-service">
@@ -3369,5 +3369,6 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
+{{-- All Home Page Styles moved to /public/assets/css/custom.css --}}
     </style>
 @endsection

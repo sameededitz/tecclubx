@@ -18,6 +18,15 @@ Route::get('/services', [HomeController::class, 'service'])->name('services');
 
 Route::get('/faqs', [HomeController::class, 'faq'])->name('faqs');
 Route::get('/testimonial', [HomeController::class, 'testimonial'])->name('reviews');
+// Route removed: case-studies
+Route::get('/development-process', [HomeController::class, 'developmentProcess'])->name('development.process');
+Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('privacy.policy');
+Route::get('/terms-of-service', [HomeController::class, 'termsOfService'])->name('terms.service');
+Route::get('/security-policy', [HomeController::class, 'securityPolicy'])->name('security.policy');
+// Route removed: our-team
+// Routes removed: nda, nda.request, nda.download
+
+Route::post('/contact', [HomeController::class, 'contactSubmit'])->name('contact.submit');
 
 
 Route::get('/portfolios', [HomeController::class, 'portfolio'])->name('portfolio');

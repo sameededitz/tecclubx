@@ -2218,6 +2218,7 @@
         font-size: 1rem;
     }
 }
+{{-- White Label Page Styles moved to /public/assets/css/custom.css --}}
 </style>
 @endsection
 

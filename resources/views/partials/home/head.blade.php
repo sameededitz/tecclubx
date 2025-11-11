@@ -13,6 +13,10 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicon-32x32.png') }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicon-16x16.png') }}">
 <link rel="manifest" href="{{ asset('assets/img/site.webmanifest') }}">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
@@ -32,7 +36,7 @@
 <link rel="stylesheet" href="{{ asset('assets/css/meanmenu.min.css') }}">
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ asset('assets/sass/style.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}?v={{ time() }}">
 
 {{-- AOS Animation --}}
 {{-- 

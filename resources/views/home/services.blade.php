@@ -218,83 +218,124 @@
     <!-- Services Two Area End -->
 
     <!-- Service Process Section Start -->
-    <div class="service-process section-padding">
+    <div class="service-work-process section-padding" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
         <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-xl-7 col-lg-8">
-                    <div class="section-title">
-                        <span class="subtitle-one">Our Process</span>
-                        <h2>How We Work</h2>
-                        <p class="mb-5">Our streamlined development process ensures quality delivery and client <br> satisfaction at every step</p>
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="work-section-header" data-aos="fade-up">
+                        <div class="section-badge-work">
+                            <i class="fas fa-cogs"></i>
+                            <span>OUR PROCESS</span>
+                        </div>
+                        <h2 class="work-title">How We Work</h2>
+                        <p class="work-description">
+                            Our Streamlined Development Process Ensures Quality Delivery And Client<br>Satisfaction At Every Step
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="process-step">
-                        <div class="step-number">01</div>
-                        <div class="step-icon">
-                            <i class="fas fa-lightbulb"></i>
+            
+            <div class="work-process-grid">
+                <div class="work-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="work-step-inner">
+                        <div class="work-number-wrapper">
+                            <div class="work-number">01</div>
                         </div>
-                        <div class="step-content">
+                        <div class="work-icon-box">
+                            <div class="work-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                        <div class="work-content">
                             <h4>Discovery</h4>
-                            <p>We analyze your requirements, understand your business goals, and define project scope</p>
-                            <ul class="step-features">
-                                <li>Requirement Analysis</li>
-                                <li>Market Research</li>
-                                <li>Goal Setting</li>
+                            <p>We Analyze Your Requirements, Understand Your Business Goals, And Define Project Scope</p>
+                            <ul class="work-points">
+                                <li><i class="fas fa-check-circle"></i> Requirement Analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Market Research</li>
+                                <li><i class="fas fa-check-circle"></i> Goal Setting</li>
                             </ul>
+                        </div>
+                        <div class="work-step-decoration">
+                            <div class="decoration-circle circle-1"></div>
+                            <div class="decoration-circle circle-2"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="process-step">
-                        <div class="step-number">02</div>
-                        <div class="step-icon">
-                            <i class="fas fa-drafting-compass"></i>
+
+                <div class="work-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="work-step-inner">
+                        <div class="work-number-wrapper">
+                            <div class="work-number">02</div>
                         </div>
-                        <div class="step-content">
+                        <div class="work-icon-box">
+                            <div class="work-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                        </div>
+                        <div class="work-content">
                             <h4>Planning</h4>
-                            <p>We create detailed project plans, wireframes, and choose the best technology stack</p>
-                            <ul class="step-features">
-                                <li>Project Planning</li>
-                                <li>UI/UX Design</li>
-                                <li>Technology Selection</li>
+                            <p>We Create Detailed Project Plans, Wireframes, And Choose The Best Technology Stack</p>
+                            <ul class="work-points">
+                                <li><i class="fas fa-check-circle"></i> Project Planning</li>
+                                <li><i class="fas fa-check-circle"></i> UI/UX Design</li>
+                                <li><i class="fas fa-check-circle"></i> Technology Selection</li>
                             </ul>
+                        </div>
+                        <div class="work-step-decoration">
+                            <div class="decoration-circle circle-1"></div>
+                            <div class="decoration-circle circle-2"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="process-step">
-                        <div class="step-number">03</div>
-                        <div class="step-icon">
-                            <i class="fas fa-code"></i>
+
+                <div class="work-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="work-step-inner">
+                        <div class="work-number-wrapper">
+                            <div class="work-number">03</div>
                         </div>
-                        <div class="step-content">
+                        <div class="work-icon-box">
+                            <div class="work-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="work-content">
                             <h4>Development</h4>
-                            <p>Our expert developers bring your ideas to life with clean, scalable, and efficient code</p>
-                            <ul class="step-features">
-                                <li>Clean Coding</li>
-                                <li>Quality Testing</li>
-                                <li>Regular Updates</li>
+                            <p>Our Expert Developers Bring Your Ideas To Life With Clean, Scalable, And Efficient Code</p>
+                            <ul class="work-points">
+                                <li><i class="fas fa-check-circle"></i> Clean Coding</li>
+                                <li><i class="fas fa-check-circle"></i> Quality Testing</li>
+                                <li><i class="fas fa-check-circle"></i> Regular Updates</li>
                             </ul>
+                        </div>
+                        <div class="work-step-decoration">
+                            <div class="decoration-circle circle-1"></div>
+                            <div class="decoration-circle circle-2"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="process-step">
-                        <div class="step-number">04</div>
-                        <div class="step-icon">
-                            <i class="fas fa-rocket"></i>
+
+                <div class="work-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="work-step-inner">
+                        <div class="work-number-wrapper">
+                            <div class="work-number">04</div>
                         </div>
-                        <div class="step-content">
+                        <div class="work-icon-box">
+                            <div class="work-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <div class="work-content">
                             <h4>Launch</h4>
-                            <p>We deploy your project and provide ongoing support to ensure everything runs smoothly</p>
-                            <ul class="step-features">
-                                <li>Deployment</li>
-                                <li>Testing & QA</li>
-                                <li>Ongoing Support</li>
+                            <p>We Deploy Your Project And Provide Ongoing Support To Ensure Everything Runs Smoothly</p>
+                            <ul class="work-points">
+                                <li><i class="fas fa-check-circle"></i> Deployment</li>
+                                <li><i class="fas fa-check-circle"></i> Testing & QA</li>
+                                <li><i class="fas fa-check-circle"></i> Ongoing Support</li>
                             </ul>
+                        </div>
+                        <div class="work-step-decoration">
+                            <div class="decoration-circle circle-1"></div>
+                            <div class="decoration-circle circle-2"></div>
                         </div>
                     </div>
                 </div>
@@ -419,290 +460,294 @@
     </div>
     <!-- Why Choose Us Section End -->
 
-    <!-- Technologies Section Start -->
-    <div class="technologies-section section-padding">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-xl-7 col-lg-8">
-                    <div class="section-title">
-                        <span class="subtitle-one">Technologies</span>
-                        <h2>Technologies We Use</h2>
-                        <p>We leverage cutting-edge technologies to build robust and scalable solutions</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Frontend Technologies -->
-            <div class="tech-category">
-                <div class="row justify-content-center text-center mb-4">
-                    <div class="col-12">
-                        <h3 class="category-title">Frontend Development</h3>
-                    </div>
-                </div>
-                <div class="row g-4">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <h5>React.js</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="150">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-vuejs"></i>
-                            </div>
-                            <h5>Vue.js</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-angular"></i>
-                            </div>
-                            <h5>Angular</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="250">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <h5>JavaScript</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Backend Technologies -->
-            <div class="tech-category">
-                <div class="row justify-content-center text-center mb-4">
-                    <div class="col-12">
-                        <h3 class="category-title">Backend Development</h3>
-                    </div>
-                </div>
-                <div class="row g-4">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-laravel"></i>
-                            </div>
-                            <h5>Laravel</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="150">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <h5>Node.js</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <h5>Python</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="250">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-php"></i>
-                            </div>
-                            <h5>PHP</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mobile Technologies -->
-            <div class="tech-category">
-                <div class="row justify-content-center text-center mb-4">
-                    <div class="col-12">
-                        <h3 class="category-title">Mobile Development</h3>
-                    </div>
-                </div>
-                <div class="row g-4">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-android"></i>
-                            </div>
-                            <h5>Android</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="150">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-apple"></i>
-                            </div>
-                            <h5>iOS</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fas fa-mobile-alt"></i>
-                            </div>
-                            <h5>Flutter</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="250">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <h5>React Native</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Design Tools -->
-            <div class="tech-category">
-                <div class="row justify-content-center text-center mb-4">
-                    <div class="col-12">
-                        <h3 class="category-title">Design Tools</h3>
-                    </div>
-                </div>
-                <div class="row g-4">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-figma"></i>
-                            </div>
-                            <h5>Figma</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="150">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fas fa-palette"></i>
-                            </div>
-                            <h5>Adobe XD</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fab fa-sketch"></i>
-                            </div>
-                            <h5>Sketch</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="250">
-                        <div class="tech-card">
-                            <div class="tech-icon">
-                                <i class="fas fa-paint-brush"></i>
-                            </div>
-                            <h5>Photoshop</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Technologies Section End -->
 @endsection
 @section('home_scripts')
 <style>
-/* Service Process Section Styles */
-.service-process {
+/* How We Work Section - New Modern Design */
+.service-work-process {
     position: relative;
+    overflow: hidden;
 }
 
-.service-process .section-title h2 {
-    color: var(--text-heading-color);
+.work-section-header {
+    margin-bottom: 60px;
+}
+
+.section-badge-work {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    border: 2px solid #0E59F2;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-bottom: 25px;
     font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #0E59F2;
 }
 
-.service-process .section-title p {
-    color: var(--body-color);
+.section-badge-work i {
     font-size: 16px;
-    line-height: 1.6;
 }
 
-.process-step {
-    background: var(--bg-white);
-    border-radius: 15px;
-    padding: 40px 25px;
-    text-align: center;
-    box-shadow: var(--box-shadow-1);
-    transition: all 0.4s ease;
-    position: relative;
-    height: 100%;
-    border: 1px solid var(--border-color-1);
-}
-
-.process-step:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--box-shadow-2);
-    border-color: var(--primary-color-1);
-}
-
-.step-number {
-    position: absolute;
-    top: -15px;
-    left: 25px;
-    background: var(--primary-color-2);
-    color: var(--text-heading-color);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 18px;
-    font-family: var(--heading-font);
-}
-
-.step-icon {
-    width: 70px;
-    height: 70px;
-    background: rgba(14, 89, 242, 0.1);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    color: var(--primary-color-1);
-    margin: 20px auto 25px;
-}
-
-.step-content h4 {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--text-heading-color);
-    margin-bottom: 15px;
-    font-family: var(--heading-font);
-}
-
-.step-content p {
-    color: var(--body-color);
-    font-size: 15px;
-    line-height: 1.6;
+.work-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a1a1a;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
-.step-features {
+.work-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.work-process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.work-step {
+    position: relative;
+}
+
+.work-step-inner {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+}
+
+.work-step:hover .work-step-inner {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(14, 89, 242, 0.15);
+    border-color: #0E59F2;
+}
+
+.work-number-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.work-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1a1a1a;
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.4);
+    transition: all 0.3s ease;
+}
+
+.work-step:hover .work-number {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.work-icon-box {
+    margin: 80px 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.work-icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #0e59f2 0%, #2d7cff 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(14, 89, 242, 0.3);
+    transition: all 0.4s ease;
+}
+
+.work-step:hover .work-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 15px 40px rgba(14, 89, 242, 0.5);
+}
+
+.work-content {
+    text-align: center;
+}
+
+.work-content h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.work-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.work-points {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: left;
 }
 
-.step-features li {
-    background: var(--color-1);
-    color: var(--text-heading-color);
-    padding: 8px 15px;
-    margin-bottom: 5px;
-    border-radius: 8px;
+.work-points li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    background: #f8f9fa;
+    border-radius: 10px;
     font-size: 14px;
     font-weight: 600;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.work-points li:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.work-points li i {
+    color: #0E59F2;
+    font-size: 14px;
+}
+
+.work-step-decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.decoration-circle {
+    position: absolute;
+    background: linear-gradient(135deg, rgba(14, 89, 242, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);
+    border-radius: 50%;
+    animation: floatDecoration 8s ease-in-out infinite;
+}
+
+.decoration-circle.circle-1 {
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    right: -30px;
+}
+
+.decoration-circle.circle-2 {
+    width: 60px;
+    height: 60px;
+    bottom: -20px;
+    left: -20px;
+    animation-delay: 4s;
+}
+
+@keyframes floatDecoration {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+/* Responsive Design for How We Work */
+@media (max-width: 991px) {
+    .work-title {
+        font-size: 2.5rem;
+    }
+    
+    .work-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-title {
+        font-size: 2rem;
+    }
+    
+    .work-description {
+        font-size: 1rem;
+    }
+    
+    .work-process-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .work-step-inner {
+        padding: 35px 25px;
+    }
+    
+    .work-number {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .work-icon {
+        width: 75px;
+        height: 75px;
+        font-size: 32px;
+    }
+    
+    .work-content h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .work-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-badge-work {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+    
+    .work-icon-box {
+        margin: 70px 0 25px;
+    }
+    
+    .work-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+    }
+    
+    .work-points li {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
 }
 
 /* Why Choose Us Section Styles */
@@ -806,84 +851,6 @@
     font-size: 16px;
     font-weight: 600;
     color: var(--body-color);
-}
-
-/* Technologies Section Styles */
-.technologies-section {
-    background: var(--bg-white);
-    position: relative;
-}
-
-.technologies-section .section-title h2 {
-    color: var(--text-heading-color);
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.technologies-section .section-title p {
-    color: var(--body-color);
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.tech-category {
-    margin-bottom: 60px;
-}
-
-.tech-category:last-child {
-    margin-bottom: 0;
-}
-
-.category-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text-heading-color);
-    margin-bottom: 30px;
-    position: relative;
-    font-family: var(--heading-font);
-}
-
-.category-title::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: var(--primary-color-2);
-    border-radius: 2px;
-}
-
-.tech-card {
-    background: var(--bg-white);
-    border: 1px solid var(--border-color-1);
-    border-radius: 15px;
-    padding: 30px 20px;
-    text-align: center;
-    transition: all 0.4s ease;
-    height: 100%;
-    box-shadow: var(--box-shadow-1);
-}
-
-.tech-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--primary-color-1);
-    box-shadow: var(--box-shadow-2);
-}
-
-.tech-icon {
-    font-size: 48px;
-    color: var(--primary-color-1);
-    margin-bottom: 15px;
-}
-
-.tech-card h5 {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--text-heading-color);
-    margin: 0;
-    font-family: var(--heading-font);
 }
 
 /* Service Packages Section Styles */
