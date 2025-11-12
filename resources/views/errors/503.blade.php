@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under Maintenance - TecClub</title>
     <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -399,16 +400,16 @@
         <!-- Social Links -->
         <div class="social-links">
             <a href="https://facebook.com/tecclub" class="social-link" target="_blank" title="Facebook">
-                <span>📘</span>
+                <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://twitter.com/tecclub" class="social-link" target="_blank" title="Twitter">
-                <span>🐦</span>
+                <i class="fab fa-twitter"></i>
             </a>
             <a href="https://instagram.com/tecclub" class="social-link" target="_blank" title="Instagram">
-                <span>📷</span>
+                <i class="fab fa-instagram"></i>
             </a>
             <a href="https://linkedin.com/company/tecclub" class="social-link" target="_blank" title="LinkedIn">
-                <span>💼</span>
+                <i class="fab fa-linkedin-in"></i>
             </a>
         </div>
 
