@@ -3691,6 +3691,224 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
+
+        /* CRITICAL RESPONSIVE FIXES - Added by AI Assistant */
+        
+        /* Ensure all images are responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Fix tech logo images */
+        .tech-item {
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px;
+            background: #f8fafc;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .tech-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        
+        .tech-item img {
+            max-width: 100%;
+            max-height: 80px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            margin: 0 auto 15px;
+            display: block;
+        }
+        
+        .tech-item h4 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin: 0;
+            word-wrap: break-word;
+        }
+        
+        /* Fix horizontal overflow */
+        body, html {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+        
+        .container, .container-fluid {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+        
+        .row {
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+        
+        .row > * {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        
+        /* Fix brand images */
+        .brand-image-wrapper img {
+            max-width: 100% !important;
+            max-height: 60px !important;
+            width: auto !important;
+            height: auto !important;
+            object-fit: contain !important;
+        }
+        
+        /* Fix main banner image */
+        .main-banner-image {
+            max-width: 100% !important;
+            height: auto !important;
+            width: 100% !important;
+            object-fit: cover;
+        }
+        
+        /* Additional mobile fixes */
+        @media (max-width: 767px) {
+            .tech-item {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .tech-item img {
+                max-height: 60px;
+                margin-bottom: 10px;
+            }
+            
+            .tech-item h4 {
+                font-size: 0.85rem;
+            }
+            
+            .banner-image-wrapper {
+                margin-top: 30px;
+            }
+            
+            .premium-brand-wrapper {
+                padding: 30px 15px !important;
+            }
+            
+            .brand-slider-container {
+                margin-bottom: 30px;
+            }
+            
+            .trust-indicators {
+                gap: 15px !important;
+            }
+            
+            .trust-item {
+                padding: 15px !important;
+                min-width: 130px !important;
+            }
+            
+            /* Fix col-6 spacing on mobile */
+            .col-6 {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .tech-item {
+                padding: 12px;
+            }
+            
+            .tech-item img {
+                max-height: 50px;
+            }
+            
+            .tech-item h4 {
+                font-size: 0.8rem;
+            }
+            
+            .col-6 {
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+            
+            .premium-services-grid {
+                gap: 15px !important;
+            }
+            
+            .service-card-inner {
+                padding: 20px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .tech-item img {
+                max-height: 45px;
+            }
+            
+            .tech-item h4 {
+                font-size: 0.75rem;
+            }
+            
+            .banner-title {
+                font-size: 1.8rem !important;
+            }
+            
+            .section-title {
+                font-size: 1.6rem !important;
+            }
+        }
+        
+        /* Fix portfolio slider overflow */
+        .portfolio__one-slider {
+            overflow: visible !important;
+        }
+        
+        .swiper-wrapper {
+            overflow: visible !important;
+        }
+        
+        /* Ensure Bootstrap grid doesn't break */
+        .container {
+            max-width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+        
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1320px;
+            }
+        }
+        
+        /* END CRITICAL RESPONSIVE FIXES */
 {{-- All Home Page Styles moved to /public/assets/css/custom.css --}}
     </style>
 @endsection

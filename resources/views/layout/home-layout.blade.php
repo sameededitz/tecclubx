@@ -12,8 +12,6 @@
     </div>
     <!-- Preloader End -->
 
-    @include('partials.home.top-bar')
-
     @include('partials.home.navbar')
 
     @yield('home_content')

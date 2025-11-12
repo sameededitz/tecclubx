@@ -35,7 +35,7 @@
 <!-- Mean Menu CSS -->
 <link rel="stylesheet" href="{{ asset('assets/css/meanmenu.min.css') }}">
 <!-- Custom CSS -->
-<link rel="stylesheet" href="{{ asset('assets/sass/style.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/sass/style.css') }}?v={{ time() }}">
 <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}?v={{ time() }}">
 
 {{-- AOS Animation --}}
