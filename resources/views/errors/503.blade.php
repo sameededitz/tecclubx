@@ -399,13 +399,11 @@
 
         <!-- Social Links -->
         <div class="social-links">
-            <a href="https://facebook.com/tecclub" class="social-link" target="_blank" title="Facebook">
+            <a href="https://www.facebook.com/me" class="social-link" target="_blank" title="Facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://twitter.com/tecclub" class="social-link" target="_blank" title="Twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com/tecclub" class="social-link" target="_blank" title="Instagram">
+        
+            <a href="https://www.instagram.com/tecclubx" class="social-link" target="_blank" title="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
             <a href="https://linkedin.com/company/tecclub" class="social-link" target="_blank" title="LinkedIn">
