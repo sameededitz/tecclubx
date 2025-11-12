@@ -1652,6 +1652,8 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
         }
 
         .gradient-overlay {
@@ -1667,6 +1669,8 @@
             position: absolute;
             width: 100%;
             height: 100%;
+            overflow: hidden;
+            pointer-events: none;
         }
 
         .floating-shapes .shape {
@@ -1674,6 +1678,7 @@
             background: linear-gradient(45deg, rgba(14, 89, 242, 0.1), rgba(245, 204, 21, 0.1));
             border-radius: 50%;
             animation: float 8s ease-in-out infinite;
+            will-change: transform;
         }
 
         .shape.shape-1 {
@@ -1720,6 +1725,8 @@
             position: absolute;
             width: 100%;
             height: 100%;
+            overflow: hidden;
+            pointer-events: none;
         }
 
         .banner-particles .particle {
@@ -1729,6 +1736,7 @@
             background: #F8E559;
             border-radius: 50%;
             animation: sparkle 3s linear infinite;
+            will-change: opacity, transform;
         }
 
         .particle.particle-1 {
@@ -3006,11 +3014,30 @@
             }
             
             .team-member-card {
-                padding: 25px;
+                padding: 25px 20px;
+                border-radius: 22px;
+            }
+            
+            .card-glow {
+                border-radius: 22px;
+            }
+            
+            .member-header {
+                margin-bottom: 22px;
             }
             
             .member-name {
                 font-size: 1.3rem;
+            }
+            
+            .member-description {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+            
+            .member-specialties {
+                gap: 8px;
+                margin-bottom: 22px;
             }
         }
 
@@ -3272,6 +3299,17 @@
         }
 
         /*team section styles*/
+        .team-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
         .floating-shapes {
             position: absolute;
             width: 100%;
@@ -3692,23 +3730,68 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
-        /* CRITICAL RESPONSIVE FIXES - Added by AI Assistant */
+        /* ========================================
+           COMPLETE MOBILE RESPONSIVE FIXES
+           ======================================== */
         
-        /* Ensure all images are responsive */
+        /* ===== GLOBAL FIXES ===== */
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            overflow-x: hidden !important;
+            max-width: 100vw !important;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden !important;
+            max-width: 100vw !important;
+            position: relative;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
         img {
             max-width: 100%;
             height: auto;
             display: block;
         }
         
-        /* Fix tech logo images */
+        .container, .container-fluid {
+            overflow-x: hidden !important;
+            max-width: 100% !important;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .row {
+            margin-left: -12px;
+            margin-right: -12px;
+            overflow-x: hidden;
+        }
+        
+        .row > * {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        
+        /* ===== TECHNOLOGY SECTION FIXES ===== */
         .tech-item {
-            padding: 20px;
+            padding: 15px 10px;
             text-align: center;
             border-radius: 12px;
             background: #f8fafc;
             transition: all 0.3s ease;
             border: 1px solid #e2e8f0;
+            height: auto;
+            min-height: 130px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         .tech-item:hover {
@@ -3718,54 +3801,44 @@
         }
         
         .tech-item img {
-            max-width: 100%;
-            max-height: 80px;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            margin: 0 auto 15px;
+            max-width: 90% !important;
+            max-height: 70px !important;
+            width: auto !important;
+            height: auto !important;
+            object-fit: contain !important;
+            margin: 0 auto 12px;
             display: block;
         }
         
         .tech-item h4 {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             color: #1e293b;
             margin: 0;
             word-wrap: break-word;
+            line-height: 1.3;
+            text-align: center;
         }
         
-        /* Fix horizontal overflow */
-        body, html {
-            overflow-x: hidden;
-            max-width: 100%;
+        /* ===== BRAND SECTION FIXES ===== */
+        .brand-image-wrapper {
+            padding: 15px !important;
+            height: 70px !important;
         }
         
-        .container, .container-fluid {
-            overflow-x: hidden;
-            max-width: 100%;
-        }
-        
-        .row {
-            margin-left: -12px;
-            margin-right: -12px;
-        }
-        
-        .row > * {
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-        
-        /* Fix brand images */
         .brand-image-wrapper img {
             max-width: 100% !important;
-            max-height: 60px !important;
+            max-height: 50px !important;
             width: auto !important;
             height: auto !important;
             object-fit: contain !important;
         }
         
-        /* Fix main banner image */
+        .premium-brand-item {
+            height: 80px !important;
+        }
+        
+        /* ===== BANNER IMAGE FIXES ===== */
         .main-banner-image {
             max-width: 100% !important;
             height: auto !important;
@@ -3773,57 +3846,169 @@
             object-fit: cover;
         }
         
-        /* Additional mobile fixes */
-        @media (max-width: 767px) {
-            .tech-item {
-                padding: 15px;
-                margin-bottom: 15px;
+        .banner-image-wrapper {
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        /* ===== RESPONSIVE BREAKPOINTS ===== */
+        
+        /* Large tablets and small desktops */
+        @media (max-width: 991px) {
+            .premium-banner-section {
+                padding: 80px 0 60px;
+                min-height: auto;
             }
             
-            .tech-item img {
-                max-height: 60px;
-                margin-bottom: 10px;
+            .banner-title {
+                font-size: 2.5rem;
+                line-height: 1.2;
             }
             
-            .tech-item h4 {
-                font-size: 0.85rem;
+            .section-title {
+                font-size: 2.2rem;
             }
             
-            .banner-image-wrapper {
-                margin-top: 30px;
+            .team-main-title {
+                font-size: 2.5rem;
             }
             
             .premium-brand-wrapper {
-                padding: 30px 15px !important;
-            }
-            
-            .brand-slider-container {
-                margin-bottom: 30px;
+                padding: 40px 25px;
             }
             
             .trust-indicators {
-                gap: 15px !important;
-            }
-            
-            .trust-item {
-                padding: 15px !important;
-                min-width: 130px !important;
-            }
-            
-            /* Fix col-6 spacing on mobile */
-            .col-6 {
-                padding-left: 8px;
-                padding-right: 8px;
+                justify-content: center;
+                gap: 20px;
             }
         }
         
-        @media (max-width: 576px) {
+        /* Tablets */
+        @media (max-width: 768px) {
+            .premium-banner-section {
+                padding: 60px 0 40px;
+            }
+            
+            .banner-title {
+                font-size: 2.2rem;
+                margin-bottom: 20px;
+            }
+            
+            .banner-description {
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .team-main-title {
+                font-size: 2.2rem;
+            }
+            
+            .banner-badge {
+                padding: 10px 18px;
+                margin-bottom: 25px;
+            }
+            
+            .badge-text {
+                font-size: 0.85rem;
+            }
+            
+            .banner-features {
+                gap: 12px;
+                margin-bottom: 30px;
+            }
+            
+            .feature-item {
+                font-size: 0.9rem;
+            }
+            
+            .banner-actions {
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            .btn-premium-primary,
+            .btn-premium-secondary {
+                width: 100%;
+                justify-content: center;
+                padding: 12px 24px;
+                font-size: 0.95rem;
+            }
+            
+            .banner-stats {
+                justify-content: center;
+                gap: 25px;
+                flex-wrap: wrap;
+            }
+            
+            .stat-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 5px;
+                min-width: 100px;
+            }
+            
+            .stat-number {
+                font-size: 2.2rem;
+            }
+            
+            .stat-symbol {
+                font-size: 1.6rem;
+            }
+            
+            .banner-image-wrapper {
+                margin-top: 40px;
+            }
+            
+            .premium-brand-wrapper {
+                padding: 35px 20px;
+                border-radius: 18px;
+            }
+            
+            .brand-title {
+                font-size: 1.8rem;
+            }
+            
+            .brand-description {
+                font-size: 1rem;
+            }
+            
+            .brand-slider-container {
+                margin-bottom: 35px;
+            }
+            
+            .trust-indicators {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+            
+            .trust-item {
+                flex: 0 1 calc(50% - 10px);
+                padding: 18px 20px;
+                min-width: 140px;
+            }
+            
+            .trust-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+            
+            .trust-number {
+                font-size: 1.6rem;
+            }
+            
             .tech-item {
-                padding: 12px;
+                padding: 12px 8px;
+                min-height: 110px;
             }
             
             .tech-item img {
-                max-height: 50px;
+                max-height: 55px !important;
+                margin-bottom: 10px;
             }
             
             .tech-item h4 {
@@ -3831,38 +4016,606 @@
             }
             
             .col-6 {
-                padding-left: 6px;
-                padding-right: 6px;
-            }
-            
-            .premium-services-grid {
-                gap: 15px !important;
+                padding-left: 8px;
+                padding-right: 8px;
             }
             
             .service-card-inner {
-                padding: 20px !important;
+                padding: 28px 24px;
+            }
+            
+            .service-title {
+                font-size: 1.4rem;
+            }
+            
+            .service-description {
+                font-size: 0.95rem;
+            }
+            
+            .services-cta {
+                padding: 40px 25px;
+                border-radius: 20px;
+            }
+            
+            .cta-content h3 {
+                font-size: 1.8rem;
+            }
+            
+            .cta-actions {
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            .team-subtitle {
+                font-size: 1.05rem;
+                margin-bottom: 50px;
+            }
+            
+            .section-divider {
+                margin: 50px 0 35px;
+            }
+            
+            .divider-text {
+                font-size: 0.95rem;
+                padding: 0 16px;
+            }
+            
+            .team-member-card {
+                padding: 25px 20px;
+            }
+            
+            .member-name {
+                font-size: 1.35rem;
+            }
+            
+            .member-title {
+                font-size: 0.95rem;
             }
         }
         
-        @media (max-width: 480px) {
+        /* Mobile Large */
+        @media (max-width: 576px) {
+            .premium-banner-section {
+                padding: 50px 0 30px;
+            }
+            
+            .banner-title {
+                font-size: 1.9rem;
+                line-height: 1.25;
+                margin-bottom: 18px;
+            }
+            
+            .banner-description {
+                font-size: 0.95rem;
+                margin-bottom: 22px;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+                line-height: 1.3;
+            }
+            
+            .team-main-title {
+                font-size: 1.9rem;
+                line-height: 1.3;
+            }
+            
+            .banner-badge {
+                padding: 8px 16px;
+                margin-bottom: 20px;
+            }
+            
+            .badge-icon {
+                width: 22px;
+                height: 22px;
+                font-size: 11px;
+            }
+            
+            .badge-text {
+                font-size: 0.8rem;
+            }
+            
+            .banner-features {
+                gap: 10px;
+                margin-bottom: 25px;
+            }
+            
+            .feature-item {
+                font-size: 0.85rem;
+                gap: 8px;
+            }
+            
+            .feature-icon {
+                width: 20px;
+                height: 20px;
+                font-size: 10px;
+            }
+            
+            .btn-premium-primary,
+            .btn-premium-secondary {
+                padding: 11px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .banner-stats {
+                gap: 18px;
+            }
+            
+            .stat-item {
+                min-width: 90px;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .stat-symbol {
+                font-size: 1.4rem;
+            }
+            
+            .stat-label {
+                font-size: 0.85rem;
+            }
+            
+            .premium-brand-wrapper {
+                padding: 30px 15px;
+                border-radius: 15px;
+            }
+            
+            .brand-title {
+                font-size: 1.6rem;
+                margin-bottom: 12px;
+            }
+            
+            .brand-description {
+                font-size: 0.95rem;
+            }
+            
+            .brand-badge {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .trust-indicators {
+                gap: 12px;
+            }
+            
+            .trust-item {
+                flex: 1 1 100%;
+                max-width: 160px;
+                padding: 16px 18px;
+                min-width: 130px;
+            }
+            
+            .trust-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 16px;
+            }
+            
+            .trust-number {
+                font-size: 1.5rem;
+            }
+            
+            .trust-label {
+                font-size: 0.85rem;
+            }
+            
+            .tech-item {
+                padding: 10px 6px;
+                min-height: 100px;
+            }
+            
             .tech-item img {
-                max-height: 45px;
+                max-height: 48px !important;
+                margin-bottom: 8px;
             }
             
             .tech-item h4 {
                 font-size: 0.75rem;
+                line-height: 1.2;
             }
             
-            .banner-title {
-                font-size: 1.8rem !important;
+            .col-6 {
+                padding-left: 6px;
+                padding-right: 6px;
+                margin-bottom: 10px;
             }
             
-            .section-title {
-                font-size: 1.6rem !important;
+            .premium-services-grid {
+                gap: 15px;
+            }
+            
+            .service-card-inner {
+                padding: 24px 20px;
+            }
+            
+            .service-icon {
+                width: 65px;
+                height: 65px;
+                font-size: 28px;
+            }
+            
+            .service-title {
+                font-size: 1.25rem;
+            }
+            
+            .service-description {
+                font-size: 0.9rem;
+            }
+            
+            .service-features li {
+                font-size: 0.85rem;
+            }
+            
+            .services-cta {
+                padding: 35px 20px;
+            }
+            
+            .cta-content h3 {
+                font-size: 1.6rem;
+            }
+            
+            .cta-content p {
+                font-size: 0.95rem;
+            }
+            
+            .team-subtitle {
+                font-size: 1rem;
+                margin-bottom: 45px;
+            }
+            
+            .section-divider {
+                margin: 45px 0 30px;
+                gap: 12px;
+            }
+            
+            .divider-text {
+                font-size: 0.9rem;
+                padding: 0 14px;
+            }
+            
+            .team-member-card {
+                padding: 20px 16px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .card-glow {
+                border-radius: 20px;
+            }
+            
+            .member-header {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 20px;
+            }
+            
+            .member-avatar {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .avatar-ring {
+                top: -4px;
+                left: -4px;
+                right: -4px;
+                bottom: -4px;
+                border-width: 2px;
+            }
+            
+            .avatar-image {
+                width: 70px;
+                height: 70px;
+                font-size: 28px;
+            }
+            
+            .status-indicator {
+                width: 16px;
+                height: 16px;
+                border-width: 2px;
+                bottom: 3px;
+                right: 3px;
+            }
+            
+            .member-role-badge {
+                padding: 6px 14px;
+                font-size: 0.8rem;
+                gap: 6px;
+            }
+            
+            .member-role-badge i {
+                font-size: 12px;
+            }
+            
+            .member-info {
+                text-align: center;
+            }
+            
+            .member-name {
+                font-size: 1.25rem;
+                margin-bottom: 6px;
+            }
+            
+            .member-title {
+                font-size: 0.9rem;
+                margin-bottom: 12px;
+            }
+            
+            .member-description {
+                font-size: 0.88rem;
+                line-height: 1.5;
+                margin-bottom: 16px;
+            }
+            
+            .member-specialties {
+                justify-content: center;
+                gap: 6px;
+                margin-bottom: 20px;
+            }
+            
+            .specialty {
+                font-size: 0.72rem;
+                padding: 5px 10px;
+            }
+            
+            .social-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
             }
         }
         
-        /* Fix portfolio slider overflow */
+        /* Mobile Small */
+        @media (max-width: 480px) {
+            .premium-banner-section {
+                padding: 40px 0 25px;
+            }
+            
+            .banner-title {
+                font-size: 1.7rem;
+                line-height: 1.25;
+            }
+            
+            .banner-description {
+                font-size: 0.9rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .team-main-title {
+                font-size: 1.7rem;
+            }
+            
+            .btn-premium-primary,
+            .btn-premium-secondary {
+                padding: 10px 18px;
+                font-size: 0.85rem;
+            }
+            
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            
+            .stat-symbol {
+                font-size: 1.3rem;
+            }
+            
+            .premium-brand-wrapper {
+                padding: 25px 12px;
+            }
+            
+            .brand-title {
+                font-size: 1.5rem;
+            }
+            
+            .trust-item {
+                padding: 14px 16px;
+                min-width: 120px;
+            }
+            
+            .tech-item {
+                padding: 8px 5px;
+                min-height: 95px;
+            }
+            
+            .tech-item img {
+                max-height: 42px !important;
+                margin-bottom: 6px;
+            }
+            
+            .tech-item h4 {
+                font-size: 0.7rem;
+            }
+            
+            .service-card-inner {
+                padding: 20px 16px;
+            }
+            
+            .service-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 26px;
+            }
+            
+            .service-title {
+                font-size: 1.15rem;
+            }
+            
+            .services-cta {
+                padding: 30px 16px;
+            }
+            
+            .cta-content h3 {
+                font-size: 1.5rem;
+            }
+            
+            .team-member-card {
+                padding: 18px 14px;
+                border-radius: 18px;
+            }
+            
+            .card-glow {
+                border-radius: 18px;
+            }
+            
+            .member-avatar {
+                width: 65px;
+                height: 65px;
+            }
+            
+            .avatar-ring {
+                border-width: 2px;
+            }
+            
+            .avatar-image {
+                width: 65px;
+                height: 65px;
+                font-size: 26px;
+            }
+            
+            .status-indicator {
+                width: 14px;
+                height: 14px;
+            }
+            
+            .member-role-badge {
+                padding: 5px 12px;
+                font-size: 0.75rem;
+            }
+            
+            .member-name {
+                font-size: 1.15rem;
+            }
+            
+            .member-title {
+                font-size: 0.85rem;
+            }
+            
+            .member-description {
+                font-size: 0.85rem;
+            }
+            
+            .specialty {
+                font-size: 0.7rem;
+                padding: 4px 9px;
+            }
+        }
+        
+        /* Mobile Extra Small */
+        @media (max-width: 375px) {
+            .banner-title {
+                font-size: 1.6rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .team-main-title {
+                font-size: 1.6rem;
+            }
+            
+            .stat-number {
+                font-size: 1.6rem;
+            }
+            
+            .tech-item {
+                min-height: 90px;
+            }
+            
+            .tech-item img {
+                max-height: 38px !important;
+            }
+            
+            .tech-item h4 {
+                font-size: 0.68rem;
+            }
+            
+            .trust-item {
+                min-width: 110px;
+                padding: 12px 14px;
+            }
+            
+            .team-member-card {
+                padding: 16px 12px;
+                border-radius: 16px;
+            }
+            
+            .card-glow {
+                border-radius: 16px;
+            }
+            
+            .member-avatar {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .avatar-image {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+            }
+            
+            .status-indicator {
+                width: 12px;
+                height: 12px;
+            }
+            
+            .member-role-badge {
+                padding: 4px 10px;
+                font-size: 0.7rem;
+            }
+            
+            .member-name {
+                font-size: 1.1rem;
+            }
+            
+            .member-title {
+                font-size: 0.8rem;
+            }
+            
+            .member-description {
+                font-size: 0.82rem;
+            }
+            
+            .specialty {
+                font-size: 0.68rem;
+                padding: 4px 8px;
+            }
+            
+            .social-btn {
+                width: 34px;
+                height: 34px;
+                font-size: 13px;
+            }
+        }
+        
+        /* ===== ADDITIONAL FIXES ===== */
+        
+        /* Fix tabs navigation */
+        .tabs-nav {
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            flex-wrap: nowrap !important;
+        }
+        
+        .tabs-nav .nav-item {
+            flex-shrink: 0;
+        }
+        
+        @media (max-width: 576px) {
+            .tabs-nav .nav-item .nav-link {
+                padding: 8px 12px;
+                font-size: 0.85rem;
+            }
+        }
+        
+        /* Fix portfolio slider */
         .portfolio__one-slider {
             overflow: visible !important;
         }
@@ -3871,13 +4624,18 @@
             overflow: visible !important;
         }
         
-        /* Ensure Bootstrap grid doesn't break */
-        .container {
-            max-width: 100%;
-            padding-left: 15px;
-            padding-right: 15px;
+        /* Fix blog cards on mobile */
+        @media (max-width: 576px) {
+            .blog__one-single-blog {
+                margin-bottom: 25px;
+            }
+            
+            .blog__one-single-blog-content {
+                padding: 18px 16px;
+            }
         }
         
+        /* Bootstrap container fixes */
         @media (min-width: 576px) {
             .container {
                 max-width: 540px;
@@ -3908,7 +4666,7 @@
             }
         }
         
-        /* END CRITICAL RESPONSIVE FIXES */
+        /* ===== END COMPLETE MOBILE RESPONSIVE FIXES ===== */
 {{-- All Home Page Styles moved to /public/assets/css/custom.css --}}
     </style>
 @endsection
