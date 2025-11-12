@@ -103,22 +103,7 @@
                             <div class="decoration-circle circle-2"></div>
                             <div class="decoration-circle circle-3"></div>
                         </div>
-                        <div class="image-glow"></div>
                         <div class="banner-image-wrapper">
-                            <div class="floating-elements">
-                                <div class="element element-1">
-                                    <i class="fab fa-react"></i>
-                                </div>
-                                <div class="element element-2">
-                                    <i class="fab fa-laravel"></i>
-                                </div>
-                                <div class="element element-3">
-                                    <i class="fab fa-node-js"></i>
-                                </div>
-                                <div class="element element-4">
-                                    <i class="fab fa-figma"></i>
-                                </div>
-                            </div>
                             @if ($bannerimg)
                                 <img src="{{ $bannerimg->getFirstMediaUrl('section_img') ?? asset('assets/img/banner/banner-right-img.png') }}"
                                     alt="TecClub Technology Solutions" class="main-banner-image">
@@ -1594,15 +1579,23 @@
                     breakpoints: {
                         320: {
                             slidesPerView: 2,
+                            spaceBetween: 15
+                        },
+                        480: {
+                            slidesPerView: 3,
                             spaceBetween: 20
                         },
                         576: {
                             slidesPerView: 3,
-                            spaceBetween: 25
+                            spaceBetween: 20
                         },
                         768: {
                             slidesPerView: 4,
-                            spaceBetween: 30
+                            spaceBetween: 25
+                        },
+                        992: {
+                            slidesPerView: 5,
+                            spaceBetween: 25
                         },
                         1024: {
                             slidesPerView: 5,
@@ -1636,6 +1629,20 @@
             overflow: hidden;
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
             padding: 120px 0;
+        }
+        
+        @media (max-width: 1200px) {
+            .premium-banner-section {
+                padding: 100px 0;
+                min-height: 90vh;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .premium-banner-section {
+                padding: 80px 0;
+                min-height: 85vh;
+            }
         }
 
         .banner-background {
@@ -2019,60 +2026,30 @@
             border-radius: 25px;
         }
 
-        .floating-elements {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
-
-        .floating-elements .element {
-            position: absolute;
-            background: rgba(14, 89, 242, 0.9);
-            backdrop-filter: blur(10px);
-            width: 60px;
-            height: 60px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 24px;
-            animation: float 6s ease-in-out infinite;
-            box-shadow: 0 10px 30px rgba(14, 89, 242, 0.3);
-        }
-
-        .element.element-1 {
-            top: 10%;
-            left: -30px;
-            animation-delay: 0s;
-        }
-
-        .element.element-2 {
-            top: 30%;
-            right: -30px;
-            animation-delay: 1.5s;
-        }
-
-        .element.element-3 {
-            bottom: 30%;
-            left: -30px;
-            animation-delay: 3s;
-        }
-
-        .element.element-4 {
-            bottom: 10%;
-            right: -30px;
-            animation-delay: 4.5s;
-        }
-
         /* Premium Brand Section Styles */
         .premium-brand-section {
             background: #f8fafc;
             padding: 100px 0;
             position: relative;
             overflow: hidden;
+        }
+        
+        @media (max-width: 1200px) {
+            .premium-brand-section {
+                padding: 80px 0;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .premium-brand-section {
+                padding: 70px 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .premium-brand-section {
+                padding: 60px 0;
+            }
         }
 
         .premium-brand-wrapper {
@@ -2336,7 +2313,7 @@
 
         .premium-services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-bottom: 60px;
             position: relative;
@@ -2824,9 +2801,24 @@
         }
 
         /* Responsive Design */
+        @media (max-width: 1400px) {
+            .banner-title {
+                font-size: 3.2rem;
+            }
+            
+            .section-title {
+                font-size: 2.8rem;
+            }
+            
+            .premium-services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 25px;
+            }
+        }
+
         @media (max-width: 1200px) {
             .premium-services-grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-template-columns: repeat(3, 1fr);
                 gap: 25px;
             }
 
@@ -2836,6 +2828,81 @@
 
             .section-title {
                 font-size: 2.5rem;
+            }
+            
+            .team-main-title {
+                font-size: 3rem;
+            }
+            
+            .premium-brand-wrapper {
+                padding: 50px 30px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .banner-title {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2.3rem;
+            }
+            
+            .team-main-title {
+                font-size: 2.8rem;
+            }
+            
+            .premium-services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .banner-stats {
+                gap: 30px;
+            }
+            
+            .stat-number {
+                font-size: 2.2rem;
+            }
+            
+            .stat-symbol {
+                font-size: 1.6rem;
+            }
+            
+            .trust-indicators {
+                gap: 30px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .trust-item {
+                min-width: 140px;
+                padding: 15px 20px;
+            }
+            
+            .banner-description {
+                font-size: 1.1rem;
+                max-width: 500px;
+            }
+        }
+
+        /* Keep 3 columns for larger tablets */
+        @media (min-width: 993px) and (max-width: 1100px) {
+            .premium-services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+            }
+            
+            .service-card-inner {
+                padding: 25px;
+            }
+            
+            .service-title {
+                font-size: 1.3rem;
+            }
+            
+            .service-description {
+                font-size: 0.9rem;
             }
         }
 
@@ -2852,21 +2919,35 @@
             .section-title {
                 font-size: 2rem;
             }
+            
+            .team-main-title {
+                font-size: 2.5rem;
+            }
 
             .banner-actions {
                 flex-direction: column;
-                align-items: center;
+                align-items: stretch;
+                gap: 15px;
+            }
+
+            .btn-premium-primary,
+            .btn-premium-secondary {
+                width: 100%;
+                justify-content: center;
+                padding: 12px 25px;
             }
 
             .banner-stats {
                 justify-content: center;
                 gap: 20px;
+                flex-wrap: wrap;
             }
 
             .stat-item {
                 flex-direction: column;
                 text-align: center;
                 gap: 5px;
+                min-width: 120px;
             }
 
             .premium-brand-wrapper {
@@ -2875,7 +2956,7 @@
             }
 
             .trust-indicators {
-                gap: 20px;
+                gap: 15px;
             }
 
             .trust-item {
@@ -2883,6 +2964,8 @@
                 text-align: center;
                 gap: 10px;
                 padding: 20px;
+                flex: 1;
+                min-width: 130px;
             }
 
             .premium-services-grid {
@@ -2901,6 +2984,33 @@
             .cta-actions {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
+            }
+            
+            .banner-features {
+                gap: 12px;
+            }
+            
+            .feature-item {
+                gap: 10px;
+            }
+            
+            .banner-description {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+            
+            .divider-text {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+            
+            .team-member-card {
+                padding: 25px;
+            }
+            
+            .member-name {
+                font-size: 1.3rem;
             }
         }
 
@@ -2912,11 +3022,9 @@
             .section-title {
                 font-size: 1.8rem;
             }
-
-            .floating-elements .element {
-                width: 40px;
-                height: 40px;
-                font-size: 16px;
+            
+            .team-main-title {
+                font-size: 2rem;
             }
 
             .banner-features {
@@ -2930,11 +3038,179 @@
             .premium-service-card.featured:hover {
                 transform: translateY(-10px);
             }
+            
+            .stat-item {
+                min-width: 100px;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .stat-symbol {
+                font-size: 1.4rem;
+            }
+            
+            .trust-item {
+                min-width: 120px;
+                padding: 15px;
+            }
+            
+            .trust-number {
+                font-size: 1.5rem;
+            }
+            
+            .banner-badge {
+                padding: 10px 20px;
+                margin-bottom: 25px;
+            }
+            
+            .badge-icon {
+                width: 24px;
+                height: 24px;
+                font-size: 12px;
+            }
+            
+            .badge-text {
+                font-size: 0.85rem;
+            }
+            
+            .premium-brand-wrapper {
+                padding: 30px 15px;
+                border-radius: 15px;
+            }
+            
+            .brand-title {
+                font-size: 1.8rem;
+            }
+            
+            .team-subtitle {
+                font-size: 1rem;
+                margin-bottom: 40px;
+            }
+            
+            .section-divider {
+                margin: 40px 0 30px;
+                gap: 15px;
+            }
+            
+            .divider-text {
+                font-size: 0.9rem;
+                padding: 0 12px;
+            }
+            
+            .team-member-card {
+                padding: 20px;
+            }
+            
+            .member-avatar {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .avatar-image {
+                width: 70px;
+                height: 70px;
+                font-size: 28px;
+            }
+            
+            .member-name {
+                font-size: 1.2rem;
+            }
+            
+            .member-title {
+                font-size: 0.9rem;
+            }
+            
+            .member-description {
+                font-size: 0.9rem;
+            }
+            
+            .specialty {
+                font-size: 0.75rem;
+                padding: 5px 10px;
+            }
+            
+            .social-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner-title {
+                font-size: 1.8rem;
+                line-height: 1.2;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .team-main-title {
+                font-size: 1.8rem;
+                line-height: 1.3;
+            }
+            
+            .premium-banner-section {
+                padding: 60px 0;
+            }
+            
+            .banner-description {
+                font-size: 0.95rem;
+            }
+            
+            .btn-premium-primary,
+            .btn-premium-secondary {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .service-card-inner {
+                padding: 25px;
+            }
+            
+            .service-title {
+                font-size: 1.3rem;
+            }
+            
+            .services-cta {
+                padding: 30px 15px;
+            }
+            
+            .cta-content h3 {
+                font-size: 1.6rem;
+            }
+            
+            .cta-content p {
+                font-size: 1rem;
+            }
+            
+            .trust-indicators {
+                gap: 10px;
+            }
+            
+            .premium-brand-wrapper {
+                padding: 25px 10px;
+            }
         }
 
         /* Utility Classes */
         .section-padding {
             padding: 100px 0;
+        }
+
+        @media (max-width: 1200px) {
+            .section-padding {
+                padding: 80px 0;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .section-padding {
+                padding: 70px 0;
+            }
         }
 
         @media (max-width: 768px) {
@@ -2946,6 +3222,52 @@
         @media (max-width: 576px) {
             .section-padding {
                 padding: 40px 0;
+            }
+        }
+
+        /* Container overflow fixes */
+        .container {
+            overflow-x: hidden;
+        }
+
+        /* Prevent horizontal scroll on small screens */
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Fix for elements extending outside container */
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .row > * {
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+        }
+
+        /* Better spacing for medium screens */
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .container {
+                max-width: 95%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+            .premium-services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .trust-indicators {
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+            
+            .trust-item {
+                flex: 0 1 calc(50% - 10px);
+                min-width: 180px;
             }
         }
 

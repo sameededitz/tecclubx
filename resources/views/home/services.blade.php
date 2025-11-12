@@ -1201,7 +1201,7 @@
 
 .premium-services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 60px;
     position: relative;
@@ -1648,9 +1648,20 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1400px) {
+    .premium-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+    
+    .section-title {
+        font-size: 2.8rem;
+    }
+}
+
 @media (max-width: 1200px) {
     .premium-services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 25px;
     }
     
@@ -1660,6 +1671,33 @@
     
     .section-title {
         font-size: 2.5rem;
+    }
+}
+
+/* Keep 3 columns for larger tablets */
+@media (min-width: 993px) and (max-width: 1100px) {
+    .premium-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .service-card-inner {
+        padding: 25px;
+    }
+    
+    .service-title {
+        font-size: 1.3rem;
+    }
+    
+    .service-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .premium-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
 
@@ -1737,12 +1775,6 @@
         font-size: 1.8rem;
     }
     
-    .floating-elements .element {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-    }
-    
     .banner-features {
         gap: 10px;
     }
@@ -1753,6 +1785,18 @@
     
     .premium-service-card.featured:hover {
         transform: translateY(-10px);
+    }
+    
+    .service-card-inner {
+        padding: 25px;
+    }
+    
+    .service-title {
+        font-size: 1.3rem;
+    }
+    
+    .service-description {
+        font-size: 0.9rem;
     }
 }
 
