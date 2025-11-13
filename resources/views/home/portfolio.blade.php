@@ -130,13 +130,13 @@
             </div>
             
             @if($portfolios->isNotEmpty())
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="modern-pagination">
-                            {{ $portfolios->links() }}
-                        </div>
+                <div class="row mt-4">
+                <div class="col-12">
+                    <div class="portfolio__two-pagination">
+                       {{ $portfolios->links() }}
                     </div>
                 </div>
+            </div>
             @endif
         </div>
     </div>

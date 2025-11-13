@@ -37,8 +37,7 @@
                                 <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
                                 <li><a href="{{ route('reviews') }}">Testimonials</a></li>
                                 <li><a href="{{ route('faqs') }}">Faq</a></li>
-                                <li><a href="{{ route('privacy.policy') }}">Privacy Policy</a></li>
-                                <li><a href="{{ route('terms.service') }}">Terms of Service</a></li>
+                                
                             </ul>
                         </li>
                         <li class="menu-item-has-children"><a href="{{ route('blogs') }}">Blog</a>
@@ -91,6 +90,7 @@
                                 <li><a href="{{ route('reviews') }}">Testimonials</a></li>
                                 <li><a href="{{ route('faqs') }}">FAQ</a></li>
                                 <li><a href="{{ route('privacy.policy') }}">Privacy Policy</a></li>
+                                <li><a href="{{ route('terms.service') }}">Terms of Service</a></li>
             </ul>
         </li>
         <li><a href="{{ route('blogs') }}">Blog</a></li>
