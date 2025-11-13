@@ -92,11 +92,11 @@
             <div class="row justify-content-between copyright__one-container-area">
                 <div class="col-xl-5 col-lg-6">
                     <div class="copyright__one-left">
-                        <p>© {{ isset($options['name']) ? $options['name']->value : config('app.name') }} 2024 | All
+                        <p>© {{ isset($options['name']) ? $options['name']->value : config('app.name') }} 2025 | All
                             Rights Reserved</p>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-6">
+                <div class="col-xl-5 col-lg-6 d-none d-sm-block">
                     <div class="copyright__one-right">
                         <a href="{{ route('terms.service') }}">Terms of Service</a>
                         <span>|</span>
