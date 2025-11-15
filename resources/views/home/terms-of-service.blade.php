@@ -113,7 +113,7 @@
                         <!-- Contact -->
                         <div class="terms-section-item" data-aos="fade-up">
                             <h2><i class="fas fa-envelope"></i> Contact Information</h2>
-                            <p>Questions about the Terms of Service should be sent to us at info@tecclubb.com.</p>
+                            <p>Questions about the Terms of Service should be sent to us at info@tecclubx.com.</p>
                         </div>
 
                     </div>

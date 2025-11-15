@@ -357,7 +357,7 @@
                                 <div class="contact-item">
                                     <i class="fas fa-envelope"></i>
                                     <div>
-                                        <strong>Email:</strong> privacy@tecclub.com<br>
+                                        <strong>Email:</strong>tecclubx@gmail.com<br>
                                         <strong>General Inquiries:</strong> info@tecclub.com
                                     </div>
                                 </div>
