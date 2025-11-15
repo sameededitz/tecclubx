@@ -358,7 +358,7 @@
                                     <i class="fas fa-envelope"></i>
                                     <div>
                                         <strong>Email:</strong>tecclubx@gmail.com<br>
-                                        <strong>General Inquiries:</strong> info@tecclub.com
+                                        <strong>General Inquiries:</strong> info@tecclubx.com
                                     </div>
                                 </div>
                                 <div class="contact-item">
@@ -463,7 +463,7 @@
                             <h3>Need Help?</h3>
                             <div class="support-info">
                                 <p>Have questions about your privacy rights or this policy?</p>
-                                <a href="mailto:privacy@tecclub.com" class="support-btn">
+                                <a href="mailto:info@tecclubx.com" class="support-btn">
                                     <i class="fas fa-envelope"></i>
                                     Email Privacy Team
                                 </a>
