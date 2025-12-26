@@ -2,8 +2,8 @@
 @section('title')
     Services | TecClub- Technology
 @endsection
-@section('home_scripts')
-@endsection
+@section('home_content')
+
 
     <!-- Banner Area Start -->
     <div class="page__banner">
@@ -346,51 +346,61 @@
     <!-- Service Process Section End -->
 
     <!-- Why Choose Us Section Start -->
-    <div class="why-choose-us section-padding" style="background-color: #F4F7FB;">
+    <div class="why-choose-us-simple section-padding" style="background-color: #f8f9fa;">
         <div class="container">
             <div class="row justify-content-center text-center">
-                <div class="col-xl-7 col-lg-8">
-                    <div class="section-title">
-                        <span class="subtitle-one">Why Choose Us</span>
+                <div class="col-xl-8 col-lg-9">
+                    <div class="simple-section-header" data-aos="fade-up">
+                         <div class="section-badge-work">
+                            <i class="fas fa-cogs"></i>
+                            <span>Why Choose us</span>
+                        </div>
                         <h2>Why We Are The Best Choice</h2>
+                        <p class="section-description">
+                            We deliver reliable, high-quality solutions with professional service 
+                            and ongoing support to help your business succeed.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-xl-6 col-lg-12">
-                    <div class="why-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
+                    <div class="simple-features">
+                        <div class="simple-feature-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="simple-feature-icon">
                                 <i class="fas fa-trophy"></i>
                             </div>
-                            <div class="feature-content">
+                            <div class="simple-feature-content">
                                 <h5>Proven Expertise</h5>
                                 <p>Years of experience delivering successful projects across various industries and technologies</p>
                             </div>
                         </div>
-                        <div class="feature-item" >
-                            <div class="feature-icon">
+                        
+                        <div class="simple-feature-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="simple-feature-icon">
                                 <i class="fas fa-clock"></i>
                             </div>
-                            <div class="feature-content">
+                            <div class="simple-feature-content">
                                 <h5>Timely Delivery</h5>
                                 <p>We respect deadlines and ensure your project is completed on time without compromising quality</p>
                             </div>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
+                        
+                        <div class="simple-feature-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="simple-feature-icon">
                                 <i class="fas fa-shield-alt"></i>
                             </div>
-                            <div class="feature-content">
+                            <div class="simple-feature-content">
                                 <h5>Quality Assurance</h5>
                                 <p>Rigorous testing and quality control processes ensure bug-free and high-performance solutions</p>
                             </div>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">
+                        
+                        <div class="simple-feature-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="simple-feature-icon">
                                 <i class="fas fa-headset"></i>
                             </div>
-                            <div class="feature-content">
+                            <div class="simple-feature-content">
                                 <h5>24/7 Support</h5>
                                 <p>Round-the-clock technical support and maintenance to keep your systems running smoothly</p>
                             </div>
@@ -431,31 +441,37 @@
                 </div>
             </div>
         </div>
-        <style>
-            @media (max-width: 770px) {
-                .feature-item {
-                    flex-direction: row !important;
-                    text-align: left !important;
-                    gap: 15px !important;
-                    align-items: flex-start !important;
-                }
-                
-                .feature-icon {
-                    margin: 0 !important;
-                    min-width: 60px !important;
-                    width: 60px !important;
-                    height: 60px !important;
-                    display: flex !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                }
-                
-                .stat-icon {
-                    margin: 0 auto !important;
-                    width: 60px !important;
-                    height: 60px !important;
-                    font-size: 24px !important;
-                }
-            }
-        </style>
     </div>
+    <!-- Why Choose Us Section End -->
+
+@endsection
+
+@section('home_scripts')
+<style>
+    @media (max-width: 770px) {
+        .feature-item {
+            flex-direction: row !important;
+            text-align: left !important;
+            gap: 15px !important;
+            align-items: flex-start !important;
+        }
+        
+        .feature-icon {
+            margin: 0 !important;
+            min-width: 60px !important;
+            width: 60px !important;
+            height: 60px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        
+        .stat-icon {
+            margin: 0 auto !important;
+            width: 60px !important;
+            height: 60px !important;
+            font-size: 24px !important;
+        }
+    }
+</style>
+@endsection
