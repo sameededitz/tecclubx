@@ -209,23 +209,7 @@
 @endsection
 @section('styles')
     <link rel="stylesheet" href="{{ asset('assets/css/faqs-page.css') }}">
-    <style>
-        /* Force FAQ answer text to sentence case (visual only).
-           Lowercase all letters then uppercase the first letter of the paragraph.
-           Note: this is a visual transform and will also lowercase proper nouns.
-        */
-        .premium-faq .panel,
-        .premium-faq .panel p {
-            text-transform: lowercase !important;
-        }
-        .premium-faq .panel p::first-letter {
-            text-transform: uppercase !important;
-        }
-        /* If answers include other direct child elements, normalize them too */
-        .premium-faq .panel * {
-            text-transform: none; /* allow specific tags (like code) to keep their case) */
-        }
-    </style>
+    <!-- FAQ specific styles moved to /public/assets/css/custom.css -->
 @endsection
 
 @section('home_scripts')

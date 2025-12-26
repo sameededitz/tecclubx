@@ -24,6 +24,8 @@
 <script src="{{ asset('assets/js/jquery.meanmenu.min.js') }}"></script>
 <!-- Custom JS -->
 <script src="{{ asset('assets/js/custom.js') }}"></script>
+<!-- Lazy Loading JS -->
+<script src="{{ asset('assets/js/lazy-load.js') }}"></script>
 
 {{-- ASO Animation --}}
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

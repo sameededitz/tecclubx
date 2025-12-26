@@ -1,0 +1,22 @@
+/* Global Font Settings */
+body, html {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Ensure all text elements use Outfit */
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Icon fonts should maintain their original fonts */
+.fa, .fas, .far, .fab, .fal {
+    font-family: 'Font Awesome 5 Pro', 'Font Awesome 5 Brands', 'Font Awesome 5 Duotone', sans-serif !important;
+}
+
+.flaticon, .flaticon_bantec {
+    font-family: 'flaticon_bantec' !important;
+}
+
+.ri {
+    font-family: 'remixicon' !important;
+}

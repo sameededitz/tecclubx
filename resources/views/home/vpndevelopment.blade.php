@@ -424,54 +424,5 @@
         </div>
     </section>
     <!-- Development Process Section End -->
-
-    <!-- CTA Section Start -->
-    <section class="dev-cta-section mb-5">
-        <div class="cta-background">
-            <div class="particles">
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-                <div class="particle"></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-xl-8 col-lg-9">
-                    <div class="cta-content" data-aos="fade-up">
-                        <h2 style="color: #ffffff">Ready to Build Your VPN App?</h2>
-                        <p>Let's discuss your project and create a powerful VPN application that stands out in the market. 
-                        Get a free consultation and project estimate today.</p>
-                        <div class="cta-actions">
-                            <a href="#contact" class="btn-primary-modern btn-lg">
-                                <span>Get Free Consultation</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a href="#portfolio" class="btn-outline-modern btn-lg">
-                                <i class="fas fa-eye"></i>
-                                <span>View Our Work</span>
-                            </a>
-                        </div>
-                        <div class="cta-features">
-                            <div class="cta-feature">
-                                <i class="fas fa-clock"></i>
-                                <span>Fast Delivery</span>
-                            </div>
-                            <div class="cta-feature">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>100% Secure</span>
-                            </div>
-                            <div class="cta-feature">
-                                <i class="fas fa-award"></i>
-                                <span>Quality Guaranteed</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- CTA Section End -->
 @endsection
 

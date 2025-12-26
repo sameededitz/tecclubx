@@ -330,7 +330,9 @@
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
   -webkit-line-break: after-white-space;
+  line-break: after-white-space;
   -webkit-user-select: auto;
+  user-select: auto;
 }
 
 :where([draggable=true]) {
@@ -357,7 +359,7 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-secondary-light);
-  font-family: "Inter", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 1rem;
   padding: 0;
   margin: 0;
@@ -544,6 +546,7 @@ button,
 [type=submit] {
   cursor: pointer;
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button:disabled,
@@ -603,6 +606,7 @@ textarea {
 
 [type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 label[for] {
@@ -5939,7 +5943,7 @@ h6, .h6 {
 
 .text-line-1 {
   display: -webkit-box;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 1; /* Note: line-clamp is only supported with -webkit- prefix in most browsers */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5947,7 +5951,7 @@ h6, .h6 {
 
 .text-line-2 {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 2; /* Note: line-clamp is only supported with -webkit- prefix in most browsers */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5955,7 +5959,7 @@ h6, .h6 {
 
 .text-line-3 {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 3; /* Note: line-clamp is only supported with -webkit- prefix in most browsers */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -11610,7 +11614,7 @@ select option {
   fill: #4B5563 !important;
   font-size: 14px;
   font-weight: 700 !important;
-  font-family: Inter, sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .circle-none circle {

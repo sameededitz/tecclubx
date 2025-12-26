@@ -16,7 +16,7 @@
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
@@ -37,6 +37,7 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ asset('assets/sass/style.css') }}?v={{ time() }}">
 <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}?v={{ time() }}">
+<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}?v={{ time() }}">
 
 {{-- AOS Animation --}}
 {{-- 
