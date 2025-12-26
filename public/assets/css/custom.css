@@ -14116,7 +14116,7 @@ ul {
 .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    /* color: #333; */
     margin-bottom: 10px;
     display: block;
 }
