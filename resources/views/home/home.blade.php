@@ -72,17 +72,17 @@
                         </div>
                         <div class="banner-stats">
                             <div class="stat-item">
-                                <div class="stat-number" data-count="70">70</div>
+                                <div class="stat-number text-white" data-count="70">70</div>
                                 <div class="stat-symbol">+</div>
                                 <div class="stat-label">Projects</div>
                             </div>
                             <div class="stat-item">
-                                <div class="stat-number" data-count="98">99</div>
+                                <div class="stat-number text-white" data-count="100">100</div>
                                 <div class="stat-symbol">%</div>
                                 <div class="stat-label">Satisfaction</div>
                             </div>
                             <div class="stat-item">
-                                <div class="stat-number" data-count="50">50</div>
+                                <div class="stat-number text-white" data-count="50">50</div>
                                 <div class="stat-symbol">+</div>
                                 <div class="stat-label">Clients</div>
                             </div>

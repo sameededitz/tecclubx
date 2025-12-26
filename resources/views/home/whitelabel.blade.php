@@ -223,160 +223,102 @@
     <!-- What's Included Section End -->
 
     <!-- Why Choose TecClub Section Start -->
-    <section class="why-choose-section section-padding">
+     <div class="why-choose-us-simple section-padding" style="background-color: #f8f9fa;">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="why-choose-content">
-                        <div class="section-badge">
-                            <i class="fas fa-star"></i>
-                            <span>Why Choose TecClub</span>
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="simple-section-header" data-aos="fade-up">
+                         <div class="section-badge-work">
+                            <i class="fas fa-cogs"></i>
+                            <span>Why Choose us</span>
                         </div>
-                        <h2 class="section-title">The Most Trusted White Label VPN Provider</h2>
+                        <h2>Why We Are The Best Choice</h2>
                         <p class="section-description">
-                            With over 5 years of experience in VPN technology and hundreds of successful 
-                            white label deployments, TecClub is the industry leader you can trust with your business.
+                            We deliver reliable, high-quality solutions with professional service 
+                            and ongoing support to help your business succeed.
                         </p>
-                        
-                        <div class="why-choose-points">
-                            <div class="point-item">
-                                <div class="point-icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div class="point-content">
-                                    <h4>Military-Grade Security</h4>
-                                    <p>Advanced encryption protocols including OpenVPN, WireGuard, and IKEv2 ensure maximum security for your users.</p>
-                                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-xl-6 col-lg-12">
+                    <div class="simple-features">
+                        <div class="simple-feature-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="simple-feature-icon">
+                                <i class="fas fa-trophy"></i>
                             </div>
-                            
-                            <div class="point-item">
-                                <div class="point-icon">
-                                    <i class="fas fa-rocket"></i>
-                                </div>
-                                <div class="point-content">
-                                    <h4>Lightning Fast Setup</h4>
-                                    <p>Get your VPN brand live in just 2-4 weeks with our streamlined deployment process and expert team support.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="point-item">
-                                <div class="point-icon">
-                                    <i class="fas fa-handshake"></i>
-                                </div>
-                                <div class="point-content">
-                                    <h4>Complete Business Partnership</h4>
-                                    <p>We don't just provide software - we're your technology partner helping you succeed in the competitive VPN market.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="point-item">
-                                <div class="point-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="point-content">
-                                    <h4>Proven Success Record</h4>
-                                    <p>200+ successful VPN brands launched with an average customer satisfaction rate of 98% and growing revenues.</p>
-                                </div>
+                            <div class="simple-feature-content">
+                                <h5>Proven Expertise</h5>
+                                <p>Years of experience delivering successful projects across various industries and technologies</p>
                             </div>
                         </div>
                         
-                        <div class="trust-indicators">
-                            <div class="trust-item">
-                                <div class="trust-number">25+</div>
-                                <div class="trust-label">VPN Brands Launched</div>
+                        <div class="simple-feature-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="simple-feature-icon">
+                                <i class="fas fa-clock"></i>
                             </div>
-                            <div class="trust-item">
-                                <div class="trust-number">98%</div>
-                                <div class="trust-label">Client Satisfaction</div>
+                            <div class="simple-feature-content">
+                                <h5>Timely Delivery</h5>
+                                <p>We respect deadlines and ensure your project is completed on time without compromising quality</p>
                             </div>
-                            <div class="trust-item">
-                                <div class="trust-number">7+</div>
-                                <div class="trust-label">Years Experience</div>
+                        </div>
+                        
+                        <div class="simple-feature-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="simple-feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="simple-feature-content">
+                                <h5>Quality Assurance</h5>
+                                <p>Rigorous testing and quality control processes ensure bug-free and high-performance solutions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="simple-feature-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="simple-feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="simple-feature-content">
+                                <h5>24/7 Support</h5>
+                                <p>Round-the-clock technical support and maintenance to keep your systems running smoothly</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="why-choose-visual">
-                        <div class="stats-dashboard">
-                            <div class="dashboard-header">
-                                <h3>TecClub Performance Dashboard</h3>
-                                <div class="status-indicator">
-                                    <div class="status-dot"></div>
-                                    <span>All Systems Operational</span>
-                                </div>
+                <div class="col-xl-6 col-lg-12">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
                             </div>
-                            <div class="dashboard-stats">
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-users"></i>
-                                    </div>
-                                    <div class="stat-info">
-                                        <div class="stat-number">2.5M+</div>
-                                        <div class="stat-label">Active Users</div>
-                                    </div>
-                                </div>
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-server"></i>
-                                    </div>
-                                    <div class="stat-info">
-                                        <div class="stat-number">99.9%</div>
-                                        <div class="stat-label">Uptime</div>
-                                    </div>
-                                </div>
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-globe"></i>
-                                    </div>
-                                    <div class="stat-info">
-                                        <div class="stat-number">50+</div>
-                                        <div class="stat-label">Countries</div>
-                                    </div>
-                                </div>
-                                <div class="stat-card">
-                                    <div class="stat-icon">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <div class="stat-info">
-                                        <div class="stat-number">1Gbps</div>
-                                        <div class="stat-label">Speed</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dashboard-chart">
-                                <div class="chart-header">
-                                    <span>Revenue Growth</span>
-                                    <span class="growth-percentage">+125%</span>
-                                </div>
-                                <div class="chart-bars">
-                                    <div class="bar" style="height: 40%"></div>
-                                    <div class="bar" style="height: 60%"></div>
-                                    <div class="bar" style="height: 80%"></div>
-                                    <div class="bar" style="height: 95%"></div>
-                                    <div class="bar" style="height: 100%"></div>
-                                </div>
-                            </div>
+                            <div class="stat-number" data-count="70">70</div>
+                            <div class="stat-label">Projects Completed</div>
                         </div>
-                        <div class="floating-badges">
-                            <div class="badge-item badge-1">
-                                <i class="fas fa-award"></i>
-                                <span>ISO Certified</span>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-smile"></i>
                             </div>
-                            <div class="badge-item badge-2">
-                                <i class="fas fa-lock"></i>
-                                <span>SOC2 Compliant</span>
+                            <div class="stat-number" data-count="53">53</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
                             </div>
-                            <div class="badge-item badge-3">
-                                <i class="fas fa-medal"></i>
-                                <span>Industry Leader</span>
+                            <div class="stat-number" data-count="7">7</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
                             </div>
+                            <div class="stat-number" data-count="12">12</div>
+                            <div class="stat-label">Team Members</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Why Choose TecClub Section End -->
 
     <!-- Our Expertise Section Start -->
